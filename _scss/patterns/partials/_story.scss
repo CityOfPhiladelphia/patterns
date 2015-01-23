@@ -1,0 +1,14 @@
+.story {
+  border:1px solid $geyser;
+  background:$white;
+  width:100%;
+  @include pad-box(16);
+  h3 {
+    padding:0 0 3px 0;
+    border-bottom:1px solid $whitesmoke;
+  }
+  p {
+    margin: rem-calc(7 0);
+    @extend %small;
+  }
+}

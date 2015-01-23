@@ -1,0 +1,23 @@
+<div class="page" id="page">
+  {{> organisms-header }}
+  <article>
+    <div class="row">
+      <div class="large-24 columns">
+          <h1>Page Title</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-18 columns">
+      {{> organisms-content-body }}
+      </div>
+      <div class="large-6 columns">
+        {{> organisms-related-content }}
+      </div>
+    </div>
+  </article>
+  <div class="row">
+    {{> molecules-block-panel }}
+  </div>
+</div>
+<!--end page -->
+{{> organisms-footer}}

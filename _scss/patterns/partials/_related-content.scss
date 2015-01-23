@@ -1,0 +1,24 @@
+.related{
+  @include pad-box(16);
+  background:$whitesmoke;
+  border:1px solid $geyser;
+
+  ul{
+    margin:0;
+    padding:0;
+  }
+
+  li {
+    @extend %small;
+    list-style:none;
+    margin-bottom:rem-calc(15);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      display:none;
+    }
+  }
+}

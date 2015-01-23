@@ -1,0 +1,36 @@
+.accessible, .site-branding h1, .site-branding h2, a.skip-link, .screen-reader-text {
+  position: absolute;
+  left: -99999px;
+  height: 10px;
+  width: 10px;
+}
+
+img {
+  width:100%;
+  height:auto;
+}
+
+header.site-header {
+  .logo{
+    height:75px;
+    width:auto;
+  }
+  @media #{$small-only} {
+    .search{
+      margin-bottom:rem-calc(18);
+    }//.search
+  }
+  @media #{$medium-up} {
+    .search{
+      margin-top:rem-calc(18);
+    }//.search
+  }
+}
+
+ol, ul{
+  padding: rem-calc(0 0 0 20);
+  margin:rem-calc(0 0 0 20);
+  li ul, li ol {
+    margin:0;
+  }
+}

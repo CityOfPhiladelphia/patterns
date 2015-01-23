@@ -1,0 +1,34 @@
+<div class="page" id="page">
+  {{> organisms-header-sans-search }}
+  <div class="search-head">
+    <div class="row">
+      <div class="medium-8 columns">
+        <h1>Search results for:</h1>
+      </div>
+      <div class="medium-16 columns">
+        {{> molecules-search }}
+      </div>
+    </div>
+  </div>
+    <div class="row">
+      <div class="medium-6 columns">
+        Displaying <strong>X</strong> results:
+      </div>
+      <div class="medium-18 columns search-results">
+        <article>
+          <h1><a href="#">Page title</a></h1>
+          {{> atoms-paragraph }}
+        </article>
+        <hr>
+        <article>
+          <h1><a href="#">Page title</a></h1>
+          {{> atoms-paragraph }}
+        </article>
+      </div>
+    </div>
+  <div class="row">
+    {{> molecules-block-panel }}
+  </div>
+</div>
+<!--end page -->
+{{> organisms-footer}}

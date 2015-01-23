@@ -1,0 +1,21 @@
+#breadcrumbs {
+  padding-top:rem-calc(10);
+  ul {
+    @extend %small;
+    margin: 0;
+    padding:0;
+  }
+  .inline-list > li {
+    margin-left:0;
+    float:none;
+  }
+  .inline-list > li > * {
+    display:inline-block;
+  }
+  li::after {
+    content:" / ";
+  }
+  li:last-child::after{
+    content:"";
+  }
+}

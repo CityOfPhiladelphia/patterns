@@ -1,0 +1,89 @@
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="color"],
+textarea,
+select,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+  border: 2px solid $ben-franklin-blue;
+  padding:rem-calc(8);
+  margin: 0;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: rem-calc(40);
+    height: rem-calc(40);
+    font-family: 'FontAwesome';
+    content: '\f002';
+    text-align: center;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-smooth: always;
+    background:$ben-franklin-blue;
+    color:$white;
+    font-weight:normal;
+    padding:rem-calc(8);
+  }
+
+  input[type="text"] {
+    height:rem-calc(40);
+  }
+  input[type="submit"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: rem-calc(40);
+    height: rem-calc(40);
+    opacity: 0;
+    cursor: pointer;
+  }
+  &.hint p{
+    @extend %small;
+    color: $white;
+    background: $ben-franklin-blue;
+    padding: 5px;
+    text-align: right;
+    float: right;
+    display: block;
+    margin:0;
+  }
+  &.hint:before {
+    content: '';
+    width:0;
+    height:0;
+    padding:0;
+  }
+}
+
+#filter-list input[type="text"]{
+  border:1px solid $geyser;
+}

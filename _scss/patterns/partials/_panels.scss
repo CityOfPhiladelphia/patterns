@@ -1,0 +1,13 @@
+.panel {
+  @extend %group;
+  background-color: $ghost-gray;
+  border: 1px solid $geyser;
+  padding: 1.5em;
+  margin: rem-calc(20 0);
+  text-align: center;
+}
+
+.panel p {
+  margin:0;
+  padding:0;
+}

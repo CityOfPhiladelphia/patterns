@@ -1,0 +1,89 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+ /*------------------------------------*\
+	   {o}        _       _
+	    |      __| | __ _(_)___ _   _
+	   \|/    / _` |/ _` | / __| | | |
+	[~~~~~~~]| (_| | (_| | \__ \ |_| |
+	 |_____|  \__,_|\__,_|_|___/\__, |
+	          by hbrgtech       |___/
+	https://github.com/HBRGTech/daisy
+	Created by HBRG Tech Team
+	November 2014
+	Read about it
+	http://hbrgtech.github.io/pattern-lab-team-workflow/
+\*------------------------------------*/
+
+// this is our foundation setting file
+@import "patterns/settings";
+
+// /* foundation components */
+// Behold, here are all the Foundation components.
+	@import "patterns/foundation/components/grid";
+	@import "patterns/foundation/components/accordion";
+	@import "patterns/foundation/components/alert-boxes";
+	@import "patterns/foundation/components/block-grid";
+	@import "patterns/foundation/components/breadcrumbs";
+	@import "patterns/foundation/components/button-groups";
+	@import "patterns/foundation/components/buttons";
+	@import "patterns/foundation/components/clearing";
+	@import "patterns/foundation/components/dropdown";
+	@import "patterns/foundation/components/dropdown-buttons";
+	@import "patterns/foundation/components/flex-video";
+	@import "patterns/foundation/components/forms";
+	@import "patterns/foundation/components/icon-bar";
+	@import "patterns/foundation/components/inline-lists";
+	@import "patterns/foundation/components/joyride";
+	@import "patterns/foundation/components/keystrokes";
+	@import "patterns/foundation/components/labels";
+	@import "patterns/foundation/components/magellan";
+	@import "patterns/foundation/components/orbit";
+	@import "patterns/foundation/components/pagination";
+	@import "patterns/foundation/components/panels";
+	@import "patterns/foundation/components/pricing-tables";
+	@import "patterns/foundation/components/progress-bars";
+	@import "patterns/foundation/components/range-slider";
+	@import "patterns/foundation/components/reveal";
+	@import "patterns/foundation/components/side-nav";
+	@import "patterns/foundation/components/split-buttons";
+	@import "patterns/foundation/components/sub-nav";
+	@import "patterns/foundation/components/switches";
+	@import "patterns/foundation/components/tables";
+	@import "patterns/foundation/components/tabs";
+	@import "patterns/foundation/components/thumbs";
+	@import "patterns/foundation/components/tooltips";
+	@import "patterns/foundation/components/top-bar";
+	@import "patterns/foundation/components/type";
+	@import "patterns/foundation/components/offcanvas";
+	@import "patterns/foundation/components/visibility";
+
+//utils
+@import "patterns/utils/placeholders";
+@import "patterns/utils/variables";
+@import "patterns/utils/mixins";
+
+//base
+@import "patterns/base/global";
+@import "patterns/base/buttons";
+@import "patterns/base/forms";
+@import "patterns/base/typography";
+
+//partials
+@import "patterns/partials/alerts";
+@import "patterns/partials/breadcrumbs";
+@import "patterns/partials/divider";
+@import "patterns/partials/footer";
+@import "patterns/partials/panels";
+@import "patterns/partials/related-content";
+@import "patterns/partials/story";
+
+
+//pages
+@import "patterns/pages/page";
+@import "patterns/pages/search";
+
+
+// shame.scss
+@import "patterns/shame";
