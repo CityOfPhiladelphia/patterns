@@ -8,9 +8,9 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               "Pattern Lab"
-url:                 http://cityofphiladelphia.github.io/patterns
-baseurl:             /gh-patterns/
+title:               "Patterns"
+url:                 http://cityofphiladelphia.github.io/patterns-jekyll
+baseurl:             /patterns-jekyll
 
 # Assets
 #
