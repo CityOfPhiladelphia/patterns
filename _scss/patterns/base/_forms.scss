@@ -87,3 +87,7 @@ textarea:focus {
 #filter-list input[type="text"]{
   border:1px solid $geyser;
 }
+
+input[type="text"].is-error {
+    border:2px solid $bell-yellow;
+}

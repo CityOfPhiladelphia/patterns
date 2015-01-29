@@ -3,11 +3,9 @@ title: Standard Top Bar
 ---
 <div class="row">
   <div class="small-24 medium-12 columns">
-    logo
+    {{ site.patterns | where:"title" : "Logo" }}
   </div>
   <div class="small-24 medium-12 columns">
-    <form class="search">
-      <input type="text" placeholder="Taxes"><input type="submit">
-    </form>
+    {{ site.patterns | where:"title" : "Standard Search Form" }}
   </div>
 </div>
