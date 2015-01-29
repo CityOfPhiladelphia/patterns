@@ -3,23 +3,19 @@ layout: default
 ---
 
 <div class="home">
-  <ul class="post-list">
-    {% for pattern in site.patterns %}
-      <li>
-        <h2>{{ pattern.title }}</h2>
-        <hr/>
-        <p>{{ pattern.description }}</p>
-
-        <h3>Example</h3>
-        {{ pattern.output }}
-
-
-        <h3>Code</h3>
+  {% for pattern in site.patterns %}
+    <h2 class="title">{{ pattern.title }}</h2>
+    <p>{{ pattern.description }}</p>
+    <h3>Example</h3>
+    {{ pattern.output }}
+    <h3 class="code">View Code <i class="fa fa-arrow-circle-right"></i></h3>
+      <div class="the-code">
         {% highlight html %}
-{{ pattern.output }}
+          {{ pattern.output }}
         {% endhighlight %}
-      </li>
+      </div>
+      <hr>
     {% endfor %}
-  </ul>
+  </div>
 
 </div>
