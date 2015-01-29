@@ -140,6 +140,9 @@ $animate-quick: 0.2s;
 	line-height: 1;
 }
 
+.title, .code {
+	display: inline-block;
+}
 .code {
 	cursor:pointer;
 	color:$sg-secondary;
@@ -151,4 +154,12 @@ $animate-quick: 0.2s;
 
 .code:hover {
 	color:$sg-primary;
+}
+
+h2.title {
+	margin-bottom:0;
+}
+
+p.small-text {
+	margin:.5em 0 1em 0;
 }
