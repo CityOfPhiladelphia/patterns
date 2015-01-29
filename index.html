@@ -6,14 +6,14 @@ layout: default
   {% for pattern in site.patterns %}
     <h2 class="title">{{ pattern.title }}</h2>
     <p>{{ pattern.description }}</p>
-    <h3>Example</h3>
-    {{ pattern.output }}
     <h3 class="code">View Code <i class="fa fa-arrow-circle-right"></i></h3>
       <div class="the-code">
         {% highlight html %}
           {{ pattern.output }}
         {% endhighlight %}
       </div>
+    <h3>Example:</h3>
+    {{ pattern.output }}
       <hr>
     {% endfor %}
   </div>
