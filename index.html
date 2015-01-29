@@ -4,6 +4,7 @@ layout: default
 
 <div class="home">
   {% for pattern in site.patterns %}
+  <div class="pattern" id="{{ pattern.title | remove: " -" | replace: " ", "-" | downcase }}">
     <h2 class="title">{{ pattern.title }}</h2>
     <h3 class="code">View Code <i class="fa fa-arrow-circle-right"></i></h3>
       <div class="the-code">
@@ -15,6 +16,7 @@ layout: default
     <h3>Example:</h3>
     {{ pattern.output }}
       <hr>
+    </div>
     {% endfor %}
   </div>
 

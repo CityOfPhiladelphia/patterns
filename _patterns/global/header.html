@@ -5,14 +5,10 @@ title: Standard Header
 <header class="site-header" role="banner">
   <div class="row">
     <div class="small-24 medium-12 columns">
-      <a href="{{ url }}">
-        <img src="{{ "/images/city-of-philadelphia-logo.png" | prepend: site.baseurl }}" class="logo" alt="City of Philadelphia" />
-      </a>
+      {{ site.patterns | where:"title" : "Logo" }}
     </div>
     <div class="small-24 medium-12 columns">
-      <form class="search">
-        <input type="text" placeholder="Taxes"><input type="submit">
-      </form>
+      {{ site.patterns | where:"title" : "Search Form" }}
     </div>
   </div>
 </header>
@@ -22,13 +18,4 @@ title: Standard Header
     <div class="divider"></div>
   </div>
 </div>
-<div class="row">
-  <div id="breadcrumbs" class="large-24 columns">
-    <ul class="inline-list">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Grandparent</a></li>
-      <li><a href="#">Parent</a></li>
-      <li>Child</li>
-    </ul>
-  </div>
-</div>
+  {{ site.patterns | where:"title" : "Breadcrumbs" }}
