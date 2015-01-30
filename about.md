@@ -3,8 +3,7 @@ layout: default
 title: About
 permalink: /about/
 ---
-  This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
 
-  You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+This is the official Phila.gov Pattern Portfolio. Here you will find a list of all elements used on the <a href="http://alpha.phila.gov">alpha.phila.gov</a> website and guidelines for using them.
 
-  You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+For more information on pattern portfolios in general, visit <a href="http://clearleft.com/thinks/onpatternportfolios/">Clearleft</a>.
