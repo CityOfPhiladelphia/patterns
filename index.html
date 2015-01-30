@@ -6,7 +6,7 @@ layout: default
   {% for pattern in site.patterns %}
   <div class="pattern" id="{{ pattern.title | remove: " -" | replace: " ", "-" | downcase }}">
     <h2 class="title">{{ pattern.title }}</h2>
-    <h3 class="code">View Code <i class="fa fa-arrow-circle-right"></i></h3>
+    <h3 class="code">View Code</h3> <i class="fa fa-arrow-circle-right"></i>
       <div class="the-code">
         {% highlight html %}
           {{ pattern.output }}

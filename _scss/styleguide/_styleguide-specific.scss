@@ -153,6 +153,9 @@ $animate-quick: 0.2s;
 	font-weight:300;
 	background-color:#fff !important;
 }
+.code + i {
+	color:$sg-secondary;
+}
 
 .code:hover {
 	color:$sg-primary;
