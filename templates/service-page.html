@@ -1,0 +1,32 @@
+---
+layout: page
+title: Service
+permalink: /templates/service-page/
+---
+
+<div class="page" id="page">
+  {{ site.patterns | where:"title" : "Standard Header" }}
+  <article>
+    <div class="row">
+      <div class="large-24 columns">
+          <h1>Page Title</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-18 columns">
+        {{ site.patterns | where:"title" : "Paragraph" }}
+        {{ site.patterns | where:"title" : "Button with Description" }}
+        {{ site.patterns | where:"title" : "Paragraph" }}
+        {{ site.patterns | where:"title" : "Paragraph" }}
+      </div>
+      <div class="large-6 columns">
+        {{ site.patterns | where:"title" : "Related Content Sidebar" }}
+      </div>
+    </div>
+  </article>
+  <div class="row">
+    {{ site.patterns | where:"title" : "Panel" }}
+  </div>
+</div>
+<!--end page -->
+{{ site.patterns | where:"title" : "Footer" }}
