@@ -5,7 +5,7 @@ layout: default
 <div class="home row">
   <div class="small-24 columns">
     {% for pattern in site.patterns %}
-    <div class="pattern" id="p-{{ pattern.title | remove: " -" | replace: " ", "-" | downcase }}">
+    <div class="pattern" id="p-{{ pattern.title | replace: "/", "-" | remove: " -"| replace: " ", "-" | downcase }}">
       <h2 class="title">{{ pattern.title }}</h2>
       <h3 class="code">View Code</h3> <i class="fa fa-arrow-circle-right"></i>
         <div class="the-code">

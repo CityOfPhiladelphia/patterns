@@ -168,3 +168,16 @@ h2.title {
 p.small-text {
 	margin:.5em 0 1em 0;
 }
+#p-footer footer, #p-site-wide-alert #site-wide-alert{
+		padding-left:1em;
+		padding-right:1em;
+}
+#p-full-width-layout .column, #p-3-4-layout .column, #p-three-column-layout .column, #p-two-column-layout .column{
+	background: #eee;
+	font-size: 11px;
+	margin-bottom: 10px;
+	line-height: 2rem;
+	border: solid 1px #c6c6c6;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}

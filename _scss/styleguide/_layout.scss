@@ -26,6 +26,11 @@
 .site-nav {
     float: right;
     line-height: 56px;
+    z-index: 10000;
+
+    a:hover, a:active{
+      color:$grey-color-dark;
+    }
 
     .menu-icon {
         display: none;
@@ -56,7 +61,7 @@
             width: 36px;
             height: 26px;
             line-height: 0;
-            padding-top: 10px;
+            padding-top: 6px;
             text-align: center;
 
             > svg {
