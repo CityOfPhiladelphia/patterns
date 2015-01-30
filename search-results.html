@@ -1,0 +1,52 @@
+---
+layout: page
+title: Search Results
+permalink: /search-results/
+---
+<div class="page" id="page">
+  <header class="site-header" role="banner">
+    <div class="row">
+      <div class="small-24 medium-12 columns">
+        {{ site.patterns | where:"title" : "Logo" }}
+      </div>
+    </div>
+  </header>
+  <!-- End .header -->
+  <div class="row">
+    <div class="small-24 columns">
+      <div class="divider"></div>
+    </div>
+  </div>
+    {{ site.patterns | where:"title" : "Breadcrumbs" }}
+  <div class="search-head">
+    <div class="row">
+      <div class="medium-8 columns">
+        <h1>Search results for:</h1>
+      </div>
+      <div class="medium-16 columns">
+        {{ site.patterns | where:"title" : "Search Form" }}
+      </div>
+    </div>
+  </div>
+    <div class="row">
+      <div class="medium-6 columns">
+        Displaying <strong>X</strong> results:
+      </div>
+      <div class="medium-18 columns search-results">
+        <article>
+          <h1><a href="#">Page title</a></h1>
+          {{ site.patterns | where:"title" : "Paragraph" }}
+        </article>
+        <hr>
+        <article>
+          <h1><a href="#">Page title</a></h1>
+          {{ site.patterns | where:"title" : "Paragraph" }}
+        </article>
+      </div>
+    </div>
+  <div class="row">
+    {{ site.patterns | where:"title" : "Panel" }}
+  </div>
+</div>
+<!--end page -->
+{{ site.patterns | where:"title" : "Footer" }}
