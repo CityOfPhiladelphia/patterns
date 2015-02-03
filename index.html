@@ -6,8 +6,11 @@ layout: default
   <div class="small-24 columns">
     {% for pattern in site.patterns %}
     <div class="pattern" id="p-{{ pattern.title | replace: "/", "-" | remove: " -"| replace: " ", "-" | downcase }}">
-      <h2 class="title">{{ pattern.title }}</h2>
-      <h3 class="code">View Code</h3> <i class="fa fa-arrow-circle-right"></i>
+      <hgroup class="code">
+          <h2 class="title">{{ pattern.title }}</h2>
+        <h3>View Code</h3>
+        <i class="fa fa-arrow-circle-right"></i>
+      </hgroup>
         <div class="the-code">
           {% highlight html %}
             {{ pattern.output }}
@@ -15,7 +18,6 @@ layout: default
         </div>
       <p class="small-text">{{ pattern.description }}</p>
       {{ pattern.output }}
-        <hr>
       </div>
       {% endfor %}
     </div>

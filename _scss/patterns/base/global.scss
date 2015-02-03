@@ -1,3 +1,6 @@
+html, body{
+  height:100%;
+}
 .accessible, .site-branding h1, .site-branding h2, a.skip-link, .screen-reader-text {
   position: absolute;
   left: -99999px;

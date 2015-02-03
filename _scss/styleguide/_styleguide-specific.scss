@@ -143,7 +143,7 @@ $animate-quick: 0.2s;
 }
 
 .title, .code {
-	display: inline-block;
+	display:block;
 }
 .code {
 	cursor:pointer;
@@ -151,7 +151,13 @@ $animate-quick: 0.2s;
 	font-family: Helvetica,Arial,sans-serif;
 	text-transform:none;
 	font-weight:300;
-	background-color:#fff !important;
+	background:$sg-tertiary;
+	padding:0 10px;
+	margin:20px 0;
+
+	h2, h3 {
+		display:inline-block;
+	}
 }
 .code + i {
 	color:$sg-secondary;
@@ -180,4 +186,10 @@ p.small-text {
 	border: solid 1px #c6c6c6;
 	margin-left: 0 !important;
 	margin-right: 0 !important;
+}
+
+/*override normal behavior for propper alignment*/
+.row .row {
+	margin-left:0 !important;
+	margin-right:0 !important;
 }
