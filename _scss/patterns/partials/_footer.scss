@@ -4,6 +4,7 @@ footer.site-footer {
   text-transform: uppercase;
   height:auto;
   margin-top:rem-calc(16);
+  color:$white;
 
   ul.inline-list {
     font-size:rem-calc(13);
@@ -33,5 +34,8 @@ footer.site-footer {
     ul.inline-list{
       float:right;
     }
+  }
+  p{
+    margin:0;
   }
 }
