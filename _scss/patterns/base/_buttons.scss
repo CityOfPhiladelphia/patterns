@@ -56,17 +56,19 @@ a.button:hover, a.button:active{
 .call-to-action{
   text-align:center;
   a {
+    display:block;
+    
+    &:hover .fa, &:active .fa{
+      color:$mine-shaft !important;
+    }
     .fa  {
       color:$bell-yellow;
+
     }//.fa
     .fa-inverse, span {
       color: $white;
       vertical-align:top;
       font-size:rem-calc(30);
     }
-    &:hover, &:active {
-      color:$mine-shaft;
-    }
-
   }//a
 }
