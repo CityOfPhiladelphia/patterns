@@ -5,13 +5,15 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="{{ "/src/script.js" | prepend: site.baseurl }}"></script>
 
-  <body>
+  <body id="pattern-default">
 
     {% include header.html %}
 
-    <div class="row">
-      <div class="small-24 column">
-          {{ content }}
+    <div class="container">
+      <div class="row">
+        <div class="small-24 column">
+            {{ content }}
+        </div>
       </div>
     </div>
 

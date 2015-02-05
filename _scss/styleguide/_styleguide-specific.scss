@@ -197,3 +197,29 @@ p.small-text {
 .pattern{
 	margin-bottom:30px;
 }
+
+.container {
+	transition:.3s ease-in-out;
+	position:relative;
+	left:0px;
+	top:0px;
+}
+
+.container.navigating {
+	left:250px;
+}
+.side-nav{
+	transition:.1s ease-in-out;
+	position:absolute;
+	left:-1200px;
+	z-index:2;
+	ul {
+		margin-top:30px;
+	}
+}
+.side-nav.expanded {
+	left:0;
+}
+#pattern-page .top-bar .side-nav, #pattern-page .top-bar .name{
+	display:none;
+}
