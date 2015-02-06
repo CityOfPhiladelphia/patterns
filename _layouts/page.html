@@ -12,8 +12,8 @@
           {{ content }}
     </div>
 
-    <script src="/src/foundation/foundation.min.js"></script>
-    <script src="/src/foundation/foundation.topbar.js"></script>
+    <script src="{{"/src/foundation/foundation.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{"/src/foundation/foundation.topbar.js" | prepend: site.baseurl }}"></script>
     <script>
       $(document).foundation();
     </script>
