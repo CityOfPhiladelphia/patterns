@@ -7,6 +7,9 @@ $(function() {
   });
 
   $("#toggle-side-nav").click(function(e) {
+
+    $(".top-bar").removeClass("expanded");
+
     if ($(this).attr("href") == "#")
         e.preventDefault();
 
@@ -17,5 +20,9 @@ $(function() {
   $(".side-nav a").click(function(e) {
       $("ul.side-nav").toggleClass("expanded");
       $(".container").toggleClass("navigating");
+  });
+  $(".toggle-topbar").click(function(e){
+    $(".side-nav").removeClass("expanded");
+    $(".container").removeClass("navigating");
   });
 });
