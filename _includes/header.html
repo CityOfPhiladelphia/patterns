@@ -5,20 +5,29 @@
       <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
     </div>
   </div>
+  <div class="row">
+    <div class="small-24 columns">
+      <div class="find-pattern"> <a href="#"><i id="toggle-side-nav" class="fa fa-bars">Find Pattern</i></a></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-24 columns">
+      <ul class="left side-nav">
+        {% for pattern in site.patterns %}
+          <li>
+            <a class="page-link" href="#p-{{ pattern.id }}">{{ pattern.title }}</a>
+          </li>
+          {% endfor %}
+      </ul>
+    </div>
+  </div>
   <div class="contain-to-grid">
       <nav class="top-bar" data-topbar role="navigation">
-        <ul class="left side-nav">
-            {% for pattern in site.patterns %}
-              <li>
-                <a class="page-link" href="#p-{{ pattern.id }}">{{ pattern.title }}</a>
-              </li>
-              {% endfor %}
-          </ul>
-          <ul class="title-area">
-            <li class="name"> <a href="#"><i id="toggle-side-nav" class="fa fa-bars">Find Pattern</i></a></li>
-            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-        </ul>
+        <ul class="title-area">
+          <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+          <li class="name"></li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
         <section class="top-bar-section">
           <!-- Right Nav Section -->
           <ul class="right">

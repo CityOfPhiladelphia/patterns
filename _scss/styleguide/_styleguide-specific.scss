@@ -219,7 +219,24 @@ p.small-text {
 }
 .side-nav.expanded {
 	left:0;
+	top:35px;
 }
-#pattern-page .top-bar .side-nav, #pattern-page .top-bar .name{
+#pattern-page .side-nav, #pattern-page .find-pattern, #pattern-post .side-nav, #pattern-post .find-pattern{
 	display:none;
+}
+
+.find-pattern{
+	position: absolute;
+	top: 10px;
+	z-index: 10;
+
+	.toggle-topbar.menu-icon a{
+		top:-10px;
+	}
+	a:link, a:visited{
+		color:#fff;
+	}
+	a:hover, a:active{
+		color:#ccc;
+	}
 }
