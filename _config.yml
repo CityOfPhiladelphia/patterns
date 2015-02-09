@@ -9,8 +9,8 @@ relative_permalinks: false
 
 # Setup
 title:               "Phila.gov Patterns"
-url:                 http://cityofphiladelphia.github.io/patterns-jekyll
-baseurl:             /patterns-jekyll
+url:                 http://cityofphiladelphia.github.io/patterns
+baseurl:             /patterns
 
 # Assets
 #
