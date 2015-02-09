@@ -1,0 +1,9 @@
+table {
+  width:100%;
+
+  &.bill{
+    .due {
+      background:$manatee;
+    }
+  }
+}
