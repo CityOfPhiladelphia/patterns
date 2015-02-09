@@ -97,4 +97,11 @@ form.alternate{
   background:$ben-franklin-blue;
   padding:rem-calc(16);
   color:$white;
+
+  .label{
+    color:$white;
+  }
+  p{
+    margin:rem-calc(0 0 16 0)
+  }
 }
