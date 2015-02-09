@@ -2,13 +2,10 @@ table {
   width:100%;
   border-spacing: 0;
 
-  thead{
+  thead, tfoot{
     background-color:$geyser;
   }
-
-  &.bill{
-    .due {
-      background:$geyser;
-    }
+  table tr.even, table tr.alt, table tr:nth-of-type(even) {
+    background-color:$whitesmoke;
   }
 }
