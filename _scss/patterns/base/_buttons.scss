@@ -23,7 +23,6 @@
     background:$white;
     color:$black;
     border:1px solid $manatee;
-    max-height: 38px;
 
     .fa {
       background: $white;
@@ -36,6 +35,10 @@
     height:40px;  //height in px for cross-browser compatibility
     //padding right must be equal to width of icon area for proper centering
     padding:rem-calc(10 45 0 0);
+    //alternate must be 2px smaller than .icon because of the border
+    &.alternate{
+      max-height: 38px;
+    }
   }
 }
 
