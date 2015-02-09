@@ -91,3 +91,10 @@ textarea:focus {
 input[type="text"].is-error {
     border:2px solid $bell-yellow;
 }
+
+//alternate styles for forms
+form.alternate{
+  background:$ben-franklin-blue;
+  padding:rem-calc(16);
+  color:$white;
+}
