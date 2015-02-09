@@ -19,9 +19,10 @@
     margin:rem-calc(0 0 12 0);
     padding:0;
   }
-  &.alternate{
+  &.alternate, &.alternate:link, &.alternate:visited{
     background:$white;
     color:$black;
+    border:1px solid $manatee;
 
     .fa {
       background: $white;
