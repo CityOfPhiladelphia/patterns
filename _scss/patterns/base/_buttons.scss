@@ -36,7 +36,7 @@
     //padding right must be equal to width of icon area for proper centering
     padding:rem-calc(10 45 0 0);
     //alternate must be 2px smaller than .icon because of the border
-    &.alternate{
+    &.alternate .fa{
       max-height: 38px;
     }
   }
