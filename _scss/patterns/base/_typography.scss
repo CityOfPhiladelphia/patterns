@@ -43,7 +43,7 @@ h2, .h2 {
   font-size:$h6-font-size;
 }
 
-/*heading descriptions*/
+/*callout*/
 
 .callout{
   margin:rem-calc(10 0 16 0);
@@ -57,7 +57,7 @@ h2, .h2 {
   p{
     margin:0;
     font-size:rem-calc(14);
-    color:$manatee;
+    color:#ccc;
   }
 }
 
