@@ -1,0 +1,19 @@
+{
+  "name": "patterns",
+  "version": "0.0.1",
+  "homepage": "https://github.com/cityofphiladelphia/patterns",
+  "description": "Bower for City of Philadelphia's Pattern Portfolio",
+  "authors": [
+    "@cityofphiladelphia"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.4.7"
+  }
+}
