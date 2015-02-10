@@ -1,8 +1,8 @@
-# patterns-jekyll
+# patterns
+
 Phila.gov Pattern Library
 
 To get started:
-<ol>
-  <li>Install jekyll http://jekyllrb.com/</li>
-  <li><code> jekyll serve --baseurl ''</code></li>
-</ol>
+
+1. Install jekyll http://jekyllrb.com/
+2. `jekyll serve --baseurl ''`
