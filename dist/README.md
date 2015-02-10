@@ -5,17 +5,14 @@ Phila.gov Pattern Library
 ## Using Phila.gov Patterns
 You will need to include the following in the head of your project.
 
-1. Latest version of the pattern CSS at /dist/css/patterns.css
+### The bare minimum
+1. Latest version of the pattern CSS located at <code>/dist/css/patterns.css</code>
     - This includes a customized version of Foundation 5
 2. Font Awesome
 
-
-## Dependences</h2>
-- Foundation
-- <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome
+### Also recommended:
 - <a href="http://ionicons.com/">ionicons</a> (for alerts)
--  <a href="http://modernizr.com/">Modernizr
-</ul>
+- <a href="http://modernizr.com/">Modernizr</a> (for those sad, old browsers)
 
 ## Local Setup
 Phila.gov Patterns uses <a href="http://jekyllrb.com/">Jekyll</a> to generate pattern files.
