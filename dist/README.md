@@ -1,4 +1,5 @@
-# patterns-jekyll
+# patterns
+
 Phila.gov Pattern Library
 
 <h2>Using Phila.gov Patterns</h2>
