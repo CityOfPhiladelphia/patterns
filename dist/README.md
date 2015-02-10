@@ -30,7 +30,7 @@ Phila.gov Patterns uses <a href="http://jekyllrb.com/">Jekyll</a> to generate pa
 
 Phila.gov Patterns will be maintained under the Semantic Versioning guidelines as much as possible. Releases will be numbered with the following format:
 
-<major>.<minor>.<patch>
+<code><major>.<minor>.<patch></code>
 
 <h3>Guidelines</h3>
 <ul>
