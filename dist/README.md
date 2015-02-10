@@ -3,10 +3,10 @@
 Phila.gov Pattern Library
 
 <h2>Using Phila.gov Patterns</h2>
-You will need to include the following in the <code><head></code> of your project.
+You will need to include the following in the head of your project.
 <ol>
   <li>Latest version of the pattern CSS</li>
-  <li>Font Awesome <code> <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"></code></li>
+  <li>Font Awesome</li>
 </ol>
 
 <h2>Dependences</h2>
