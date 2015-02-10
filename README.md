@@ -12,8 +12,8 @@ You will need to include the following in the <code><head></code> of your projec
 <h2>Dependences</h2>
 <ul>
   <li><a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</li>
-  <li><a href="http://ionicons.com/">ionicons</a> (for alerts)
-  <li><a href="#">Modernizr</li>
+  <li><a href="http://ionicons.com/">ionicons</a> (for alerts)</li>
+  <li><a href="http://modernizr.com/">Modernizr</li>
 </ul>
 
 <h2>Local Setup</h2>
