@@ -213,13 +213,13 @@ p.small-text {
 	position:absolute;
 	left:-1200px;
 	z-index:2;
+	top:35px;
 	ul {
 		margin-top:30px;
 	}
 }
 .side-nav.expanded {
 	left:0;
-	top:35px;
 }
 #pattern-page .side-nav, #pattern-page .find-pattern, #pattern-post .side-nav, #pattern-post .find-pattern{
 	display:none;
