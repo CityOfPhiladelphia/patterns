@@ -9,11 +9,15 @@
     content: "";
     display: block;
   }
-}
+  h1.entry-title{
+    margin-bottom:0;
+  }
+}//#page
 
 article{
   margin-bottom:rem-calc(16);
 }
+
 .department{
   h1{
     margin-top:rem-calc(32);
@@ -31,4 +35,4 @@ article{
       width:60%
     }
   }
-}
+}//.departments
