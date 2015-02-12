@@ -42,3 +42,12 @@ ol, ul{
   //for when you really _really_ need that centered text.
   text-align:center !important;
 }
+
+/*utility classes*/
+
+.no-margin{
+  margin:0 !important;
+}
+.no-padding {
+  padding:0!important;
+}
