@@ -18,7 +18,7 @@
   p{
     margin: rem-calc(16 0 32 0);
     //beacuse of those crazy long department names
-    &.description {
+    &.external-site {
       word-wrap: break-word;
       word-break: break-all;
     }
