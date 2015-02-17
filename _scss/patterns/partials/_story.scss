@@ -12,7 +12,8 @@
     @extend %small;
   }
   a:hover img, a:active img {
-    opacity:.8;
+    opacity:.7;
+    //transition: opacity 300ms ease-out;
   }
   img {
     width:100%;

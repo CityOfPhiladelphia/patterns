@@ -15,7 +15,8 @@ img {
 
 header.site-header {
   a:hover .logo, a:active .logo {
-    opacity:.8;
+    opacity:.7;
+    transition: opacity 300ms ease-out;
   }
   .logo{
     height:75px;

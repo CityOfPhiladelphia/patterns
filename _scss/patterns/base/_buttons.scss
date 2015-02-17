@@ -63,8 +63,9 @@ a.button:hover, a.button:active{
   a {
     display:block;
 
-    &:hover .fa, &:active .fa{
-      color:$mine-shaft !important;
+    &:hover .fa-circle, &:active .fa-circle {
+      color:$mine-shaft;
+      transition: color 300ms ease-out;
     }
     .fa  {
       color:$bell-yellow;
