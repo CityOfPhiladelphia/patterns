@@ -70,10 +70,17 @@ a.button:hover, a.button:active{
       color:$bell-yellow;
 
     }//.fa
-    .fa-inverse, span {
+    .fa-inverse {
       color: $white;
       vertical-align:top;
-      font-size:rem-calc(30);
+      font-size:rem-calc(40);
+      span {
+        font-size:rem-calc(30);
+        vertical-align: bottom;
+      }
+    }
+    .h3{
+      font-weight:normal;
     }
   }//a
 }
