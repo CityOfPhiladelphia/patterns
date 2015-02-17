@@ -11,6 +11,9 @@
     margin: rem-calc(7 0);
     @extend %small;
   }
+  a:hover img, a:active img {
+    opacity:.8;
+  }
   img {
     width:100%;
     height:auto;

@@ -14,6 +14,9 @@ img {
 }
 
 header.site-header {
+  a:hover .logo, a:active .logo {
+    opacity:.8;
+  }
   .logo{
     height:75px;
     width:auto;
