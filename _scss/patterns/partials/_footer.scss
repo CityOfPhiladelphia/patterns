@@ -35,6 +35,12 @@ footer.site-footer {
       float:right;
     }
   }
+  @media #{$small-only} {
+    text-align:center;
+    .inline-list>li{
+      float:none;
+    }
+  }
   p{
     margin:0;
   }
