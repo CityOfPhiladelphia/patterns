@@ -3,11 +3,11 @@
 Phila.gov Pattern Library
 
 ## Using Phila.gov Patterns
-You will need to include the following in the head of your project.
+You will need to include the following in the head of your project:
 
 ### The bare minimum
-1. Latest version of the pattern CSS located at <code>/dist/css/patterns.css</code>
-    - This includes a customized version of Foundation 5
+1. The latest version of the pattern CSS hosted on github pages is located at <code>/dist/VERSION/css/patterns.css</code>
+    - This includes a customized 24 column grid version of Foundation 5
 2. Font Awesome
 
 ### Also recommended:
