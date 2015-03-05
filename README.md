@@ -3,16 +3,20 @@
 Phila.gov Pattern Library
 
 ## Using Phila.gov Patterns
-You will need to include the following in the head of your project:
+The patterns CSS includes a customized 24-column grid version of Foundation 5. Just add a few lines to `<head>`.
 
 ### The bare minimum
-1. The latest version of the pattern CSS hosted on github pages is located at <code>/dist/VERSION/css/patterns.css</code>
-    - This includes a customized 24 column grid version of Foundation 5
-2. Font Awesome
+```
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//cityofphiladelphia.github.io/patterns/dist/0.1.1/css/patterns.css">
+```
 
-### Also recommended:
-- <a href="http://ionicons.com/">ionicons</a> (for alerts)
-- <a href="http://modernizr.com/">Modernizr</a> (for those sad, old browsers)
+### Also recommended
+Ionicons are used in alerts and modernizr is included for sad, old browsers.
+```
+<link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js?ver=2.8.3'></script>
+```
 
 ## Local Setup
 Phila.gov Patterns uses <a href="http://jekyllrb.com/">Jekyll</a> to generate pattern files.
