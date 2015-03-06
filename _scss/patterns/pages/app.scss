@@ -9,7 +9,7 @@
     top: 11px;
     max-width:60%;
 
-    @media only screen and (max-width: 40em) {
+    @media #{$small-only} {
       top:0;
       border:none;
       display:block;
