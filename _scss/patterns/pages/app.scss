@@ -1,0 +1,31 @@
+.app {
+  h1.page-title {
+    color: #353535;
+    display: inline-block;
+    border-left: 1px solid #353535;
+    padding: 5px 0 0px 13px;
+    margin: 0px 0px 2px 16px;
+    position: relative;
+    top: 11px;
+    max-width:60%;
+
+    @media #{$small-only} {
+      top:0;
+      border:none;
+      display:block;
+      margin:0;
+      padding:0;
+      font-size: 1.3em;
+      max-width:100%;
+    }
+  }
+}//app
+
+#application {
+  &.full
+    .row {
+      max-width:100%;
+    }
+
+
+}

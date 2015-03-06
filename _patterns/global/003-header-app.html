@@ -1,0 +1,21 @@
+---
+title: Application Header
+id: header-app
+description: Application Header, with app name next to logo. Please note the class "app" on the header tag. See application.html for an example of a full-width layout. 
+---
+<!-- Begin .header -->
+  <header class="site-header app" role="banner">
+    <div class="row">
+      <div class="small-24 medium-24 column">
+        {{ site.patterns | where:"title" : "Logo" }}
+        <h1 class="page-title">Application Name With a Long Title</h1>
+      </div>
+    </div>
+  </header>
+  <!-- End .header -->
+  <div class="row">
+    <div class="small-24 columns">
+      <div class="divider"></div>
+    </div>
+  </div>
+    {{ site.patterns | where:"title" : "Breadcrumbs" }}
