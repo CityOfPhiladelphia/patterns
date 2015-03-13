@@ -9,6 +9,14 @@
     top: 11px;
     max-width:60%;
 
+    a {
+      color: #353535;
+
+      &:hover {
+        color: #027EA4;
+      }
+    }
+
     @media #{$small-only} {
       top:0;
       border:none;
