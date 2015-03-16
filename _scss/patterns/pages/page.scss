@@ -1,7 +1,7 @@
 /*|*\ sticky, fat footer \*|*/
 #page {
-  min-height: 100%;
-  margin-bottom: -150px;
+  //min-height set to 90% so the fat footer just peaks out over the page.
+  min-height: 90%;
   position: relative;
 
   h1.entry-title{

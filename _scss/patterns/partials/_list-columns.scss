@@ -1,4 +1,4 @@
-ul {
+ul, ol {
    &.columns-2 {
      @include list-columns(2, 20);
   }
