@@ -1,12 +1,20 @@
 /*|*\ sticky, fat footer \*|*/
 #page {
-  //min-height set to 90% so the fat footer just peaks out over the page.
   min-height: 100%;
   position: relative;
-  margin-bottom:40px;
 
   h1.entry-title{
     margin-bottom:0;
+  }
+  &.classic {
+    min-height: 100%;
+    margin-bottom: -75px;
+    position: relative;
+  &.classic:after {
+    height: 75px;
+    content: "";
+    display: block;
+  }
   }
 }//#page
 
