@@ -47,6 +47,18 @@ ol, ul{
   text-align:center !important;
 }
 
+
+@media #{$medium-up} {
+  a[href*="tel"] {
+    pointer-events: none;
+    cursor: default;
+    &:link, &:visited {
+      font-weight:normal;
+      color:$mine-shaft;
+    }
+  }
+}
+
 /*utility classes*/
 
 .no-margin{
