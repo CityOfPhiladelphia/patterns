@@ -1,0 +1,11 @@
+ul {
+   &.columns-2 {
+     @include list-columns(2, 20);
+  }
+  &.columns-3{
+    @include list-columns(3, 25);
+  }
+  &.columns-4{
+    @include list-columns(4, 30);
+  }
+}
