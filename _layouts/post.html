@@ -2,14 +2,12 @@
 <html>
 
   {% include head.html %}
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="{{ "/src/script.js" | prepend: site.baseurl }}"></script>
 
   <body id="pattern-post">
 
     {% include header.html %}
 
-    <div class="container">
+    <div id="page">
       <div class="row">
         <div class="small-24 column">
             {{ content }}

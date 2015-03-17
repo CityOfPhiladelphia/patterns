@@ -1,17 +1,16 @@
-/*|*\ sticky footer \*|*/
+/*|*\ sticky, fat footer \*|*/
 #page {
   min-height: 100%;
-  margin-bottom: -40px;
   position: relative;
 
-  &:after {
-    height: 40px;
-    content: "";
-    display: block;
-  }
   h1.entry-title{
     margin-bottom:0;
   }
+  &:after {
+    content: "";
+    display: block;
+  }
+
 }//#page
 
 article{

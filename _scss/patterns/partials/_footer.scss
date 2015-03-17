@@ -1,32 +1,46 @@
 footer.site-footer {
   font-size:rem-calc(13);
-  background: $ben-franklin-blue;
+  background: $black;
   text-transform: uppercase;
   height:auto;
   margin-top:rem-calc(16);
   color:$white;
 
+  .classic {
+    padding:rem-calc(18 0);
+
+    .columns{
+      margin:rem-calc(10 0);
+    }
+    @media #{$small-only} {
+      text-align:center;
+      .inline-list>li{
+        float:none;
+      }
+    }
+  }
+
   ul.inline-list {
     font-size:rem-calc(13);
     margin:0;
     padding:0;
-  }
-  li{
-    margin:0;
-    padding:0 0 0 10px;
-    &:first-child{
-      padding:0;
+    li{
+      margin:0;
+      padding:0 0 0 10px;
+      &:first-child{
+        padding:0;
+      }
     }
   }
   a:link, a:visited {
     color:$white;
+    font-weight:normal;
+    font-size:rem-calc(13);
   }
   a:hover, a:active{
-    color:$mine-shaft;
+    color:$bell-yellow;
   }
   @media #{$large-up} {
-    height:rem-calc(40);//explict height for sticky footer
-    padding-top:rem-calc(10);
 
     .feedback{
       text-align:center;
@@ -35,13 +49,23 @@ footer.site-footer {
       float:right;
     }
   }
-  @media #{$small-only} {
-    text-align:center;
-    .inline-list>li{
-      float:none;
-    }
-  }
   p{
     margin:0;
+  }
+  .fat{
+    background:$mine-shaft;
+    padding:rem-calc(40 0);
+
+    h1, h2, h3, h4, h5, h6 {
+      border-bottom:1px solid $manatee;
+      padding-bottom:rem-calc(10);
+      color:$bell-yellow;
+      font-size:rem-calc(18);
+    }
+    ul, ol {
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
   }
 }

@@ -30,6 +30,8 @@
 }//app
 
 #application {
+  min-height: 100%;
+  position: relative;
   &.full
     .row {
       max-width:100%;

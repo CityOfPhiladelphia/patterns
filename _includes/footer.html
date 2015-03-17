@@ -1,11 +1,16 @@
 <footer class="site-footer">
-  <div class="row">
+  <div class="row classic">
     <div class="small-24">
       <p>Developed by the Office of Innovation and Techonology 2015</p>
     </div>
   </div>
 </footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="{{"/src/foundation/foundation.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{"/src/pattern-script.js" | prepend: site.baseurl }}"></script>
+{% if page.title && page.title = site.title %}
+  <script src="{{"/src/script.js" | prepend: site.baseurl }}"></script>
+{% endif %}
 <script>
   $(document).foundation();
 </script>
