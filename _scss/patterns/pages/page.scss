@@ -6,16 +6,11 @@
   h1.entry-title{
     margin-bottom:0;
   }
-  &.classic {
-    min-height: 100%;
-    margin-bottom: -75px;
-    position: relative;
-  &.classic:after {
-    height: 75px;
+  &:after {
     content: "";
     display: block;
   }
-  }
+
 }//#page
 
 article{
