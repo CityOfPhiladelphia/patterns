@@ -3,12 +3,10 @@ footer.site-footer {
   background: $black;
   text-transform: uppercase;
   height:auto;
-  margin-top:rem-calc(16);
   color:$white;
+  font-family: 'Montserrat', 'Tahoma', sans-serif;
 
   .classic {
-    padding:rem-calc(18 0);
-
     .columns{
       margin:rem-calc(10 0);
     }
@@ -60,12 +58,14 @@ footer.site-footer {
       border-bottom:1px solid $manatee;
       padding-bottom:rem-calc(10);
       color:$bell-yellow;
-      font-size:rem-calc(18);
+      font-size:rem-calc(14);
+      letter-spacing: .05em;
     }
     ul, ol {
       list-style:none;
       padding:0;
       margin:0;
+      line-height: 1.6rem;
     }
   }
 }
