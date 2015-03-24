@@ -5,23 +5,31 @@ layout: default
 <div class="home row">
   <div class="small-24 columns">
     <h1>Getting Started</h1>
-      <p>Check out the <a href="https://github.com/CityOfPhiladelphia/patterns">GitHub repository</a> for information on how to use these patterns in your project.</p>
-    {% for pattern in site.patterns %}
-    <div class="pattern" id="p-{{ pattern.id }}">
-      <hgroup class="code">
-          <h2 class="title">{{ pattern.title }}</h2>
-        <h3>View Code</h3>
-        <i class="fa fa-arrow-circle-right"></i>
-      </hgroup>
-        <div class="the-code">
-          {% highlight html %}
-            {{ pattern.output }}
-          {% endhighlight %}
-        </div>
-      <p class="small-text">{{ pattern.description }}</p>
-      {{ pattern.output }}
-      </div>
-      {% endfor %}
-    </div>
+      <p>Check out the <a href="https://github.com/CityOfPhiladelphia/patterns">GitHub repository</a> for information on how to use these patterns in your project, or view the <a href="{{ "/boilerplate" | prepend: site.baseurl}}">Boilerplate</a> for example markup. </p>
+  <div id="pattern-search">
+      <input class="filter" type="search" placeholder="Filter patterns">
+      <hr>
+
+      <ul class="list">
+      {% for pattern in site.patterns %}
+
+      <li class="pattern" id="p-{{ pattern.id }}">
+        <hgroup class="code">
+            <h2 class="title">{{ pattern.title }}</h2>
+          <h3>View Code</h3>
+          <i class="fa fa-arrow-circle-right"></i>
+        </hgroup>
+          <div class="the-code">
+            {% highlight html %}
+              {{ pattern.output }}
+            {% endhighlight %}
+          </div>
+        <p class="small-text">{{ pattern.description }}</p>
+        {{ pattern.output }}
+      </li>
+        {% endfor %}
+      </ul>
+
+  </div>
   </div>
 </div>
