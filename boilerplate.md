@@ -35,7 +35,7 @@ Change the page wrapper from <code><div class="site" id="page"></code> to <code>
     <meta name="description" content="{{ site.description }}">
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!--Ionicons link is optional-->  
+    <!--Ionicons are optional-->  
     <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
     <!--pattern stylesheet includes foundation css -->
