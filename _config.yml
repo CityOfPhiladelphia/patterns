@@ -22,3 +22,5 @@ sass:
 collections:
   patterns:
     output: true
+  templates:
+    output: true

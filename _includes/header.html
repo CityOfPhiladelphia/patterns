@@ -28,18 +28,32 @@
           <li class="name"></li>
           <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
       </ul>
-        <section class="top-bar-section">
-          <!-- Right Nav Section -->
-          <ul class="right">
-              {% for page in site.pages %}
-                {% if page.title %}
-                <li>
-                <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-              </li>
-                {% endif %}
-              {% endfor %}
-          </ul>
-        </section>
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+
+          {% for node in site.pages %}
+            {% if page.url == node.url %}
+              <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+            {% else %}
+              <li><a href="{{node.url}}">{{node.title}}</a></li>
+            {% endif %}
+            {% endfor %}
+
+          <li class="has-dropdown">
+            <a href="#">Examples</a>
+            <ul class="dropdown">
+              {% for node in site.templates %}
+                {% if page.url == node.url %}
+                  <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+                  {% else %}
+                    <li><a href="{{node.url}}">{{node.title}}</a></li>
+                  {% endif %}
+                {% endfor %}
+            </ul>
+          </li>
+        </ul>
+
       </nav>
 </div>
 
