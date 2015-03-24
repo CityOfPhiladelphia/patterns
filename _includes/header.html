@@ -5,56 +5,50 @@
       <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
     </div>
   </div>
-  <div class="row">
-    <div class="small-24 columns">
-      <div class="find-pattern"> <a href="#"><i id="toggle-side-nav" class="fa fa-bars">Find Pattern</i></a></div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="small-24 columns">
-      <ul class="left side-nav">
-        {% for pattern in site.patterns %}
-          <li>
-            <a class="page-link" href="#p-{{ pattern.id }}">{{ pattern.title }}</a>
-          </li>
-          {% endfor %}
-      </ul>
-    </div>
-  </div>
   <div class="contain-to-grid">
+
+
       <nav class="top-bar" data-topbar role="navigation">
         <ul class="title-area">
-          <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
           <li class="name"></li>
           <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
       </ul>
       <section class="top-bar-section">
         <!-- Right Nav Section -->
         <ul class="right">
-
-          {% for node in site.pages %}
-            {% if page.url == node.url %}
-              <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+        {% for node in site.pages %}
+          {% if page.url == node.url %}
+              {% if node.title != null %}
+                <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+              {% endif %}
             {% else %}
-              <li><a href="{{node.url}}">{{node.title}}</a></li>
+              {% if node.title != null %}
+                <li><a href="{{node.url}}">{{node.title}}</a></li>
+              {% endif %}
             {% endif %}
           {% endfor %}
 
+
           <li class="has-dropdown">
-            <a href="#">Examples</a>
+            <a href="#">Page Examples</a>
             <ul class="dropdown">
               {% for node in site.templates %}
                 {% if page.url == node.url %}
                   <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
                   {% else %}
-                    <li><a href="{{node.url}}">{{node.title}}</a></li>
+                  <li><a href="{{node.url}}">{{node.title}}</a></li>
                   {% endif %}
                 {% endfor %}
-            </ul>
+            </ul><!-- dropdown -->
+          </li><!--has dropdown -->
+        </ul><!--right-->
+        <ul class="left">
+          <li class="has-form">
+            <input type="text" placeholder="Find Pattern">
           </li>
-        </ul>
-
+      </ul>
+      </section>
       </nav>
-</div>
+</div><!--contain to grid -->
 
 </header>
