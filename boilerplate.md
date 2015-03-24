@@ -6,7 +6,22 @@ permalink: /boilerplate/
 
 #Boilerplate
 
-Use this template to get up and running fast!
+Use this template to get up and running fast! It includes:
+
+  * Absolute paths to Phila.gov Pattern CSS and Javascript files
+  * Absolute path to the phila.gov logo
+  * CDN links to:
+    * [jQuery](https://jquery.com/)
+    * [Modernizr](http://modernizr.com/)
+    * [foundation.min.js](http://foundation.zurb.com/docs/javascript.html)
+    * [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
+    * [Ionicons CSS](http://ionicons.com/) (optional, font files not included)
+  * Standard header & footer markup
+  * Empty div for your main content
+
+##Full-width applications
+
+Change the page wrapper from <code><div class="site" id="page"></code> to <code><div class="full" id="application"></code>
 
 {% highlight html %}
 <html>
@@ -20,19 +35,19 @@ Use this template to get up and running fast!
     <meta name="description" content="{{ site.description }}">
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!--
-        Ionicons link optional  
-        <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    -->
+    <!--Ionicons link is optional-->  
+    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
     <!--pattern stylesheet includes foundation css -->
     <link rel="stylesheet" href="//cityofphiladelphia.github.io/patterns/{{ site.version }}/css/patterns.css">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js?ver=2.8.3" type="text/javascript"></script>
   </head>
 
   <body>
-    <div class="page" id="page">
+    <div class="site" id="page">
       <!-- Begin header -->
       <header class="site-header" role="banner">
         <div class="row">
