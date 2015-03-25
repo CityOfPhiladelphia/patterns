@@ -39,7 +39,7 @@ Change the page wrapper from <code><div class="site" id="page"></code> to <code>
     <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
     <!--pattern stylesheet includes foundation css -->
-    <link rel="stylesheet" href="//cityofphiladelphia.github.io/patterns/{{ site.version }}/css/patterns.css">
+    <link rel="stylesheet" href="//cityofphiladelphia.github.io/patterns/dist/{{ site.version }}/css/patterns.css">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
@@ -126,7 +126,7 @@ Change the page wrapper from <code><div class="site" id="page"></code> to <code>
     <!-- End footer -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/js/foundation.min.js"></script>
-    <script type='text/javascript' src='//cityofphiladelphia.github.io/patterns/{{ site.version }}/js/patterns.min.js'></script>
+    <script type='text/javascript' src='//cityofphiladelphia.github.io/patterns/dist/{{ site.version }}/js/patterns.min.js'></script>
     <script>
       $(document).foundation();
     </script>
