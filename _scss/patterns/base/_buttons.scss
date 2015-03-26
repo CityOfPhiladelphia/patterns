@@ -72,12 +72,16 @@ a.button:hover, a.button:active{
 
     }//.fa
     .fa-inverse {
-      color: $white;
+      color: $mine-shaft;
       vertical-align:top;
       font-size:rem-calc(40);
       span {
         font-size:rem-calc(30);
         vertical-align: bottom;
+      }
+      &:hover {
+        color:$white;
+        transition: color 300ms ease-out;
       }
     }
     .h3{
