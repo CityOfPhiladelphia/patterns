@@ -13,7 +13,7 @@ url:                 http://cityofphiladelphia.github.io/patterns
 baseurl:             /patterns
 destination:        _site
 description:        The official Pattern Portfolio for phila.gov
-version:            0.3.0
+version:            0.4.0
 # Assets
 #
 # We specify the directory for Jekyll so we can use @imports.
