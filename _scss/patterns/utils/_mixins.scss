@@ -10,3 +10,9 @@
   column-count: $num;
   column-gap:rem-calc($pad);
 }
+
+@mixin secondary-font{
+  font-family: 'Montserrat', 'Tahoma', sans-serif;
+  font-weight:700;
+  text-transform: uppercase;
+}

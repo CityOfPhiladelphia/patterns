@@ -13,9 +13,8 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: 'Montserrat', 'Tahoma', sans-serif;
-  font-weight:700;
-  text-transform: uppercase;
+  @include secondary-font;
+
   &.alternate {
     color:$sidewalk;
     font-size:$h4-font-size;
@@ -99,7 +98,7 @@ a:hover, a:active {
 }
 
 .small-text {
-  color: $manatee;
+  color: $sidewalk;
   font-size: 80%;
   display:block;
 }
