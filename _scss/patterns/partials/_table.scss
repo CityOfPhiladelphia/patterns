@@ -1,11 +1,23 @@
 table {
   width:100%;
   border-spacing: 0;
+  @include secondary-font;
+  border:none;
 
-  thead, tfoot{
-    background-color:$geyser;
+  thead tr th,
+  thead tr td{
+    background-color:$manatee;
+    color:$white;
+    padding:0.625rem;
+    font-size:rem-calc(14);
   }
-  table tr.even, table tr.alt, table tr:nth-of-type(even) {
+  tr th, tr td{
+    padding:0.5625rem 0.625rem;
+    font-size:rem-calc(12);
+    font-weight:normal;
+  }
+  tr.even, tr.alt,
+  tr:nth-of-type(even) {
     background-color:$whitesmoke;
   }
 }

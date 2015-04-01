@@ -13,10 +13,37 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: 'Montserrat', 'Tahoma', sans-serif;
-  font-weight:700;
-  text-transform: uppercase;
+  @include secondary-font;
+
+  &.alternate {
+    color:$sidewalk;
+    font-size:$h4-font-size;
+    margin-top:rem-calc(12);
+    margin-bottom:rem-calc(12);
+    @media #{$small-only} {
+      &.divide{
+        border-bottom:2px solid $bell-yellow;
+      }
+    }
+    @media #{$medium-up} {
+      &.divide{
+        display: flex;
+        flex-direction: row;
+        &:after {
+          background-color: #F2BA13;
+          flex-grow: 1;
+          height: 2px;
+          position: relative;
+          top: 0.6em;
+          content: '';
+          margin: 0 0 0 15px;
+        }
+      }
+    }
+  }
 }
+
+
 
 h1, .h1{
   padding:0;
@@ -30,6 +57,7 @@ h2, .h2 {
   margin:rem-calc(13 0);
   font-size:$h2-font-size;
 }
+
 .h3{
   font-size:$h3-font-size;
 }
@@ -70,7 +98,7 @@ a:hover, a:active {
 }
 
 .small-text {
-  color: $manatee;
+  color: $sidewalk;
   font-size: 80%;
   display:block;
 }
