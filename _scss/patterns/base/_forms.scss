@@ -105,3 +105,7 @@ form.alternate{
     margin:rem-calc(0 0 16 0)
   }
 }
+//chome autocomplete hack to stop random ugly yellow background
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}

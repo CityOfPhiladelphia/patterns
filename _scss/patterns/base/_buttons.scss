@@ -1,5 +1,6 @@
 // /|\ "regular" buttons /|\ //
 .button {
+  @include secondary-font;
   text-transform:uppercase;
   font-weight:400;
   margin: 1em 0;

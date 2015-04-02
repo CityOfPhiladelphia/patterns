@@ -20,6 +20,7 @@ h6, .h6 {
     font-size:$h4-font-size;
     margin-top:rem-calc(12);
     margin-bottom:rem-calc(12);
+    font-weight:700;
     @media #{$small-only} {
       &.divide{
         border-bottom:2px solid $bell-yellow;
@@ -43,32 +44,36 @@ h6, .h6 {
   }
 }
 
-
-
 h1, .h1{
   padding:0;
   margin-top:rem-calc(16);
   margin-bottom:rem-calc(16);
   font-size:$h1-font-size;
+  letter-spacing:.03rem;
 }
 
 h2, .h2 {
   padding:0;
   margin:rem-calc(13 0);
   font-size:$h2-font-size;
+  letter-spacing:.03rem;
 }
 
-.h3{
+h3, .h3{
   font-size:$h3-font-size;
+  letter-spacing:.03rem;
 }
-.h4{
+h4, .h4{
   font-size:$h4-font-size;
+  font-weight:normal;
 }
-.h5{
+h5, .h5{
   font-size:$h5-font-size;
+  font-weight:normal;
 }
-.h6{
+h6, .h6{
   font-size:$h6-font-size;
+  font-weight:normal;
 }
 /*paragraphs*/
 blockquote p {
