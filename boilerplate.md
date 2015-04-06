@@ -103,11 +103,19 @@ Change the page wrapper from <code><div class="site" id="page"></code> to <code>
             </nav>
           </div>
           <div class="large-16 columns">
-            <h1>Browse this website</h1>
+            <h1>Browse alpha.phila.gov</h1>
             <nav>
               <ul class="columns-2">
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
+                <li><a href="http://alpha.phila.gov/browse/business">Business</a></li>
+                <li><a href="http://alpha.phila.gov/browse/health">Health</a></li>
+                <li><a href="http://alpha.phila.gov/browse/jobs-and-contracts">Jobs and Contracts</a></li>
+                <li><a href="http://alpha.phila.gov/browse/legal">Legal</a></li>
+                <li><a href="http://alpha.phila.gov/browse/payments-and-taxes">Payments and Taxes</a></li>
+                <li><a href="http://alpha.phila.gov/browse/permits-licenses">Permits and Licenses</a></li>
+                <li><a href="http://alpha.phila.gov/browse/property-housing">Property and Housing</a></li>
+                <li><a href="http://alpha.phila.gov/browse/public-safety">Public Safety</a></li>
+                <li><a href="http://alpha.phila.gov/browse/recreation">Recreation</a></li>
+                <li><a href="http://alpha.phila.gov/browse/streets-and-utilities">Streets and Utilities</a></li>
               </ul>
             </nav>
           </div>
