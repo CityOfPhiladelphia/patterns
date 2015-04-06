@@ -14,3 +14,51 @@
     padding:0 10px 0 0;
   }
 }
+
+#alpha-alert{
+    background:$mine-shaft;
+    color: $white;
+    min-height: 30px;
+    padding: 0.4em 0;
+
+    h1{
+      color:$bell-yellow;
+      margin: 5px 0;
+    }
+    p {
+        display:block;
+        margin:0;
+        font-size:.8rem;
+      a{
+        font-weight:bold;
+      }
+    }
+
+    a:link, a:visited{
+        color:$white;
+    }
+    a:hover, a:active{
+        color:$bell-yellow;
+    }
+    .button {
+      height:30px;
+      padding: .3rem 2.8125rem 0 0;
+      margin:.5rem 0 0 0;
+    &.icon{
+      padding: 0.2rem 2.8125rem 0 0;
+      &.alternate .fa{
+        max-height:28px;
+      }
+      a:link, a:visited{
+        background:$white;
+        color:$mine-shaft;
+      }
+      a:active, a:hover{
+        color:$ben-franklin-blue;
+      }
+    }
+  .fa {
+    padding:.2em .5em .5em .4em;
+    }
+  }//button
+}//alpha-alert
