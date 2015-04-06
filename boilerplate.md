@@ -93,13 +93,17 @@ Change the page wrapper from <code><div class="site" id="page"></code> to <code>
             <h1>Government</h1>
             <nav>
               <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
+                <li><a href="http://alpha.phila.gov">alpha.phila.gov</a></li>
+                <li><a href="http://alpha.phila.gov/departments">Department Directory</a></li>
+                <li><a href="http://www.phila.gov/mayor">Mayor's Office</a></li>
+                <li><a href="http://iframe.publicstuff.com/#?client_id=242">Report an Issue / 311</a></li>
+                <li><a href="http://cityofphiladelphia.wordpress.com/">News</a></li>
+                <li><a href="http://www.phila.gov/phoneDir/">Phone Directory</a></li>
               </ul>
             </nav>
           </div>
           <div class="large-16 columns">
-            <h1>Browse alpha.phila.gov</h1>
+            <h1>Browse this website</h1>
             <nav>
               <ul class="columns-2">
                 <li><a href="#">Link 1</a></li>
@@ -116,8 +120,9 @@ Change the page wrapper from <code><div class="site" id="page"></code> to <code>
         <div class="large-12 columns">
           <nav>
             <ul class="inline-list">
-              <li><a href="#">Link 1</a></li>
-              <li><a href="#">Link 2</a></li>
+              <li><a href="http://alpha.phila.gov/terms-of-use">Terms of use</a></li>
+              <li><a href="http://www.phila.gov/privacy/pdfs/FinalCityOpenRecords.pdf">Right to know (pdf)</a></li>
+              <li><a href="http://alpha.phila.gov/privacypolicy">Privacy Policy</a></li>
             </ul>
           </nav>
         </div>
