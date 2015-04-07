@@ -5,4 +5,13 @@ jQuery(document).ready(function( $ ) {
       $("#page").css("padding-bottom", footerHeight);
       $("#application").css("padding-bottom", footerHeight);
       $("footer").css("margin-top", -footerHeight);
+
+      //show/hide the footer on modal open/close to prevent breakage
+      $(document).on('open.fndtn.reveal', '[data-reveal]', function () {
+        $('footer.site-footer').hide();
+      });
+
+      $(document).on('close.fndtn.reveal', '[data-reveal]', function () {
+        $('footer.site-footer').show();
+      });
 });
