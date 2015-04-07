@@ -60,3 +60,13 @@
 {% if page.title && page.title = site.title %}
   <script src="{{"/src/script.js" | prepend: site.baseurl }}"></script>
 {% endif %}
+<script src="{{ "/bower_components/nprogress/nprogress.js" | prepend: site.baseurl }}"></script>
+<script>
+$( document ).ready(function() {
+//  NProgress.start();
+});
+
+$(window).load(function(){
+  NProgress.start();
+});
+</script>

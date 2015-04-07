@@ -14,6 +14,7 @@
     "tests"
   ],
   "dependencies": {
-    "foundation": "~5.4.7"
+    "foundation": "~5.4.7",
+    "nprogress": "~0.1.6"
   }
 }
