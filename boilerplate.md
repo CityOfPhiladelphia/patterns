@@ -82,8 +82,8 @@ Change the page wrapper from <code><div class="site" id="page"></code> to <code>
           <div class="large-24 columns">
             <!-- main content here-->
           </div>
-        </article>
-      </div>
+        </div>
+      </article>
     </div><!-- End #page -->
     <!-- Begin footer -->
     <footer class="site-footer" role="contentinfo">
