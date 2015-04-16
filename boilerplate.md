@@ -32,7 +32,7 @@ Change the page wrapper from <code><div class="site" id="page"></code> to <code>
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} | phila.gov</title>
     <link rel='icon' type='image/x-icon' href="//cityofphiladelphia.github.io/patterns/images/favicon.ico">
-    <meta name="description" content="{{ site.description }}">
+    <meta name="description" content="">
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!--Ionicons are optional-->  
@@ -41,8 +41,8 @@ Change the page wrapper from <code><div class="site" id="page"></code> to <code>
     <!--pattern stylesheet includes foundation css -->
     <link rel="stylesheet" href="//cityofphiladelphia.github.io/patterns/dist/{{ site.version }}/css/patterns.css">
 
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="canonical" href="">
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
   </head>
 
