@@ -87,3 +87,61 @@ a.button:hover, a.button:active{
     }
   }//a
 }
+
+// /|\ call to action departments /|\ //
+.call-to-action-departments{
+  text-align:center;
+  a {
+    display:block;
+
+    &:hover .fa-circle-thin, &:active .fa-circle-thin {
+      color:$mine-shaft;
+      transition: color 300ms ease-out;
+    }
+    .fa  {
+      color:$bell-yellow;
+
+    }//.fa
+    .fa-inverse {
+      color: $black;
+      vertical-align:top;
+      font-size:rem-calc(40);
+      span {
+        font-size:rem-calc(16);
+        vertical-align: bottom;
+      }
+    }
+    .h3{
+      font-weight:normal;
+    }
+  }//a
+}
+
+// /|\ social media /|\ //
+.social-media-buttons{
+  text-align:center;
+  a {
+    display:block;
+
+    &:hover .fa-circle, &:active .fa-circle {
+      color:$bell-yellow;
+      transition: color 300ms ease-out;
+    }
+    .fa  {
+      color:$mine-shaft;
+
+    }//.fa
+    .fa-inverse {
+      color: $white;
+      vertical-align:top;
+      font-size:rem-calc(40);
+      span {
+        font-size:rem-calc(30);
+        vertical-align: bottom;
+      }
+    }
+    .h3{
+      font-weight:normal;
+    }
+  }//a
+}
