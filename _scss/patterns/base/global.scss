@@ -51,13 +51,18 @@ dl {
   dt{
     color:$manatee;
     text-transform:uppercase;
-    font-size:rem-calc(12);
-    line-height:1.9;
   }
   dt, dd{
+    font-size:rem-calc(12);
+    line-height:1.9;
     margin: 0 0 10px 0;
     padding: 0 0 10px 0;
     border-bottom: 1px solid $manatee;
+  }
+  dt:last-of-type, dd:last-of-type{
+    margin:0;
+    padding:0;
+    border-bottom:none;
   }
 }
 
