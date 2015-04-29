@@ -1,0 +1,18 @@
+nav.top-bar {
+  .top-bar-section ul li{
+    @media #{$medium-up} {
+      margin:rem-calc(0 10);
+      border-top: 2px solid $bell-yellow;
+      min-width: rem-calc(150);
+      &.has-dropdown > ul > li{
+        border:none;
+      }
+    }
+
+    > a {
+      @include secondary-font;
+      font-weight:normal;
+
+    }
+  }
+}
