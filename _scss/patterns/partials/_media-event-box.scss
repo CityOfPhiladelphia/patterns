@@ -4,13 +4,13 @@
   border: 1px solid #DBE1E3;
   background: $white;
   width: 100%;
-  padding: 0rem;
+  padding: 0;
   font-size: rem-calc(10);
   line-height: rem-calc(12);
   color: $mine-shaft;
 
   .event-row {
-    padding: 10px;
+    padding: rem-calc(16);
     &:nth-child(even){
       background:$whitesmoke;
     }
