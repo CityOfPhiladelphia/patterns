@@ -114,3 +114,12 @@ a:hover, a:active {
   margin:0;
   padding:0;
 }
+
+/*tooltip*/
+.tooltip {
+  font-size:rem-calc(12);
+  p{
+    font-size:rem-calc(12);
+    margin:rem-calc(6 0);
+  }
+}
