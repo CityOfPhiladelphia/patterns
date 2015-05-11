@@ -86,4 +86,20 @@ a.button:hover, a.button:active{
       font-weight:normal;
     }
   }//a
-}
+  &.hollow {
+    &:hover .fa-circle-thin, &:active .fa-circle-thin {
+      color:$mine-shaft;
+      transition: color 300ms ease-out;
+    }
+
+    .fa-inverse {
+      color: $black;
+      span {
+        font-size:rem-calc(16);
+        line-height: rem-calc(21);
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+}//end call to action

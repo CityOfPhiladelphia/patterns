@@ -92,6 +92,7 @@ hr {
   background:$whitesmoke;
 }
 
+
 /*links*/
 a:link, a:visited{
   color:$ben-franklin-blue;
@@ -113,6 +114,15 @@ a:hover, a:active {
   border:0;
   margin:0;
   padding:0;
+
+  .vcard-label {
+    @extend %small-highlight;
+  }
+}
+
+.date-time {
+   letter-spacing:.01rem;
+   text-transform:uppercase;
 }
 
 /*tooltip*/
