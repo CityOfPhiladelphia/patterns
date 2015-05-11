@@ -1,0 +1,25 @@
+/*media events box*/
+
+.event-box {
+  border: 1px solid #DBE1E3;
+  background: $white;
+  width: 100%;
+  padding: 0;
+  font-size: rem-calc(10);
+  line-height: rem-calc(12);
+  color: $mine-shaft;
+
+  .event-row {
+    padding: rem-calc(16);
+    &:nth-child(even){
+      background:$whitesmoke;
+    }
+  }
+  .event-title{
+    font-weight: bold;
+    font-size: rem-calc(10);
+    line-height: rem-calc(12);
+    margin-bottom: rem-calc(5);
+    margin-top: rem-calc(10);
+   }
+}//end events box
