@@ -1,32 +1,28 @@
 ---
 title: Navigation
 id: nav
-description: Primarily used for department navigation. Check <a href="http://foundation.zurb.com/docs/components/topbar.html">Foundation documentation</a> for more possibilities. 
+description: Primarily used for department navigation. Check <a href="http://foundation.zurb.com/docs/components/topbar.html">Foundation documentation</a> for more possibilities.
 ---
-<nav class="top-bar" data-topbar="" role="navigation">
+<nav class="top-bar" data-topbar role="navigation">
 	<section class="top-bar-section">
-		<ul id="menu-oem" class="department-menu">
-      <li id="menu-item-593" class="menu-item menu-item-type-post_type menu-item-object-department_page menu-item-has-children has-dropdown menu-item-593 not-click"><a href="http://localhost:19102/departments/emergency-management/about/">About</a>
-        <ul class="dropdown">
-          <li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
-          <li class="parent-link hide-for-large-up"><a class="parent-link js-generated" href="http://localhost:19102/departments/emergency-management/about/">About</a></li>
-          <li id="menu-item-591" class="menu-item menu-item-type-post_type menu-item-object-department_page menu-item-591"><a href="http://localhost:19102/departments/emergency-management/about/you-probably-like-us/">You probably like us!</a></li>
-	        <li id="menu-item-590" class="menu-item menu-item-type-post_type menu-item-object-department_page menu-item-590"><a href="http://localhost:19102/departments/emergency-management/about/or-not/">or not :(</a></li>
-        </ul>
+		<ul class="right">
+      <li class="has-dropdown"><a href="#">Dropdown</a>
+	       <ul class="dropdown">
+	         <li><a href="#">Link</a></li>
+		       <li><a href="#">Link</a></li>
+	       </ul>
       </li>
-      <li id="menu-item-592" class="menu-item menu-item-type-post_type menu-item-object-department_page menu-item-has-children has-dropdown menu-item-592 not-click"><a href="http://localhost:19102/departments/emergency-management/prepare/">Prepare</a>
-        <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
-          <li class="parent-link hide-for-large-up"><a class="parent-link js-generated" href="http://localhost:19102/departments/emergency-management/prepare/">Prepare</a></li>
-          <li id="menu-item-596" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has-dropdown menu-item-596 not-click"><a href="http://localhost:19102/terms-of-use/">Terms of Use</a>
-            <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
-              <li class="parent-link hide-for-large-up"><a class="parent-link js-generated" href="http://localhost:19102/terms-of-use/">Terms of Use</a></li>
-              <li id="menu-item-597" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-597"><a href="http://localhost:19102/privacypolicy/">Privacy Policy</a></li>
+      <li class="has-dropdown"><a href="#">Dropdown 3 levels</a>
+        <ul class="dropdown">
+          <li class="has-dropdown"><a href="#">2nd level with dropdown</a>
+            <ul class="dropdown">
+              <li><a href="#">3rd level</a></li>
 	          </ul>
           </li>
         </ul>
       </li>
-      <li id="menu-item-598" class="menu-item menu-item-type-post_type menu-item-object-department_page menu-item-598"><a href="http://localhost:19102/departments/zoning-code/">Philadelphia Zoning Code Commission</a></li>
-      <li id="menu-item-599" class="menu-item menu-item-type-post_type menu-item-object-department_page menu-item-599"><a href="http://localhost:19102/departments/water/">Department of Water</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
     </ul>
   </section>
 </nav>
