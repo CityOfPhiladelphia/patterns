@@ -103,31 +103,3 @@ a.button:hover, a.button:active{
     }
   }
 }//end call to action
-// /|\ social media /|\ //
-.social-media-button{
-  text-align:center;
-  a {
-    display:block;
-
-    &:hover .fa-circle, &:active .fa-circle {
-      color:$bell-yellow;
-      transition: color 300ms ease-out;
-    }
-    .fa  {
-      color:$mine-shaft;
-
-    }//.fa
-    .fa-inverse {
-      color: $white;
-      vertical-align:top;
-      font-size:rem-calc(40);
-      span {
-        font-size:rem-calc(30);
-        vertical-align: bottom;
-      }
-    }
-    .h3{
-      font-weight:normal;
-    }
-  }//a
-}
