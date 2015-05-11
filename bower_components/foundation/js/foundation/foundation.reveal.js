@@ -4,7 +4,7 @@
   Foundation.libs.reveal = {
     name : 'reveal',
 
-    version : '5.5.0',
+    version : '5.4.7',
 
     locked : false,
 
@@ -15,7 +15,6 @@
       close_on_esc: true,
       dismiss_modal_class: 'close-reveal-modal',
       bg_class: 'reveal-modal-bg',
-      bg_root_element: 'body',
       root_element: 'body',
       open: function(){},
       opened: function(){},
@@ -194,8 +193,7 @@
           $.extend(ajax_settings, {
             success: function (data, textStatus, jqXHR) {
               if ( $.isFunction(old_success) ) {
-                var result = old_success(data, textStatus, jqXHR);
-                if (typeof result == 'string') data = result;
+                old_success(data, textStatus, jqXHR);
               }
 
               modal.html(data);
@@ -239,13 +237,10 @@
       return base;
     },
 
-    toggle_bg : function (el, modal, state) {
-      var settings = el.data(this.attr_name(true) + '-init') || this.settings,
-            bg_root_element = settings.bg_root_element; // Adding option to specify the background root element fixes scrolling issue
-      
+    toggle_bg : function (modal, state) {
       if (this.S('.' + this.settings.bg_class).length === 0) {
         this.settings.bg = $('<div />', {'class': this.settings.bg_class})
-          .appendTo(bg_root_element).hide();
+          .appendTo('body').hide();
       }
 
       var visible = this.settings.bg.filter(':visible').length > 0;
@@ -280,9 +275,9 @@
           this.locked = false;
         }
         if (animData.pop) {
-          css.top = $(root_element).scrollTop() - el.data('offset') + 'px'; //adding root_element instead of window for scrolling offset if modal trigger is below the fold
+          css.top = $(window).scrollTop() - el.data('offset') + 'px';
           var end_css = {
-            top: $(root_element).scrollTop() + el.data('css-top') + 'px', //adding root_element instead of window for scrolling offset if modal trigger is below the fold
+            top: $(window).scrollTop() + el.data('css-top') + 'px',
             opacity: 1
           };
 
@@ -298,7 +293,7 @@
         }
 
         if (animData.fade) {
-          css.top = $(root_element).scrollTop() + el.data('css-top') + 'px'; //adding root_element instead of window for scrolling offset if modal trigger is below the fold
+          css.top = $(window).scrollTop() + el.data('css-top') + 'px';
           var end_css = {opacity: 1};
 
           return setTimeout(function () {
@@ -330,8 +325,8 @@
     hide : function (el, css) {
       // is modal
       if (css) {
-        var settings = el.data(this.attr_name(true) + '-init') || this.settings,
-            root_element = settings.root_element;
+        var settings = el.data(this.attr_name(true) + '-init');
+        settings = settings || this.settings;
 
         var animData = getAnimationData(settings.animation);
         if (!animData.animate) {
@@ -339,7 +334,7 @@
         }
         if (animData.pop) {
           var end_css = {
-            top: - $(root_element).scrollTop() - el.data('offset') + 'px', //adding root_element instead of window for scrolling offset if modal trigger is below the fold
+            top: - $(window).scrollTop() - el.data('offset') + 'px',
             opacity: 0
           };
 

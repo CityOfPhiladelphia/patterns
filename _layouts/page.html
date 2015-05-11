@@ -15,6 +15,14 @@
       $(document).foundation();
     </script>
 
+    <script src="{{ "/bower_components/nprogress/nprogress.js" | prepend: site.baseurl }}"></script>
+    <script>
+    $( document ).ready(function() {
+      if ($("#application").length > 0)
+        NProgress.start();
+    });
+    </script>
+
   </body>
 
 </html>
