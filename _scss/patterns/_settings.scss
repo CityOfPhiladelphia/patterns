@@ -1367,7 +1367,7 @@ $inline-list-display: inline-block;
  $topbar-bg: $topbar-bg-color;
 
 // Height and margin
- $topbar-height: 35px;
+ $topbar-height: rem-calc(35);
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
