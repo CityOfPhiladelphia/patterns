@@ -3,13 +3,13 @@
 Phila.gov Pattern Library
 
 ## Using Phila.gov Patterns
-The patterns CSS includes a customized 24-column grid version of Foundation 5. Just add a few lines to `<head>`. For a sticky footer, also include the patterns.min.js file.
+The patterns CSS includes a customized 24-column grid version of Foundation 5.5.2. Just add a few lines to `<head>`. For a sticky footer, also include the patterns.min.js file.
 
 ### The bare minimum
 ```
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="//cityofphiladelphia.github.io/patterns/dist/0.8.0/css/patterns.css">
-<script type='text/javascript' src='//cityofphiladelphia.github.io/patterns/dist/0.8.0/js/patterns.min.js'></script>
+<link rel="stylesheet" href="//cityofphiladelphia.github.io/patterns/dist/0.8.1/css/patterns.css">
+<script type='text/javascript' src='//cityofphiladelphia.github.io/patterns/dist/0.8.1/js/patterns.min.js'></script>
 ```
 
 ### Also recommended
