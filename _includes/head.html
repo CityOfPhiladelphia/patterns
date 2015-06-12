@@ -7,6 +7,11 @@
   <link rel='icon' type='image/x-icon' href="{{ "/images/favicon.ico" | prepend: site.baseurl }}">
   <meta name="description" content="{{ site.description }}">
 
+  <!-- Swiftype Meta Tags -->
+  <!-- TODO: Update these values for the phila.gov search engine. -->
+  <meta class="swiftype" name="title" data-type="string" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta class="swiftype" name="published_at" data-type="date" content="2015-06-12" />
+
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="{{ "/css/styleguide.css" | prepend: site.baseurl }}">

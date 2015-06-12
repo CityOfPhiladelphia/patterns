@@ -5,7 +5,14 @@ permalink: /templates/application/
 ---
 <div class="full" id="application">
   {{ site.patterns | where:"title" : "Application Header" }}
-  <article>
+  <div class="row">
+    <div class="small-24 columns">
+      <div class="divider"></div>
+    </div>
+  </div>
+  {{ site.patterns | where:"title" : "Breadcrumbs" }}
+
+  <article data-swiftype-name="body" data-swiftype-type="text">
     <div class="row">
       <div class="large-24 columns">
           <h1 class="entry-title">Page Title</h1>

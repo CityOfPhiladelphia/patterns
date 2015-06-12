@@ -35,7 +35,7 @@ Change the page wrapper from <code><div class="site" id="page"></code> to <code>
     <meta name="description" content="">
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!--Ionicons are optional-->  
+    <!--Ionicons are optional-->
     <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
     <!--pattern stylesheet includes foundation css -->
@@ -48,36 +48,9 @@ Change the page wrapper from <code><div class="site" id="page"></code> to <code>
 
   <body>
     <div class="site" id="page">
-      <!-- Begin header -->
-      <header class="site-header" role="banner">
-        <div class="row">
-          <div class="small-24 medium-12 columns">
-            <a href="http://alpha.phila.gov"><img src="//cityofphiladelphia.github.io/patterns/images/city-of-philadelphia-logo.png" class="logo no-scale" alt="City of Philadelphia"></a>
-          </div>
-          <div class="small-24 medium-12 columns">
-            <form class="search">
-              <input type="text" placeholder="Search alpha.phila.gov"><input type="submit">
-            </form>
-          </div>
-        </div>
-      </header>
-      <!-- End header -->
-      <div class="row">
-        <div class="small-24 columns">
-          <div class="divider"></div>
-        </div>
-      </div>
-      <div class="row">
-        <div id="breadcrumbs" class="large-24 columns">
-          <ul class="inline-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Grandparent</a></li>
-            <li><a href="#">Parent</a></li>
-            <li>Child</li>
-          </ul>
-        </div>
-      </div>
-      <article>
+
+{{ site.patterns | where:"title" : "Header with Breadcrumbs" }}
+      <article data-swiftype-name="body" data-swiftype-type="text">
         <div class="row">
           <div class="large-24 columns">
             <!-- main content here-->
@@ -85,58 +58,7 @@ Change the page wrapper from <code><div class="site" id="page"></code> to <code>
         </div>
       </article>
     </div><!-- End #page -->
-    <!-- Begin footer -->
-    <footer class="site-footer" role="contentinfo">
-      <section class="fat">
-        <div class="row">
-          <div class="large-8 columns">
-            <h1>Government</h1>
-            <nav>
-              <ul>
-                <li><a href="http://alpha.phila.gov">alpha.phila.gov</a></li>
-                <li><a href="http://alpha.phila.gov/departments">Department Directory</a></li>
-                <li><a href="http://www.phila.gov/mayor">Mayor's Office</a></li>
-                <li><a href="http://iframe.publicstuff.com/#?client_id=242">Report an Issue / 311</a></li>
-                <li><a href="http://cityofphiladelphia.wordpress.com/">News</a></li>
-                <li><a href="http://www.phila.gov/phoneDir/">Phone Directory</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="large-16 columns">
-            <h1>Browse alpha.phila.gov</h1>
-            <nav>
-              <ul class="columns-2">
-                <li><a href="http://alpha.phila.gov/browse/business">Business</a></li>
-                <li><a href="http://alpha.phila.gov/browse/health">Health</a></li>
-                <li><a href="http://alpha.phila.gov/browse/jobs-and-contracts">Jobs and Contracts</a></li>
-                <li><a href="http://alpha.phila.gov/browse/legal">Legal</a></li>
-                <li><a href="http://alpha.phila.gov/browse/payments-and-taxes">Payments and Taxes</a></li>
-                <li><a href="http://alpha.phila.gov/browse/permits-licenses">Permits and Licenses</a></li>
-                <li><a href="http://alpha.phila.gov/browse/property-housing">Property and Housing</a></li>
-                <li><a href="http://alpha.phila.gov/browse/public-safety">Public Safety</a></li>
-                <li><a href="http://alpha.phila.gov/browse/recreation">Recreation</a></li>
-                <li><a href="http://alpha.phila.gov/browse/streets-and-utilities">Streets and Utilities</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </section>
-      <div class="row classic">
-        <div class="large-6 columns">
-          <a href="#">Feedback</a>
-        </div>
-        <div class="large-12 columns">
-          <nav>
-            <ul class="inline-list">
-              <li><a href="http://alpha.phila.gov/terms-of-use">Terms of use</a></li>
-              <li><a href="http://www.phila.gov/privacy/pdfs/FinalCityOpenRecords.pdf">Right to know (pdf)</a></li>
-              <li><a href="http://alpha.phila.gov/privacypolicy">Privacy Policy</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </footer>
-    <!-- End footer -->
+{{ site.patterns | where:"title" : "Footer" }}
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/js/foundation.min.js"></script>
     <script src="//cityofphiladelphia.github.io/patterns/dist/{{ site.version }}/js/patterns.min.js"></script>
