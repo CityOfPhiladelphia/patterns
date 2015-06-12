@@ -6,16 +6,24 @@
 
     {% include header.html %}
 
+    {% if page.title == "Application" %}
+
+    <div class="full" id="application">
+
+    {% else %}
+    <div id="page">
+      {% endif %}
+      <div class="row">
+        <div class="small-24 column">
+
+
           {{ content }}
+        </div>
+      </div>
+    </div>
+    {% include footer.html %}
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="{{"/src/foundation/foundation.min.js" | prepend: site.baseurl }}"></script>
-    <script src="{{"/src/script.js" | prepend: site.baseurl }}"></script>
-    <script>
-      $(document).foundation();
-    </script>
-
-    <script src="{{ "/bower_components/nprogress/nprogress.js" | prepend: site.baseurl }}"></script>
+        <script src="{{ "/bower_components/nprogress/nprogress.js" | prepend: site.baseurl }}"></script>
     <script>
     $( document ).ready(function() {
       if ($("#application").length > 0)
