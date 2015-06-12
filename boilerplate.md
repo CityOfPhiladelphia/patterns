@@ -50,7 +50,7 @@ Change the page wrapper from <code><div class="site" id="page"></code> to <code>
     <div class="site" id="page">
 
 {{ site.patterns | where:"title" : "Header with Breadcrumbs" }}
-      <article>
+      <article data-swiftype-name="body" data-swiftype-type="text">
         <div class="row">
           <div class="large-24 columns">
             <!-- main content here-->
