@@ -3,20 +3,13 @@ title: Standard Header
 id: header
 ---
 <!-- Begin .header -->
-<header class="site-header" role="banner">
+<header data-swiftype-index='false' class="site-header" role="banner">
   <div class="row">
     <div class="small-24 medium-12 columns">
       {{ site.patterns | where:"title" : "Logo" }}
     </div>
     <div class="small-24 medium-12 columns">
-      {{ site.patterns | where:"title" : "Search Form" }}
+{{ site.patterns | where:"title" : "Search Form" }}
     </div>
   </div>
 </header>
-<!-- End .header -->
-<div class="row">
-  <div class="small-24 columns">
-    <div class="divider"></div>
-  </div>
-</div>
-  {{ site.patterns | where:"title" : "Breadcrumbs" }}
