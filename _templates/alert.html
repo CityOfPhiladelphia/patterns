@@ -4,25 +4,7 @@ title: Alert
 permalink: /templates/alert/
 ---
 <div class="page" id="page">
-  <!-- Begin .header -->
-  <header class="site-header" role="banner">
-    <div class="row">
-      <div class="small-24 medium-12 columns">
-        {{ site.patterns | where:"title" : "Logo" }}
-      </div>
-      <div class="small-24 medium-12 columns">
-        {{ site.patterns | where:"title" : "Search Form" }}
-      </div>
-    </div>
-  </header>
-  {{ site.patterns | where:"title" : "Site-Wide Alert" }}
-  <!-- End .header -->
-  <div class="row">
-    <div class="small-24 columns">
-      <div class="divider"></div>
-    </div>
-  </div>
-    {{ site.patterns | where:"title" : "Breadcrumbs" }}
+  {{ site.patterns | where:"title" : "Header with Site-Wide Alert" }}
 
   <article>
     <div class="row">
