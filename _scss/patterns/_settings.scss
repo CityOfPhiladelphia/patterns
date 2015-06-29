@@ -1301,10 +1301,10 @@ $inline-list-display: inline-block;
 // $include-html-tabs-classes: $include-html-classes;
 
 // $tabs-navigation-padding: rem-calc(16);
-// $tabs-navigation-bg-color: $silver  ;
-// $tabs-navigation-active-bg-color: $white;
-// $tabs-navigation-hover-bg-color: scale-color($tabs-navigation-bg-color, $lightness: -6%);
-// $tabs-navigation-font-color: $jet;
+ $tabs-navigation-bg-color: $ghost-gray  ;
+ $tabs-navigation-active-bg-color: $geyser;
+ $tabs-navigation-hover-bg-color: $manatee;
+ $tabs-navigation-font-color: $mine-shaft;
 // $tabs-navigation-active-font-color: $tabs-navigation-font-color;
 // $tabs-navigation-font-size: rem-calc(16);
 // $tabs-navigation-font-family: $body-font-family;
