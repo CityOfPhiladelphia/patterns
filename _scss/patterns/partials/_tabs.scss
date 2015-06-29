@@ -3,10 +3,12 @@
 
 .tab-title{
   border-bottom: 3px solid $white;
+  font-weight: 600;
 
   > a{
       padding: .5rem 1.5rem;
-      font-weight: normal;
+      font-weight: 600;
+      font-size:rem-calc(14);
       border-left:5px solid $ghost-gray;
 
       &:hover {
