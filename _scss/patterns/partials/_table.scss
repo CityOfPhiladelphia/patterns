@@ -8,9 +8,9 @@ table {
     background-color:$manatee;
     color:$white;
     padding:0.625rem;
-    font-size:rem-calc(14);
-    font-weight:400;
+    font-size:rem-calc(13);
     @include secondary-font;
+    font-weight:400;
   }
   tr th, tr td{
     padding:0.5625rem 0.625rem;
