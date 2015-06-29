@@ -105,7 +105,7 @@ a:hover, a:active {
 
 .small-text {
   color: $sidewalk;
-  font-size: 80%;
+  font-size: rem-calc(12);
   display:block;
 }
 
