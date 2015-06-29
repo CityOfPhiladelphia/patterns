@@ -1,7 +1,6 @@
 table {
   width:100%;
-  border-spacing: 0;
-  @include secondary-font;
+  border-spacing: 2px;
   border:none;
 
   thead tr th,
@@ -10,14 +9,18 @@ table {
     color:$white;
     padding:0.625rem;
     font-size:rem-calc(14);
+    font-weight:400;
+    @include secondary-font;
   }
   tr th, tr td{
     padding:0.5625rem 0.625rem;
     font-size:rem-calc(12);
-    font-weight:normal;
   }
   tr.even, tr.alt,
   tr:nth-of-type(even) {
-    background-color:$whitesmoke;
+    background-color:$geyser;
+  }
+  tr.odd, tr, tr:nth-of-type(odd) {
+    background-color:$ghost-gray;
   }
 }
