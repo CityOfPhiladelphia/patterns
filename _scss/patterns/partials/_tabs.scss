@@ -1,13 +1,6 @@
 .tabs{
   padding:0;
 
-  .tabs-content {
-
-    >.content {
-      padding: 0 0 0 27%;
-    }
-  }//.tabs-content
-
 .tab-title{
   border-bottom: 3px solid $white;
 
@@ -36,3 +29,22 @@
     }
   }
 }//tabs
+
+.tabs-content {
+
+  >.content.active, >.content {
+    padding: 0 0 0 27%;
+
+    p:first-of-type{
+      margin:0 0 1em 0;
+    }
+    h1:first-of-type,
+    h2:first-of-type,
+    h3:first-of-type {
+      margin: 0 0 0.8125rem 0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      color:$sidewalk;
+    }
+  }
+}//.tabs-content
