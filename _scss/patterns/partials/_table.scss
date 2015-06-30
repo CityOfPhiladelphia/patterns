@@ -4,11 +4,13 @@ table {
   border:none;
 
   thead tr th,
-  thead tr td{
+  thead tr td,
+  tr th{
     background-color:$manatee;
     color:$white;
     padding:0.625rem;
     font-size:rem-calc(13);
+    letter-spacing: .05px;
     @include secondary-font;
     font-weight:400;
   }
