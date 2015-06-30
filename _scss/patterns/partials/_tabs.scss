@@ -22,7 +22,7 @@
     border:none;
   }
 }//tab-title
-  @media only screen and (min-width: 40.0625em){
+@media #{$medium-up}{
     &.vertical {
       max-width: 25%;
       width: 25%;
@@ -35,8 +35,9 @@
 .tabs-content {
 
   >.content.active, >.content {
-    padding: 0 0 0 27%;
-
+    @media #{$medium-up} {
+      padding: 0 0 0 27%;
+    }
     p:first-of-type{
       margin:0 0 1em 0;
     }
