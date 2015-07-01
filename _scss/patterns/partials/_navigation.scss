@@ -1,21 +1,29 @@
 nav.top-bar {
-  .top-bar-section ul li{//first lvl
-    @media #{$medium-up} {
-      margin:rem-calc(0 10);
-      border-top: 2px solid $bell-yellow;
-      min-width: rem-calc(150);
-      &.has-dropdown > ul > li{//second lvl
-        border:none;
-      }
-      ul li {
-        margin:rem-calc(0);
-      }
-    }//end media query
-    > a {
-      @include secondary-font;
-      font-weight:normal;
+  .top-bar-section {
+    li.parent-link a{
+        border-top: 2px solid $bell-yellow;
+        color:$sidewalk;
     }
-  }//.top-bar-section ul li
+    ul li{//first lvl
+      background:$geyser;
+      @media #{$medium-up} {
+        background:$white;
+        margin:rem-calc(0 10);
+        border-top: 2px solid $bell-yellow;
+        min-width: rem-calc(150);
+        &.has-dropdown > ul > li{//second lvl
+          border:none;
+        }
+        ul li {
+          margin:rem-calc(0);
+        }
+      }//end media query
+      > a {
+        @include secondary-font;
+        font-weight:400;
+      }
+    }//.topbar-section ul li
+  }//.top-bar-section
   .top-bar-section .dropdown li .dropdown {
     border-top: 4px solid $bell-yellow;
     li {
