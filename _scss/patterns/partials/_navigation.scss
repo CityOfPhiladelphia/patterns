@@ -1,4 +1,9 @@
 nav.top-bar {
+  .title-area{
+    @media #{$medium-up} {
+          display: none;
+        }
+    }
   .top-bar-section {
     li.parent-link a{
         border-top: 2px solid $bell-yellow;
