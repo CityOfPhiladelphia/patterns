@@ -2,6 +2,7 @@
   border:1px solid $geyser;
   background:$white;
   width:100%;
+  position: relative;
   @include pad-box(16);
   h3 {
     padding:0 0 3px 0;
@@ -10,6 +11,9 @@
   p {
     margin: rem-calc(7 0);
     @extend %small;
+    &:last-child{
+      min-height:20px;
+    }
   }
   a:hover img, a:active img {
     opacity:.7;
@@ -18,5 +22,14 @@
   img {
     width:100%;
     height:auto;
+  }
+  .more-link{
+    position: absolute;
+    bottom: 2%;
+    right: 8%;
+
+    &:after {
+      content: ' »';
+    }
   }
 }
