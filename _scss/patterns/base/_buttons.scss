@@ -23,7 +23,7 @@
   }
   &.alternate, &.alternate:link, &.alternate:visited{
     background:$white;
-    color:$black;
+    color:$ben-franklin-blue;
     border:1px solid $manatee;
 
     .fa {
@@ -46,7 +46,7 @@
 
 .button.alternate:hover, .button.alternate:active,
 .button.alternate > .fa:hover, .button.alternate > .fa:active  {
-  color:$ben-franklin-blue !important;
+  color:$black !important;
 
 }
 
