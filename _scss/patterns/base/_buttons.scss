@@ -85,12 +85,6 @@ a.button:hover, a.button:active{
     .h3{
       font-weight:normal;
     }
-  }//a
-  &.hollow {
-    &:hover .fa-circle-thin, &:active .fa-circle-thin {
-      color:$mine-shaft;
-      transition: color 300ms ease-out;
-    }
 
     .fa-inverse {
       color: $black;
