@@ -1,10 +1,9 @@
 footer.site-footer {
   font-size:rem-calc(13);
   background: $black;
-  text-transform: uppercase;
   height:auto;
   color:$white;
-  font-family: 'Montserrat', 'Tahoma', sans-serif;
+  letter-spacing:.015em;
 
   .classic {
     .columns{
