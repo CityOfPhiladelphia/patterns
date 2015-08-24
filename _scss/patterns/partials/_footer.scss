@@ -6,6 +6,15 @@ footer.site-footer {
   letter-spacing:.015em;
 
   .classic {
+    font-family: 'Montserrat', 'Tahoma', sans-serif;
+    text-transform: uppercase;
+  a:link, a:visited {
+    color: $sidewalk;
+  }
+  a:hover, a:active{
+    color:$bell-yellow;
+  }
+
     .columns{
       margin:rem-calc(10 0);
     }
