@@ -5,9 +5,12 @@
   font-weight:400;
   margin: 1em 0;
   letter-spacing:.03rem;
+  i.fa{
+    color:$manatee
+  }
 
   .fa{
-    background: $black;
+    background: $geyser;
     padding: .4em .5em .5em .4em;
     font-size: 1.7em;
     max-height: 40px;
@@ -23,8 +26,11 @@
   }
   &.alternate, &.alternate:link, &.alternate:visited{
     background:$white;
-    color:$black;
+    color:$ben-franklin-blue;
     border:1px solid $manatee;
+  i.fa{
+    color: $ben-franklin-blue;
+  }
 
     .fa {
       background: $white;
@@ -44,10 +50,12 @@
   }
 }
 
-.button.alternate:hover, .button.alternate:active,
-.button.alternate > .fa:hover, .button.alternate > .fa:active  {
-  color:$ben-franklin-blue !important;
-
+.button.alternate:hover,
+.button.alternate:active,
+.button.alternate > .fa:hover,
+.button.alternate > .fa:active,
+.button.alternate:hover > i.fa{
+  color:$black;
 }
 
 a.button:link, a.button:visited {
@@ -85,21 +93,6 @@ a.button:hover, a.button:active{
     .h3{
       font-weight:normal;
     }
-  }//a
-  &.hollow {
-    &:hover .fa-circle-thin, &:active .fa-circle-thin {
-      color:$mine-shaft;
-      transition: color 300ms ease-out;
-    }
 
-    .fa-inverse {
-      color: $black;
-      span {
-        font-size:rem-calc(16);
-        line-height: rem-calc(21);
-        display: inline-block;
-        vertical-align: middle;
-      }
-    }
   }
 }//end call to action

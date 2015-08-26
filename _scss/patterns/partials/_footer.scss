@@ -1,12 +1,20 @@
 footer.site-footer {
   font-size:rem-calc(13);
   background: $black;
-  text-transform: uppercase;
   height:auto;
   color:$white;
-  font-family: 'Montserrat', 'Tahoma', sans-serif;
+  letter-spacing:.015em;
 
   .classic {
+    font-family: 'Montserrat', 'Tahoma', sans-serif;
+    text-transform: uppercase;
+  a:link, a:visited {
+    color: $sidewalk;
+  }
+  a:hover, a:active{
+    color:$bell-yellow;
+  }
+
     .columns{
       margin:rem-calc(10 0);
     }
