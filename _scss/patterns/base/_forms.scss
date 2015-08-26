@@ -13,7 +13,12 @@ input[type="time"],
 input[type="url"],
 input[type="color"],
 textarea,
-select,
+select{
+  border: 1px solid $ben-franklin-blue;
+  background: $ghost-gray;
+  padding:rem-calc(8);
+  margin: 0;
+}
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="date"]:focus,
@@ -29,11 +34,13 @@ input[type="time"]:focus,
 input[type="url"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-  border: 1px solid $ben-franklin-blue;
-  background: $ghost-gray;
-  padding:rem-calc(8);
-  margin: 0;
+    border: 2px solid $ben-franklin-blue;
+    background:$white;
 }
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 
 .search {
   width: 100%;
