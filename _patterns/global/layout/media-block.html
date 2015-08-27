@@ -1,23 +1,19 @@
 ---
 title: Media Block
+description: News stories should be card-like. The whole area is a link.
 id: media-block
 ---
 
 <div class="row">
   <div class="medium-8">
-    <div class="story s-box">
-        <a href="#" target="_blank">
-          <img src="{{ "/images/internships.jpg" | prepend: site.baseurl }}" alt="Apply to Philadelphia Internships">
-      </a>
-      <a href="#" target="_blank">
+    <a href="#" target="_blank">
+      <div class="story s-box">
+        <img src="{{ "/images/internships.jpg" | prepend: site.baseurl }}" alt="Apply to Philadelphia Internships">
         <h3>Apply to the Mayor’s Internship Program</h3>
-      </a>
         <div class="small-text">Experience Philadelphia</div>
-      <p>Undergraduate and graduate students interested in City government or gaining valuable workplace experience should
-        <a href="#" target="_blank">apply to the MIPs</a> before January 30th, 2015.
+        <p>Undergraduate and graduate students interested in City government or gaining valuable workplace experience should apply to the MIPs before January 30th, 2015.
         </p>
-        <p><a href="#" class="more-link">Read more</a></p>
-
-    </div>
+      </div>
+    </a>
   </div>
 </div>
