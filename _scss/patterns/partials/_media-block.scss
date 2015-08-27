@@ -1,3 +1,11 @@
+a:link > .story,
+a:visited > .story {
+  color:$black;
+}
+a:hover > .story {
+  opacity: .65;
+}
+
 .story {
   border:1px solid $geyser;
   background:$white;
