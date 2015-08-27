@@ -132,3 +132,11 @@ a:hover, a:active {
     margin:rem-calc(6 0);
   }
 }
+
+// External Links
+.external::after {
+  font-family: "FontAwesome";
+  content: "\f08e";
+  font-size:rem-calc(12);
+  padding:0 5px;
+}
