@@ -23,13 +23,13 @@ a:hover > .story {
       min-height:20px;
     }
   }
-  a:hover img, a:active img {
-    opacity:.7;
-    //transition: opacity 300ms ease-out;
-  }
   img {
     width:100%;
     height:auto;
+
+    @media #{$small-only} {
+      display:none;
+    }
   }
   .more-link{
     position: absolute;
@@ -40,4 +40,4 @@ a:hover > .story {
       content: ' »';
     }
   }
-}
+} //.story
