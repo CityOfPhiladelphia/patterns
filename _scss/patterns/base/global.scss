@@ -87,6 +87,23 @@ dl {
   }
 }
 
+.equal-height {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: stretch;
+  flex-align: stretch;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+
+  > div {
+    display: -webkit-flex;
+    display: flex;
+  }
+}
+
 /*utility classes*/
 
 .no-margin{
