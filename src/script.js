@@ -14,4 +14,9 @@ jQuery(document).ready(function( $ ) {
       $(document).on('close.fndtn.reveal', '[data-reveal]', function () {
         $('footer.site-footer').show();
       });
+
+      $(".story.s-box").click(function() {
+        window.location = $(this).find("a").attr("href");
+        return false;
+      });
 });

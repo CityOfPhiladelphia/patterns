@@ -1,17 +1,19 @@
-a:link > .story,
-a:visited > .story {
-  color:$black;
-}
-a:hover > .story {
-  opacity: .65;
-}
-
 .story {
   border:1px solid $geyser;
   background:$white;
   width:100%;
   position: relative;
   @include pad-box(16);
+  cursor: pointer;
+
+  a:link > .link-wrap,
+  a:visited > .link-wrap{
+    color:$black;
+  }
+  a:hover > .link-wrap {
+    opacity: .65;
+  }
+
   h3 {
     padding:0 0 3px 0;
     border-bottom:1px solid $whitesmoke;
