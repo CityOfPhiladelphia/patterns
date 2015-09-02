@@ -4,6 +4,17 @@
   width:100%;
   position: relative;
   @include pad-box(16);
+  cursor: pointer;
+
+  > a {
+    display: block;
+
+    &:link,
+    &:visited{
+      color:$black;
+    }
+  }
+
   h3 {
     padding:0 0 3px 0;
     border-bottom:1px solid $whitesmoke;
@@ -15,13 +26,13 @@
       min-height:20px;
     }
   }
-  a:hover img, a:active img {
-    opacity:.7;
-    //transition: opacity 300ms ease-out;
-  }
   img {
     width:100%;
     height:auto;
+
+    @media #{$small-only} {
+      display:none;
+    }
   }
   .more-link{
     position: absolute;
@@ -32,4 +43,4 @@
       content: ' »';
     }
   }
-}
+} //.story

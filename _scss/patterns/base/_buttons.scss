@@ -50,10 +50,12 @@
   }
 }
 
-.button.alternate:hover, .button.alternate:active,
-.button.alternate > .fa:hover, .button.alternate > .fa:active  {
-  color:$black !important;
-
+.button.alternate:hover,
+.button.alternate:active,
+.button.alternate > .fa:hover,
+.button.alternate > .fa:active,
+.button.alternate:hover > i.fa{
+  color:$black;
 }
 
 a.button:link, a.button:visited {

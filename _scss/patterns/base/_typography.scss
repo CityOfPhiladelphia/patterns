@@ -1,4 +1,4 @@
-//get our fonts (thx Google)
+// Get our fonts (thx Google)
 @import url('//fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,700');
 
 body {
@@ -6,7 +6,7 @@ body {
   font-size:100%;
   background:$white;
 }
-/* Heading sizes */
+// Heading sizes
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -41,8 +41,8 @@ h6, .h6 {
         }
       }
     }
-  }
-}
+  }// &.alternate
+} // h1, .h1 etc
 
 h1, .h1{
   padding:0;
@@ -75,7 +75,7 @@ h6, .h6{
   font-size:$h6-font-size;
   font-weight:normal;
 }
-/*paragraphs*/
+// Paragraphs
 blockquote p {
   margin: 0 0 1em 0;
 }
@@ -92,8 +92,7 @@ hr {
   background:$whitesmoke;
 }
 
-
-/*links*/
+// Links
 a:link, a:visited{
   color:$ben-franklin-blue;
   text-decoration: none;
@@ -125,11 +124,19 @@ a:hover, a:active {
    text-transform:uppercase;
 }
 
-/*tooltip*/
+// Tooltip
 .tooltip {
   font-size:rem-calc(12);
   p{
     font-size:rem-calc(12);
     margin:rem-calc(6 0);
   }
+}
+
+// External Links
+.external::after {
+  font-family: "FontAwesome";
+  content: "\f08e";
+  font-size:rem-calc(12);
+  padding:0 5px;
 }
