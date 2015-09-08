@@ -20,10 +20,14 @@ h6, .h6 {
     font-size:$h4-font-size;
     margin-top:rem-calc(12);
     margin-bottom:rem-calc(12);
-    font-weight:700;
+    font-weight:400;
+    + .small-text{
+      color:$black;
+    }
     @media #{$small-only} {
       &.divide{
         border-bottom:2px solid $bell-yellow;
+        padding: 0 20px;
       }
     }
     @media #{$medium-up} {
@@ -94,9 +98,7 @@ hr {
 
 // Links
 a:link, a:visited{
-  color:$ben-franklin-blue;
-  text-decoration: none;
-  font-weight:700;
+  @extend %link-styles;
 }
 a:hover, a:active {
   color:$mine-shaft;

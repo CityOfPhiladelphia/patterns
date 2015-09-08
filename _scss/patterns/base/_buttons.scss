@@ -5,6 +5,8 @@
   font-weight:400;
   margin: 1em 0;
   letter-spacing:.03rem;
+  transition: background-color 300ms ease-in-out;
+
   i.fa{
     color:$manatee
   }
@@ -63,8 +65,12 @@ a.button:link, a.button:visited {
   font-weight:400;
 }
 
-a.button:hover, a.button:active{
+a.button:hover,
+a.button:active,
+a.button:hover > i.fa,
+a.button:active > i.fa{
   background:$mine-shaft;
+  transition: background-color 300ms ease-in-out;
 }
 
 // /|\ call to action /|\ //
