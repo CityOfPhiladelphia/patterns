@@ -7,7 +7,7 @@ $(function() {
   });
   // this is here so it works properly in the all patterns view
 
-  var mediaBox = $(".story.s-box");
+  var mediaBox = $(".news .story.s-box");
 
   mediaBox.hover( function() {
     $( this ).addClass( 'lower-opacity' );

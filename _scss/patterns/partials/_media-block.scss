@@ -1,10 +1,13 @@
+.news .story {
+  cursor: pointer;
+}
+
 .story {
   border:1px solid $geyser;
   background:$white;
   width:100%;
   position: relative;
   @include pad-box(16);
-  cursor: pointer;
 
   > a {
     display: block;
