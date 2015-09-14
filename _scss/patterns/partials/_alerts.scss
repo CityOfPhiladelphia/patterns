@@ -22,6 +22,30 @@
   padding: rem-calc(7 0);
   font-size:rem-calc(13);
 
+  //leave this for backwards compatibility,
+  //remove in next update
+  .button {
+    height:30px;
+    padding: .3rem 2.8125rem 0 0;
+    margin:.5rem 0 0 0;
+    &.icon{
+      padding: 0.2rem 2.8125rem 0 0;
+      &.alternate .fa{
+        max-height:28px;
+      }
+      a:link, a:visited{
+        background:$white;
+        color:$ben-franklin-blue;
+      }
+      a:active, a:hover{
+        color:$mine-shaft;
+      }
+    }
+    .fa {
+    padding:.13em .5em .5em .4em;
+    }
+  }//button
+
   h1{
     color:$bell-yellow;
     margin: rem-calc(5px 0);
