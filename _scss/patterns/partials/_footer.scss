@@ -2,14 +2,12 @@ footer.site-footer {
   font-size:rem-calc(13);
   background: $black;
   height:auto;
-  color:$white;
+  color:#e5e5e5;
   letter-spacing:.015em;
 
   .classic {
-    font-family: 'Montserrat', 'Tahoma', sans-serif;
-    text-transform: uppercase;
   a:link, a:visited {
-    color: $sidewalk;
+    color: #e5e5e5;
   }
   a:hover, a:active{
     color:$bell-yellow;
@@ -39,7 +37,7 @@ footer.site-footer {
     }
   }
   a:link, a:visited {
-    color:$white;
+    color:#e5e5e5;
     font-weight:normal;
     font-size:rem-calc(13);
   }
@@ -59,15 +57,15 @@ footer.site-footer {
     margin:0;
   }
   .fat{
-    background:$mine-shaft;
+    background:#282828;
     padding:rem-calc(40 0);
 
     h1, h2, h3, h4, h5, h6 {
       border-bottom:1px solid $manatee;
       padding-bottom:rem-calc(10);
       color:$bell-yellow;
-      font-size:rem-calc(14);
-      letter-spacing: .05em;
+      font-size:rem-calc(13);
+      letter-spacing: .04em;
     }
     ul, ol {
       list-style:none;
