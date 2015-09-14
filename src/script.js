@@ -16,7 +16,7 @@ jQuery(document).ready(function( $ ) {
     $('footer.site-footer').show();
   });
 
-  var mediaBox = $(".story.s-box");
+  var mediaBox = $(".news story.s-box");
   mediaBox.hover( function() {
     $( this ).addClass( 'lower-opacity' );
   }, function() {
