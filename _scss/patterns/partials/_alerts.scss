@@ -8,42 +8,26 @@
   h2 {
     margin:0;
     padding:0;
-    font-size:1rem;
+    font-size:rem-calc(16);
   }
   i{
-    padding:0 10px 0 0;
+    padding:rem-calc(0 10px 0 0);
   }
 }
 
 #alpha-alert{
-    background:$mine-shaft;
-    color: $white;
-    min-height: 30px;
-    padding: 0.4em 0;
+  background:$mine-shaft;
+  color: $white;
+  min-height: rem-calc(30);
+  padding: rem-calc(7 0);
+  font-size:rem-calc(13);
 
-    h1{
-      color:$bell-yellow;
-      margin: 5px 0;
-    }
-    p {
-        display:block;
-        margin:0;
-        font-size:.8rem;
-      a{
-        font-weight:bold;
-      }
-    }
-
-    a:link, a:visited{
-        color:$white;
-    }
-    a:hover, a:active{
-        color:$bell-yellow;
-    }
-    .button {
-      height:30px;
-      padding: .3rem 2.8125rem 0 0;
-      margin:.5rem 0 0 0;
+  //leave this for backwards compatibility,
+  //remove in next update
+  .button {
+    height:30px;
+    padding: .3rem 2.8125rem 0 0;
+    margin:.5rem 0 0 0;
     &.icon{
       padding: 0.2rem 2.8125rem 0 0;
       &.alternate .fa{
@@ -57,8 +41,79 @@
         color:$mine-shaft;
       }
     }
-  .fa {
+    .fa {
     padding:.13em .5em .5em .4em;
     }
   }//button
+
+  h1{
+    color:$bell-yellow;
+    margin: rem-calc(5px 0);
+  }
+  p {
+    display:block;
+    margin:rem-calc(0 0 5 0);
+    font-size:rem-calc(13);
+  }
+  a:link, a:visited{
+    color:$white;
+    text-transform: uppercase;
+  }
+  a:hover, a:active{
+    color:$bell-yellow;
+    text-transform: uppercase;
+  }
+  a.go-back:link, a.go-back:visited{
+    color:$bell-yellow;
+  }
+  a.go-back:hover, a.go-back:active{
+    color:$white;
+  }
+  .contact{
+    text-align:right;
+
+    .feedback{
+      padding: 0 10px 0 0;
+      border-right: 1px solid #fff;
+      margin: 0 10px 0 0;
+      font-size:rem-calc(11);
+    }
+  }
+  #google_translate_element {
+    display: inline-block;
+
+    .goog-te-gadget-simple{
+      background:none;
+      border:none;
+      font-size:rem-calc(11);
+
+      img {
+        display: none;
+      }
+      span {
+        vertical-align: top !important;
+      }
+      .goog-te-menu-value {
+
+        span:first-of-type {
+          display:none;
+        }
+
+        span:last-of-type::before {
+          content: "Translate";
+          vertical-align:top !important;
+          padding:rem-calc(0 5 0 0);
+        }
+        span:hover:last-of-type::before {
+          color:$bell-yellow;
+        }
+
+        span {
+          border:none !important;
+          padding: rem-calc(0 1 0 0);
+          color:$white !important;
+        }
+      }
+    }
+  }
 }//alpha-alert
