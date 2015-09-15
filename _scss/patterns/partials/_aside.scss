@@ -1,7 +1,11 @@
-.related{
-  @include pad-box(16);
-  background:$whitesmoke;
-  border:1px solid $geyser;
+aside#secondary{
+  border-left: 3px solid $ghost-gray;
+  padding-bottom: 20px;
+  padding-left: 30px;
+
+  h3 {
+    margin-top:10px;
+  }
 
   ul{
     margin:0;
