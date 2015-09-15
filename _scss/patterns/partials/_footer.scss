@@ -6,16 +6,17 @@ footer.site-footer {
   letter-spacing:.015em;
 
   .classic {
-  a:link, a:visited {
-    color: #e5e5e5;
-  }
-  a:hover, a:active{
-    color:$bell-yellow;
-  }
+    a:link, a:visited {
+      color: #e5e5e5;
+    }
+    a:hover, a:active{
+      color:$bell-yellow;
+    }
 
     .columns{
       margin:rem-calc(10 0);
     }
+
     @media #{$small-only} {
       text-align:center;
       .inline-list>li{
