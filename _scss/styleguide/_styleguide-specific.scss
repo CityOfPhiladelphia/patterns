@@ -145,6 +145,9 @@ $animate-quick: 0.2s;
 .title, .code {
 	display:block;
 }
+.the-code {
+  display: none;
+}
 .code {
 	cursor:pointer;
 	color:$sg-secondary;
