@@ -1,27 +1,19 @@
-/*|*\ sticky, fat footer \*|*/
 #page {
   min-height: 100%;
   position: relative;
   margin-bottom:rem-calc(40);
 
-  h1.entry-title{
-    margin-bottom:0;
-  }
   &:after {
     content: "";
     display: block;
   }
-
-}//#page
+}
 
 article{
   margin-bottom:rem-calc(16);
 }
 
 .department{
-  h1{
-    margin-top:rem-calc(32);
-  }
   p{
     margin: rem-calc(16 0 32 0);
     //beacuse of those crazy long department names
