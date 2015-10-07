@@ -9,10 +9,6 @@
     top: 11px;
     max-width:60%;
 
-    h1.site-title, h1.site-description{
-      @extend %accessible;
-    }
-
     a {
       color: #353535;
 
@@ -31,6 +27,7 @@
       max-width:100%;
     }
   }
+
 }//app
 
 #application {
