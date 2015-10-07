@@ -1,7 +1,7 @@
 html, body{
   height:100%;
 }
-.accessible, .site-branding h1, .site-branding h2, a.skip-link, .screen-reader-text {
+.accessible, .site-branding .site-title, .site-branding .site-description, a.skip-link, .screen-reader-text {
   position: absolute;
   left: -99999px;
   height: 10px;

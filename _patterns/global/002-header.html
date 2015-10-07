@@ -4,12 +4,14 @@ id: header
 ---
 <!-- Begin .header -->
 <header data-swiftype-index='false' class="site-header" role="banner">
-  <div class="row">
+  <div class="row site-branding">
     <div class="small-24 medium-12 columns">
       {{ site.patterns | where:"title" : "Logo" }}
+      <h1 class="site-title">phila.gov</h1>
+      <h2 class="site-description">City of Philadelphia</h2>
     </div>
     <div class="small-24 medium-12 columns">
-{{ site.patterns | where:"title" : "Search Form" }}
+      {{ site.patterns | where:"title" : "Search Form" }}
     </div>
   </div>
 </header>

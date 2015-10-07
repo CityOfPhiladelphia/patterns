@@ -21,3 +21,10 @@
   text-decoration: none;
   font-weight:700;
 }
+
+%accessible{
+  position: absolute;
+  left: -99999px;
+  height: 10px;
+  width: 10px;
+}
