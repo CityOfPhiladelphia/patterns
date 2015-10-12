@@ -23,6 +23,7 @@ Use this template to get up and running fast! It includes:
 
 Change the page wrapper from <code><div class="site" id="page"></code> to <code><div class="full" id="application"></code>
 
+<button class="btn copy" title="Copy code to clipboard" data-clipboard-target-selector=".highlight"><i class="fa fa-clipboard"></i></button>
 {% highlight html %}
 <html>
   <head>
