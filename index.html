@@ -18,7 +18,7 @@ layout: default
             <i class="fa fa-arrow-circle-right"></i>
           </hgroup>
           <div class="the-code">
-            <button class="btn copy" title="Copy code to clipboard"><i class="fa fa-clipboard"></i></button>
+            <button class="btn copy" title="Copy code to clipboard" data-clipboard-target-selector="#p-{{ pattern.id }} .highlight"><i class="fa fa-clipboard"></i></button>
             {% highlight html %}
               {{ pattern.output }}
             {% endhighlight %}
