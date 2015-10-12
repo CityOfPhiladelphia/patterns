@@ -3,6 +3,13 @@ $(function() {
       $(this).next(".the-code").toggle("fast");
       $(this).find("i").toggleClass("fa-arrow-circle-down").toggleClass("fa-arrow-circle-right");
   });
+  // Initialize copy to clipboard buttons
+  new Clipboard('.copy', {
+    text: function(trigger) {
+      // Return the text of the sibling element (div.highlight)
+      return $(trigger).next().text();
+    }
+  })
   // this is here so it works properly in the all patterns view
 
   var mediaBox = $(".news .story.s-box");
