@@ -69,7 +69,7 @@ class ClipboardAction {
 
     /**
      * Only removes the fake element after another click event, that way
-     * an user can hit `Ctrl+C` to copy because selection still exists.
+     * a user can hit `Ctrl+C` to copy because selection still exists.
      */
     removeFake() {
         if (this.fakeHandler) {
@@ -95,6 +95,7 @@ class ClipboardAction {
             let range = document.createRange();
             let selection = window.getSelection();
 
+            selection.removeAllRanges();
             range.selectNodeContents(this.target);
             selection.addRange(range);
             this.selectedText = selection.toString();
