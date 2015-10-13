@@ -5,11 +5,7 @@ $(function() {
   });
   
   // Initialize clipboard.js
-  new Clipboard('.copy', {
-    text: function(target) {
-      return $($(target).data('clipboard-target-selector')).text();
-    }
-  });
+  new Clipboard('.copy');
   
   // this is here so it works properly in the all patterns view
 
