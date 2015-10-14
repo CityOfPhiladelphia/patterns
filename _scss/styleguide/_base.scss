@@ -149,6 +149,18 @@ pre {
 
 
 /**
+ * Copy to clipboard button
+ */
+.copy {
+    position: absolute;
+    right: 0;
+    margin-right: 13px;
+    padding: 2px 6px 3px;
+}
+
+
+
+/**
  * Wrapper
  */
 .wrapper {
