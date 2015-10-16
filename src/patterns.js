@@ -1,4 +1,8 @@
 jQuery(document).ready(function( $ ) {
+
+  //reponsive tables
+	$( document ).trigger( "enhance.tablesaw" );
+
   // You can use the locally-scoped $ in here as an alias to jQuery.
   //variable footer height for sticky footer
 
@@ -16,7 +20,7 @@ jQuery(document).ready(function( $ ) {
     $('footer.site-footer').show();
   });
 
-  var mediaBox = $(".news story.s-box");
+  var mediaBox = $(".news .story.s-box");
   mediaBox.hover( function() {
     $( this ).addClass( 'lower-opacity' );
   }, function() {

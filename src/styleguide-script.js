@@ -1,29 +1,18 @@
+//meta ja, specifically for Patterns
+
 $(function() {
+
   $(".code").click(function () {
       $(this).next(".the-code").toggle("fast");
       $(this).find("i").toggleClass("fa-arrow-circle-down").toggleClass("fa-arrow-circle-right");
   });
-  
+
   // Initialize clipboard.js
   new Clipboard('.copy');
-  
-  // this is here so it works properly in the all patterns view
-
-  var mediaBox = $(".news .story.s-box");
-
-  mediaBox.hover( function() {
-    $( this ).addClass( 'lower-opacity' );
-  }, function() {
-    $( this ).removeClass( 'lower-opacity' );
-  });
-
-  mediaBox.click(function() {
-    window.location = $(this).find("a").attr("href");
-    return false;
-  });
 
 });
 
+//pattern filter
 var options = {
   valueNames: [ 'title' ],
   searchClass: 'filter'
