@@ -24,8 +24,7 @@ nav.top-bar {
         }
       }//end media query
       > a {
-        @include secondary-font;
-        font-weight:400;
+        @include secondary-font(400);
       }
     }//.topbar-section ul li
   }//.top-bar-section

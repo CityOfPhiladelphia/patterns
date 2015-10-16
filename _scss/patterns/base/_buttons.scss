@@ -1,8 +1,7 @@
 // /|\ "regular" buttons /|\ //
 .button {
-  @include secondary-font;
+  @include secondary-font(400);
   text-transform:uppercase;
-  font-weight:400;
   margin: 1em 0;
   letter-spacing:.03rem;
   transition: background-color 300ms ease-in-out;
