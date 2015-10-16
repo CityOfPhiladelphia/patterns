@@ -61,7 +61,7 @@ Change the page wrapper from <code><div class="site" id="page"></code> to <code>
     </div><!-- End #page -->
 {{ site.patterns | where:"title" : "Footer" }}
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/js/foundation.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
     <script src="//cityofphiladelphia.github.io/patterns/dist/{{ site.version }}/js/patterns.min.js"></script>
     <script>
       $(document).foundation();
