@@ -7,43 +7,43 @@
 
 // /* foundation components */
 // Behold, here are all the Foundation components.
-	@import "patterns/foundation/components/grid";
-	@import "patterns/foundation/components/accordion";
-	@import "patterns/foundation/components/alert-boxes";
-	@import "patterns/foundation/components/block-grid";
-	@import "patterns/foundation/components/breadcrumbs";
-	@import "patterns/foundation/components/button-groups";
-	@import "patterns/foundation/components/buttons";
-	@import "patterns/foundation/components/clearing";
-	@import "patterns/foundation/components/dropdown";
-	@import "patterns/foundation/components/dropdown-buttons";
-	@import "patterns/foundation/components/flex-video";
-	@import "patterns/foundation/components/forms";
-	@import "patterns/foundation/components/icon-bar";
-	@import "patterns/foundation/components/inline-lists";
-	@import "patterns/foundation/components/joyride";
-	@import "patterns/foundation/components/keystrokes";
-	@import "patterns/foundation/components/labels";
-	@import "patterns/foundation/components/magellan";
-	@import "patterns/foundation/components/orbit";
-	@import "patterns/foundation/components/pagination";
-	@import "patterns/foundation/components/panels";
-	@import "patterns/foundation/components/pricing-tables";
-	@import "patterns/foundation/components/progress-bars";
-	@import "patterns/foundation/components/range-slider";
-	@import "patterns/foundation/components/reveal";
-	@import "patterns/foundation/components/side-nav";
-	@import "patterns/foundation/components/split-buttons";
-	@import "patterns/foundation/components/sub-nav";
-	@import "patterns/foundation/components/switches";
-	@import "patterns/foundation/components/tables";
-	@import "patterns/foundation/components/tabs";
-	@import "patterns/foundation/components/thumbs";
-	@import "patterns/foundation/components/tooltips";
-	@import "patterns/foundation/components/top-bar";
-	@import "patterns/foundation/components/type";
-	@import "patterns/foundation/components/offcanvas";
-	@import "patterns/foundation/components/visibility";
+	@import "../bower_components/foundation/scss/foundation/components/grid";
+	@import "../bower_components/foundation/scss/foundation/components/accordion";
+	@import "../bower_components/foundation/scss/foundation/components/alert-boxes";
+	@import "../bower_components/foundation/scss/foundation/components/block-grid";
+	@import "../bower_components/foundation/scss/foundation/components/breadcrumbs";
+	@import "../bower_components/foundation/scss/foundation/components/button-groups";
+	@import "../bower_components/foundation/scss/foundation/components/buttons";
+	@import "../bower_components/foundation/scss/foundation/components/clearing";
+	@import "../bower_components/foundation/scss/foundation/components/dropdown";
+	@import "../bower_components/foundation/scss/foundation/components/dropdown-buttons";
+	@import "../bower_components/foundation/scss/foundation/components/flex-video";
+	@import "../bower_components/foundation/scss/foundation/components/forms";
+	@import "../bower_components/foundation/scss/foundation/components/icon-bar";
+	@import "../bower_components/foundation/scss/foundation/components/inline-lists";
+	@import "../bower_components/foundation/scss/foundation/components/joyride";
+	@import "../bower_components/foundation/scss/foundation/components/keystrokes";
+	@import "../bower_components/foundation/scss/foundation/components/labels";
+	@import "../bower_components/foundation/scss/foundation/components/magellan";
+	@import "../bower_components/foundation/scss/foundation/components/orbit";
+	@import "../bower_components/foundation/scss/foundation/components/pagination";
+	@import "../bower_components/foundation/scss/foundation/components/panels";
+	@import "../bower_components/foundation/scss/foundation/components/pricing-tables";
+	@import "../bower_components/foundation/scss/foundation/components/progress-bars";
+	@import "../bower_components/foundation/scss/foundation/components/range-slider";
+	@import "../bower_components/foundation/scss/foundation/components/reveal";
+	@import "../bower_components/foundation/scss/foundation/components/side-nav";
+	@import "../bower_components/foundation/scss/foundation/components/split-buttons";
+	@import "../bower_components/foundation/scss/foundation/components/sub-nav";
+	@import "../bower_components/foundation/scss/foundation/components/switches";
+	@import "../bower_components/foundation/scss/foundation/components/tables";
+	@import "../bower_components/foundation/scss/foundation/components/tabs";
+	@import "../bower_components/foundation/scss/foundation/components/thumbs";
+	@import "../bower_components/foundation/scss/foundation/components/tooltips";
+	@import "../bower_components/foundation/scss/foundation/components/top-bar";
+	@import "../bower_components/foundation/scss/foundation/components/type";
+	@import "../bower_components/foundation/scss/foundation/components/offcanvas";
+	@import "../bower_components/foundation/scss/foundation/components/visibility";
 
 //utils
 @import "patterns/utils/placeholders";
@@ -55,6 +55,10 @@
 @import "patterns/base/buttons";
 @import "patterns/base/forms";
 @import "patterns/base/typography";
+
+//dependencies
+@import "patterns/dependencies/tablesaw.stackonly";
+@import "patterns/dependencies/nprogress";
 
 //partials
 @import "patterns/partials/alerts";
@@ -68,9 +72,7 @@
 @import "patterns/partials/media-block";
 @import "patterns/partials/navigation";
 @import "patterns/partials/panels";
-@import "patterns/partials/progress-bar";
 @import "patterns/partials/table";
-@import "patterns/partials/tablesaw.stackonly";
 @import "patterns/partials/tabs";
 
 //pages
