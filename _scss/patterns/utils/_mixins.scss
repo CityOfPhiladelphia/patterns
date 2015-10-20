@@ -11,8 +11,8 @@
   column-gap:rem-calc($pad);
 }
 
-@mixin secondary-font{
+@mixin secondary-font($weight){
   font-family: 'Montserrat', 'Tahoma', sans-serif;
-  font-weight:700;
+  font-weight:$weight;
   text-transform: uppercase;
 }

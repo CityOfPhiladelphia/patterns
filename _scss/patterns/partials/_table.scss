@@ -2,7 +2,7 @@ table {
   width:100%;
   border-spacing: 2px;
   border:none;
-  
+
   &.no-borders {
     border-spacing:0;
   }
@@ -14,8 +14,13 @@ table {
     padding:0.625rem;
     font-size:rem-calc(13);
     letter-spacing: .05px;
-    @include secondary-font;
-    font-weight:400;
+    @include secondary-font(400);
+
+    abbr{
+      @include secondary-font(400);
+      font-size: 100%;
+      color:$white;
+    }
   }
   tr th, tr td{
     padding:0.5625rem 0.625rem;
@@ -28,4 +33,5 @@ table {
   tr.odd, tr, tr:nth-of-type(odd) {
     background-color:$ghost-gray;
   }
+
 }

@@ -1,7 +1,12 @@
 jQuery(document).ready(function( $ ) {
-  // You can use the locally-scoped $ in here as an alias to jQuery.
-  //variable footer height for sticky footer
 
+  //init foundation
+  $(document).foundation();
+  
+  //reponsive tables
+  $( document ).trigger( "enhance.tablesaw" );
+
+  //variable footer height for sticky footer
   var footerHeight = $("footer").height();
   $("#page").css("padding-bottom", footerHeight);
   $("#application").css("padding-bottom", footerHeight);
@@ -16,7 +21,7 @@ jQuery(document).ready(function( $ ) {
     $('footer.site-footer').show();
   });
 
-  var mediaBox = $(".news story.s-box");
+  var mediaBox = $(".news .story.s-box");
   mediaBox.hover( function() {
     $( this ).addClass( 'lower-opacity' );
   }, function() {
@@ -26,4 +31,5 @@ jQuery(document).ready(function( $ ) {
     window.location = $(this).find("a").attr("href");
     return false;
   });
+
 });
