@@ -28,8 +28,9 @@ Phila.gov Patterns uses <a href="http://jekyllrb.com/">Jekyll</a> to generate pa
 1. Install Jekyll <code>$ gem install jekyll</code>  
 2. Clone this repository
 3. cd into the patterns directory
-4. Run: <code>$ jekyll serve --baseurl ''</code>
-5. Navigate to <code>http://localhost:4000</code>
+4. <code>$ jekyll serve</code>
+5. Navigate to <code>http://localhost:4000/patterns</code>
+6. Run <code>$ grunt watch</code>
 
 
 ## Versioning
