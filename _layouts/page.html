@@ -15,21 +15,19 @@
       {% endif %}
       <div class="row">
         <div class="small-24 column">
-
-
           {{ content }}
         </div>
       </div>
     </div>
     {% include footer.html %}
-
-        <script src="{{ "/bower_components/nprogress/nprogress.js" | prepend: site.baseurl }}"></script>
-    <script>
-    $( document ).ready(function() {
-      if ($("#application").length > 0)
-        NProgress.start();
-    });
-    </script>
+    {% if page.title == "Application" %}
+      <script>
+      $( document ).ready(function() {
+        if ($("#application").length > 0)
+          NProgress.start();
+      });
+      </script>
+    {% endif %}
 
   </body>
 
