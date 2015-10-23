@@ -6,11 +6,22 @@ description: Application Header, with app name next to logo. Please note the cla
 <!-- Begin .header -->
 <header data-swiftype-index='false' class="site-header app" role="banner">
   <div class="row">
-    <div class="small-24 medium-24 column">
+    <div class="large-16 columns">
       {{ site.patterns | where:"title" : "Logo" }}
-      <h1 class="page-title"><a href="#/">Application Name With a Long Title</a></h1>
       <h1 class="site-title">phila.gov</h1>
       <h2 class="site-description">City of Philadelphia</h2>
+      <div class="page-title-container">
+        <a href="#/">
+          <h1 class="page-title">Application Name With a Long Title</h1>
+          <h2 class="page-subtitle">An optional subtitle</h2>
+        </a>
+      </div>
+    </div>
+    <div class="large-8 columns">
+      <nav>
+        <a class="button" href="#/">Button 1</a>
+        <a class="button" href="#/">Button 2</a>
+      </nav>
     </div>
   </div>
 </header>
