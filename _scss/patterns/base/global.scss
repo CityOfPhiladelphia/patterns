@@ -20,7 +20,7 @@ header.site-header {
     transition: opacity 300ms ease-out;
   }
   .logo{
-    height:75px;
+    max-height:75px;
     width:auto;
   }
   @media #{$small-only} {
