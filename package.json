@@ -1,6 +1,6 @@
 {
   "name": "phila.gov-patterns",
-  "version": "0.12.1",
+  "version": "0.12.2",
   "description": "The official Pattern Portfolio for Phila.gov",
   "main": "index.js",
   "scripts": {
