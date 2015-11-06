@@ -14,7 +14,7 @@
 @mixin secondary-font($weight){
   font-family: 'Montserrat', 'Tahoma', sans-serif;
   font-weight:$weight;
-  text-transform: uppercase;
+//  text-transform: uppercase;
 }
 
 @mixin word-wrap() {
