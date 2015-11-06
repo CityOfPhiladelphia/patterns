@@ -25,6 +25,7 @@ Change the page wrapper from <code><div class="site" id="page"></code> to <code>
 
 <button class="btn copy" title="Copy code to clipboard" data-clipboard-target=".highlight"><i class="fa fa-clipboard"></i></button>
 {% highlight html %}
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
