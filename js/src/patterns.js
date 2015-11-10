@@ -2,7 +2,7 @@ jQuery(document).ready(function( $ ) {
 
   //init foundation
   $(document).foundation();
-  
+
   //reponsive tables
   $( document ).trigger( "enhance.tablesaw" );
 
@@ -21,7 +21,7 @@ jQuery(document).ready(function( $ ) {
     $('footer.site-footer').show();
   });
 
-  var mediaBox = $(".news .story.s-box");
+  var mediaBox = $(".content-block").not('.no-link');
   mediaBox.hover( function() {
     $( this ).addClass( 'lower-opacity' );
   }, function() {
