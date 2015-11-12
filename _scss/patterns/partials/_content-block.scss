@@ -6,6 +6,10 @@
   cursor: pointer;
   @include pad-box(16);
 
+  @media #{$small-only} {
+    margin-bottom: 1rem;
+  }
+
   &.no-link{
     border:none;
     background:$geyser;
