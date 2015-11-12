@@ -1,4 +1,8 @@
-.content-block {
+.content-block,
+.story
+//.story class will remain for backwards compatiblity,
+//but will be removed in the next major release 
+{
   border:1px solid $geyser;
   background:$white;
   width:100%;
