@@ -24,25 +24,17 @@ h6, .h6 {
     + .small-text{
       color:$black;
     }
-    @media #{$small-only} {
-      &.divide{
-        border-bottom:2px solid $bell-yellow;
-        padding: 0 20px;
-      }
-    }
-    @media #{$medium-up} {
-      &.divide{
-        display: flex;
-        flex-direction: row;
-        &:after {
-          background-color: #F2BA13;
-          flex-grow: 1;
-          height: 2px;
-          position: relative;
-          top: 0.6em;
-          content: '';
-          margin: 0 0 0 15px;
-        }
+    &.divide{
+      display: flex;
+      flex-direction: row;
+      &:after {
+        background-color: #F2BA13;
+        flex-grow: 1;
+        height: 2px;
+        position: relative;
+        top: 0.6em;
+        content: '';
+        margin: 0 0 0 15px;
       }
     }
   }// &.alternate

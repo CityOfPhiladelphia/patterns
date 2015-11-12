@@ -1,13 +1,20 @@
-.news .story {
-  cursor: pointer;
-}
-
-.story {
+.content-block {
   border:1px solid $geyser;
   background:$white;
   width:100%;
   position: relative;
+  cursor: pointer;
   @include pad-box(16);
+
+  @media #{$small-only} {
+    margin-bottom: 1rem;
+  }
+
+  &.no-link{
+    border:none;
+    background:$geyser;
+    cursor: default;
+  }
 
   > a {
     display: block;

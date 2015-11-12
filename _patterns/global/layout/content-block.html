@@ -1,0 +1,28 @@
+---
+title: Content Block
+description: Content blocks can be linked to more information, in which case the whole card is a link. The "no-link" class can be added to remove the link-specific styles and change the display of the content block. The 'equal-height' class can be used to force media blocks (and other elements) of different heights to appear equal.
+id: content-block
+---
+
+<div class="row">
+  <div class="equal-height">
+    <div class="medium-8 columns">
+      <div class="content-block">
+        <a href="http://www.phila.gov/experiencephila/mayor.html">
+          <img src="{{ "/images/internships.jpg" | prepend: site.baseurl }}" alt="Apply to Philadelphia Internships">
+          <h3>Apply to the Mayor’s Internship Program</h3>
+          <p>Undergraduate and graduate students interested in City government or gaining valuable workplace experience should apply to the MIPs before January 30th, 2015.
+          </p>
+        </a>
+      </div>
+    </div>
+    <div class="medium-8 columns">
+      <div class="content-block no-link">
+        <img src="{{ "/images/internships.jpg" | prepend: site.baseurl }}" alt="Apply to Philadelphia Internships">
+        <h3>Apply to the Mayor’s Internship Program</h3>
+        <p>Undergraduate and graduate students interested in City government or gaining valuable workplace experience should apply to the MIPs before January 30th, 2015.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1416,10 +1416,10 @@ $inline-list-display: inline-block;
 // $topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: rem-calc(13);
 // $topbar-menu-link-weight: $font-weight-bold;
-// $topbar-menu-link-color: $white;
-// $topbar-menu-icon-color: $white;
-// $topbar-menu-link-color-toggled: $jumbo;
-// $topbar-menu-icon-color-toggled: $jumbo;
+ $topbar-menu-link-color: $black;
+ $topbar-menu-icon-color: $black;
+ $topbar-menu-link-color-toggled: $black;
+ $topbar-menu-icon-color-toggled: $black;
 
 // Transitions and breakpoint styles
 // $topbar-transition-speed: 300ms;
