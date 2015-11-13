@@ -28,3 +28,9 @@
   height: 10px;
   width: 10px;
 }
+%lower-opacity {
+  opacity:.6;
+  transition: opacity .2s ease-in-out;
+   -moz-transition: opacity .2s ease-in-out;
+   -webkit-transition: opacity .2s ease-in-out;
+}

@@ -7,7 +7,6 @@
   background:$white;
   width:100%;
   position: relative;
-  cursor: pointer;
   @include pad-box(16);
 
   @media #{$small-only} {
@@ -31,7 +30,7 @@
 
   h3 {
     padding:0 0 3px 0;
-    border-bottom:1px solid $whitesmoke;
+    border-bottom:1px solid $geyser;
   }
   p {
     margin: rem-calc(7 0);
@@ -48,21 +47,35 @@
       display:none;
     }
   }
-  .more-link{
-    position: absolute;
-    bottom: 2%;
-    right: 8%;
-
-    &:after {
-      content: ' »';
-    }
-  }
 }
-.card{
+a.card{
+  display: flex;
+  flex-direction: column;
+  color: $black;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+
+  &:hover{
+    @extend %lower-opacity;
+  }
   img {
     width:100%;
   }
   .content-block{
-    background:$geyser;
+    background:$ghost-gray;
+    display: flex;
+    flex-direction: column;
+    flex-grow:1;
+
+    @media #{$small-only} {
+      &:after {
+        content: '\f178';
+        font-family: "FontAwesome";
+        position: absolute;
+        bottom: 2%;
+        right: 8%;
+      }
+    }
   }
 }
