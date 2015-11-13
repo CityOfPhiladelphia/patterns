@@ -102,12 +102,9 @@ dl {
   > div {
     display: -webkit-flex;
     display: flex;
+    flex-direction: column;
   }
 }
-.lower-opacity {
-  opacity:.6;
-}
-
 /*utility classes*/
 
 .no-margin{

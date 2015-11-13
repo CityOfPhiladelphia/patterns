@@ -1,0 +1,28 @@
+---
+title: Content Block
+description: Content blocks can be linked to more information, in which case the whole card is a link. To make a card, apply the 'card' class to an &lt;a&gt; tag that wraps the card content. The 'equal-height' class can be used to force blocks (and other elements) of different heights to appear equal.
+id: content-block
+---
+
+<div class="row">
+  <div class="equal-height">
+    <div class="medium-8 columns">
+      <h2 class="alternate divide title-offset">Card Example</h2>
+      <a href="http://www.phila.gov/experiencephila/mayor.html" class="card">
+        <img src="{{ "/images/internships.jpg" | prepend: site.baseurl }}" alt="Apply to Philadelphia Internships">
+          <div class="content-block">
+            <h3>Apply to the Mayor’s Internship Program</h3>
+            <p>Undergraduate and graduate students interested in City government or gaining valuable workplace experience should apply to the MIPs before January 30th, 2015.</p>
+          </div>
+        </a>
+    </div>
+    <div class="medium-8 columns">
+      <h2 class="alternate divide title-offset">Unlinked Block</h2>
+      <div class="content-block">
+        <img src="//alpha.phila.gov/media/20151028111310/oem-daylight-savings-time.jpg" alt="Apply to Philadelphia Internships">
+        <h3>Daylight Savings Time Ends</h3>
+        <p>As Saturday yields to Sunday, and October to November this week, daylight savings time 2015, will cease. DST officially ends at 2 a.m. Sunday, November 1. Time to turn your clocks back one hour.</p>
+      </div>
+    </div>
+  </div>
+</div>

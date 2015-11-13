@@ -20,16 +20,4 @@ jQuery(document).ready(function( $ ) {
   $(document).on('close.fndtn.reveal', '[data-reveal]', function () {
     $('footer.site-footer').show();
   });
-
-  var mediaBox = $(".content-block").not('.no-link');
-  mediaBox.hover( function() {
-    $( this ).addClass( 'lower-opacity' );
-  }, function() {
-    $( this ).removeClass( 'lower-opacity' );
-  });
-  mediaBox.click(function() {
-    window.location = $(this).find("a").attr("href");
-    return false;
-  });
-
 });
