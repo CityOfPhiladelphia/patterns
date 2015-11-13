@@ -102,6 +102,7 @@ dl {
   > div {
     display: -webkit-flex;
     display: flex;
+    flex-direction: column;
   }
 }
 /*utility classes*/
