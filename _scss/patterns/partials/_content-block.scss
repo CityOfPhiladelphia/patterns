@@ -1,7 +1,7 @@
 .content-block,
 .story
 //.story class will remain for backwards compatiblity,
-//but will be removed in the next major release 
+//but will be removed in the next major release
 {
   border:1px solid $geyser;
   background:$white;
@@ -57,4 +57,12 @@
       content: ' »';
     }
   }
-} //.story
+}
+.card{
+  img {
+    width:100%;
+  }
+  .content-block{
+    background:$geyser;
+  }
+}

@@ -21,7 +21,7 @@ jQuery(document).ready(function( $ ) {
     $('footer.site-footer').show();
   });
 
-  var mediaBox = $(".content-block").not('.no-link');
+  var mediaBox = $(".card");
   mediaBox.hover( function() {
     $( this ).addClass( 'lower-opacity' );
   }, function() {
