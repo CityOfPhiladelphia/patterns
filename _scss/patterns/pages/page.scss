@@ -12,19 +12,3 @@
 article{
   margin-bottom:rem-calc(16);
 }
-
-.department{
-  p{
-    margin: rem-calc(16 0 32 0);
-    //beacuse of those crazy long department names
-    &.external-site {
-      word-wrap: break-word;
-      word-break: break-all;
-    }
-  }
-  @media #{$medium-up} {
-    a.button{
-      width:60%
-    }
-  }
-}//.departments
