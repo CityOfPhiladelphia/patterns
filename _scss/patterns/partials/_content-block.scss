@@ -14,21 +14,6 @@
     margin-bottom: 1rem;
   }
 
-  &.no-link{
-    border:none;
-    background:$geyser;
-    cursor: default;
-  }
-
-  > a {
-    display: block;
-
-    &:link,
-    &:visited{
-      color:$black;
-    }
-  }
-
   h3 {
     padding:0 0 3px 0;
     border-bottom:1px solid $geyser;
@@ -48,6 +33,12 @@
       display:none;
     }
   }
+  .more{
+    position: absolute;
+    bottom: 0;
+    right: rem-calc(20);
+    width: auto;
+  }
 }
 a.card{
   display: flex;
@@ -57,6 +48,15 @@ a.card{
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
   -webkit-transition: opacity .2s ease-in-out;
+
+  > a {
+    display: block;
+
+    &:link,
+    &:visited{
+      color:$black;
+    }
+  }
 
   &:hover{
     @extend %lower-opacity;
