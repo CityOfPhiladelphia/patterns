@@ -30,12 +30,15 @@ h6, .h6 {
       &:after {
         background-color: #F2BA13;
         flex-grow: 1;
-        height: 2px;
+        height: rem-calc(2px);
         position: relative;
         top: 0.6em;
         content: '';
-        margin: 0 0 0 15px;
+        margin:rem-calc(0 0 0 15px);
       }
+    }
+    i {
+      padding:rem-calc(3px 5px 0 0);
     }
   }// &.alternate
 } // h1, .h1 etc
