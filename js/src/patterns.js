@@ -7,10 +7,10 @@ jQuery(document).ready(function( $ ) {
   $( document ).trigger( "enhance.tablesaw" );
 
   //variable footer height for sticky footer
-  var footerHeight = $("footer").height();
+  var footerHeight = $("footer.site-footer").height();
   $("#page").css("padding-bottom", footerHeight);
   $("#application").css("padding-bottom", footerHeight);
-  $("footer").css("margin-top", -footerHeight);
+  $("footer.site-footer").css("margin-top", -footerHeight);
 
   //show/hide the footer on modal open/close to prevent breakage
   $(document).on('open.fndtn.reveal', '[data-reveal]', function () {
