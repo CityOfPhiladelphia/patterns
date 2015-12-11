@@ -15,7 +15,7 @@ input[type="color"],
 textarea,
 select{
   border: 1px solid $ben-franklin-blue;
-  background: $ghost-gray;
+  background-color: $ghost-gray;
   padding:rem-calc(8);
   margin: 0;
 }
@@ -51,7 +51,7 @@ input[type="url"]:focus,
 input[type="color"]:focus,
 textarea:focus {
     border: 2px solid $ben-franklin-blue;
-    background:$white;
+    background-color:$white;
 }
 input:focus::-webkit-input-placeholder { color:transparent; }
 input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
