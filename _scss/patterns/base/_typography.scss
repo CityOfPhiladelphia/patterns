@@ -1,10 +1,9 @@
-@import url('//fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,700');
-
 body {
-  font-family:$font-family-sans-serif;
+  font-family: $body-font-family;
   font-size:100%;
   background:$white;
 }
+
 // Heading sizes
 h1, .h1,
 h2, .h2,
@@ -16,7 +15,7 @@ h6, .h6 {
 
   &.alternate {
     color:$sidewalk;
-    font-size:$h4-font-size;
+    font-size: header-size(medium, h4);
     margin-top:rem-calc(12);
     margin-bottom:rem-calc(12);
     font-weight:400;
@@ -47,31 +46,31 @@ h1, .h1{
   padding:0;
   margin-top:rem-calc(16);
   margin-bottom:rem-calc(16);
-  font-size:$h1-font-size;
+  font-size:header-size(medium, h1);;
   letter-spacing:.03rem;
 }
 
 h2, .h2 {
   padding:0;
   margin:rem-calc(13 0);
-  font-size:$h2-font-size;
+  font-size:header-size(medium, h2);
   letter-spacing:.03rem;
 }
 
 h3, .h3{
-  font-size:$h3-font-size;
+  font-size:header-size(medium, h3);
   letter-spacing:.03rem;
 }
 h4, .h4{
-  font-size:$h4-font-size;
+  font-size:header-size(medium, h4);
   font-weight:normal;
 }
 h5, .h5{
-  font-size:$h5-font-size;
+  font-size:header-size(medium, h5);
   font-weight:normal;
 }
 h6, .h6{
-  font-size:$h6-font-size;
+  font-size:header-size(medium, h6);
   font-weight:normal;
 }
 // Paragraphs

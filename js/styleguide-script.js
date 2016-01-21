@@ -7,10 +7,9 @@ $(function() {
       $(this).find("i").toggleClass("fa-arrow-circle-down").toggleClass("fa-arrow-circle-right");
   });
 
-  // Initialize clipboard.js
-  new Clipboard('.copy');
-
 });
+
+new Clipboard('.copy');
 
 //pattern filter
 var options = {
