@@ -14,14 +14,12 @@ baseurl:             /patterns
 destination:        _site
 description:        The official Pattern Portfolio for phila.gov
 version:            0.12.6
-exclude:            [package.json, Gruntfile.js, js/src]
-
-# Assets
-#
-# We specify the directory for Jekyll so we can use @imports.
-sass:
-  sass_dir:          _scss
-  style:            :compressed
+exclude:            [
+                      'package.json',
+                      'Gruntfile.js',
+                      'js/src',
+                      '_scss'
+                    ]
 
 collections:
   patterns:
