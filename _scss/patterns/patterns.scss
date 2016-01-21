@@ -1,8 +1,16 @@
 @charset 'utf-8';
 
+//pattern portfolio utils
+@import "utils/functions";
+@import "utils/variables";
+@import "utils/placeholders";
+@import "utils/mixins";
+
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
+
+
 
 @include foundation-global-styles;
 @include foundation-grid;
@@ -42,12 +50,6 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
-
-//utils
-@import "utils/functions";
-@import "utils/variables";
-@import "utils/placeholders";
-@import "utils/mixins";
 
 //base
 @import "base/global";
