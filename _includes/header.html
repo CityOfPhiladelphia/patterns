@@ -19,9 +19,9 @@
             {% endif %}
           {% endfor %}
 
-        <li>
+      <li class="has-submenu">
           <a href="#">Page Examples</a>
-          <ul class="menu">
+          <ul class="submenu menu vertical" data-submenu>
             {% for node in site.templates %}
               {% if page.url == node.url %}
                 <li class="active"><a href="{{node.url | prepend: site.baseurl}}" class="active">{{node.title}}</a></li>
