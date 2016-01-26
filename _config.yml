@@ -22,7 +22,7 @@ exclude:            [
                     ]
 
 collections:
-  templates:
-    output: true
   patterns:
+    output: true
+  templates:
     output: true
