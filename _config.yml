@@ -1,5 +1,5 @@
 # Syntax highlighting
-highlighter:         pygments
+highlighter:         rouge
 
 # Permalinks
 #
@@ -22,7 +22,7 @@ exclude:            [
                     ]
 
 collections:
-  patterns:
-    output: true
   templates:
+    output: true
+  patterns:
     output: true
