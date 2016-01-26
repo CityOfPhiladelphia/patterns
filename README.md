@@ -48,7 +48,6 @@ Phila.gov Patterns will be maintained under the Semantic Versioning guidelines a
 
 For more information on SemVer, please visit http://semver.org.
 
-
 ## new stuff
 - foundation 6
 - added grunt-postcss
