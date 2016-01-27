@@ -2,20 +2,18 @@
 layout: default
 ---
 
-<div class="home row">
-  <div class="small-24 columns">
     <h1>Getting Started</h1>
     <p>Check out the <a href="https://github.com/CityOfPhiladelphia/patterns">GitHub repository</a> for information on how to use these patterns in your project, or view the <a href="{{ "/boilerplate" | prepend: site.baseurl}}">Boilerplate</a> for example markup. </p>
     <div id="pattern-search">
       <input class="filter" type="search" placeholder="Filter pattern list">
       <hr>
 
-      <ul class="list">
+      <div class="list">
 
         {% for type in site.data.types %}
         {% capture slug %}{{ type.name | slugify }}{% endcapture %}
 
-        <h1 id="{{ slug }}">{{ type.name }}</h1>
+        <h1 id="{{ slug }}" data-magellan-target="{{ slug }}">{{ type.name }}</h1>
         {% for pattern in site.patterns %}
 
           {% capture url %} {{ pattern.relative_path }} {% endcapture %}
@@ -28,7 +26,5 @@ layout: default
           {% endif %}
         {% endfor %}
       {% endfor %}
-      </ul>
     </div>
-  </div>
-</div>
+    </div>

@@ -3,32 +3,40 @@
 $(function() {
 
   $(".code").click(function () {
-      $(this).next(".the-code").toggle("fast");
-      $(this).find("i").toggleClass("fa-arrow-circle-down").toggleClass("fa-arrow-circle-right");
+    $(this).next(".the-code").toggle("fast");
+    $(this).find("i").toggleClass("fa-arrow-circle-down").toggleClass("fa-arrow-circle-right");
   });
 
-  $("nav ul.children").hide();
+ $( 'nav.sticky ul' ).on('update.zf.magellan', function( event, element ) {
 
-  $( window ).scroll(function() {
+    var currentParent = $(element).parent();
 
-    if ( $("nav .children a").hasClass("active") ) {
+    $( 'nav.sticky ul' ).each(function(){
 
-      var current = $("nav .children a.active");
+      if ( element.hasClass('active') ){
+        $("nav.sticky ul.children").hide();
 
-      $( current ).parent().parent().show();
+        $( element ).parent().parent().show();
 
-    }
+      }
+      if ( currentParent ){
+        $( element ).next().show();
+      }
+    });
 
   });
+
 
 });
 
-new Clipboard('.copy');
+//new Clipboard('.copy');
 
 //pattern filter
+/*
 var options = {
   valueNames: [ 'title' ],
   searchClass: 'filter'
 };
 
 var userList = new List('pattern-search', options);
+*/
