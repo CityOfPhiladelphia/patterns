@@ -13,16 +13,7 @@ ul, ol, dl, figure,
 /**
  * Code formatting
  */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    background-color: #edf4f7;
-}
 
-code {
-    padding: 1px 5px;
-}
 
 pre {
     padding: 8px 12px;
@@ -74,16 +65,6 @@ nav.sticky ul a{
 
   &.active{
     border-left: 5px solid $brand-color;
-  }
-
-}
-.pattern{
-  border: 1px solid #ccc;
-  margin-bottom: 30px;
-  position: relative;
-
-  .details{
-    padding:10px;
   }
 
 }
