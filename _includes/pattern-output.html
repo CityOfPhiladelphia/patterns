@@ -1,19 +1,24 @@
-<div id="p-{{ pattern.title | replace:' ','-' | downcase  }}" data-magellan-target="p-{{ pattern.title | replace:' ','-' | downcase  }}" class="pattern">
+<section id="p-{{ pattern.title | replace:' ','-' | downcase  }}" data-magellan-target="p-{{ pattern.title | replace:' ','-' | downcase  }}" class="pattern">
 
-  <hgroup class="code">
-    <h3 class="title">{{ pattern.title }}<span class="view-code">Code <i class="fa fa-arrow-circle-right"></i></span></h3>
+  <hgroup class="title">
+    <h3>{{ pattern.title }}<span class="view-code">Details<i class="fa fa-arrow-circle-right"></i></span></h3>
   </hgroup>
 
-  <div class="the-code">
-    <button class="button copy" title="Copy code to clipboard" data-clipboard-target="#p-{{ pattern.title | replace:' ','-' | downcase  }}"><i class="fa fa-clipboard"></i></button>
 
-    {% highlight html %}
-       {{ pattern.output }}
-    {% endhighlight %}
-  </div>
-  <div class="details">
-    <p class="small-text">Usage: {{ pattern.description }}</p>
-      {{ pattern.output }}
-  </div>
+  <div class="row details medium-collapse">
+    <div class="large-17 columns">
+      <button class="button copy" title="Copy code to clipboard" data-clipboard-target="#p-{{ pattern.title | replace:' ','-' | downcase  }} code">Copy</button>
 
-</div>
+      {% highlight html %}
+         {{ pattern.output }}
+      {% endhighlight %}
+    </div>
+      <div class="large-7 columns">
+        <h4 class="h6">Usage</h4>
+        <p>{{ pattern.description }}</p>
+      </div>
+  </div>
+  <div class="preview">
+    {{ pattern.output }}
+  </div>
+</section>
