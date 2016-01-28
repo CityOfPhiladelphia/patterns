@@ -3,13 +3,14 @@
 //pattern portfolio utils
 @import "utils/functions";
 @import "utils/variables";
-@import "utils/placeholders";
-@import "utils/mixins";
 @import "utils/classes";
 
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
+
+@import "utils/placeholders";
+@import "utils/mixins";
 
 @include foundation-global-styles;
 @include foundation-grid;
