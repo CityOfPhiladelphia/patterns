@@ -9,7 +9,6 @@ h6, .h6 {
 
   &.alternate {
     color:$medium-gray;
-    font-size: header-size(medium, h4);
     margin-top:rem-calc(12);
     margin-bottom:rem-calc(12);
     font-weight:400;
@@ -44,13 +43,21 @@ h1, .h1{
 }
 
 h2, .h2 {
-  padding:0;
+  padding:rem-calc(0 0 0 10);
   margin:rem-calc(13 0);
   letter-spacing:.03rem;
+  border-bottom:10px solid $ben-franklin-blue;
+
+  &.regular{
+    padding:0;
+    border:none;
+  }
 }
 
 h3, .h3{
   letter-spacing:.03rem;
+  border-bottom: none;
+  padding:0;
 }
 h4, .h4{
   font-weight:normal;
