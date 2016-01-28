@@ -1,0 +1,26 @@
+<div data-sticky-container>
+  <nav class="sticky" data-sticky data-anchor="main" data-sticky-on="large">
+    <ul class="vertical menu" data-magellan data-options="deepLinking: true;">
+
+      {% for type in site.data.types %}
+        {% capture slug %}{{ type.name | slugify }}{% endcapture %}
+        <li class="parent"><a href="#{{ slug }}"> {{ type.name }}</a>
+          <ul class="children no-bullet">
+              {% for pattern in site.patterns %}
+                {% capture url %} {{ pattern.relative_path }} {% endcapture %}
+
+                {% if url contains slug %}
+
+                <li class="child">
+                  <a href="#p-{{ pattern.title | replace:' ','-' | downcase  }}">
+                    {{ pattern.title }}
+                  </a>
+                </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>
