@@ -51,16 +51,16 @@ $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $primary-color: $ben-franklin-blue;
 $secondary-color: $bell-yellow;
-$success-color: #3adb76;
-$warning-color: #ffae00;
-$alert-color: #ec5840;
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
-$dark-gray: $mine-shaft;
+$success-color: $fairmount-green;
+$warning-color: $agent-orange;
+$alert-color: $agent-orange;
+$light-gray: $light-gray;
+$medium-gray: $middle-gray;
+$dark-gray: $dark-gray;
 $black: $black;
 $white: $white;
 $body-background: $white;
-$body-font-color: $black;
+$body-font-color: $dark-gray;
 $body-font-family: 'Open Sans', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
@@ -111,12 +111,12 @@ $header-sizes: (
     'h6': 16,
   ),
   medium: (
-    'h1': 24,
-    'h2': 20,
-    'h3': 19,
-    'h4': 18,
+    'h1': 40,
+    'h2': 30,
+    'h3': 25,
+    'h4': 20,
     'h5': 17,
-    'h6': 16,
+    'h6': 15,
   ),
 );
 $header-color: inherit;
@@ -188,7 +188,7 @@ $input-error-font-weight: $global-weight-bold;
 // 7. Accordion
 // ------------
 
-$accordion-background: $white;
+$accordion-background: $light-gray;
 $accordion-plusminus: true;
 $accordion-item-color: foreground($accordion-background, $primary-color);
 $accordion-item-background-hover: $light-gray;
