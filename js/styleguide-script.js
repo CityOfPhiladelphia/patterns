@@ -29,14 +29,13 @@ $(function() {
 
 });
 
-//new Clipboard('.copy');
+new Clipboard('.copy');
 
 //pattern filter
-/*
+
 var options = {
   valueNames: [ 'title' ],
   searchClass: 'filter'
 };
 
 var userList = new List('pattern-search', options);
-*/
