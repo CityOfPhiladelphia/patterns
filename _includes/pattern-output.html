@@ -13,13 +13,11 @@
       </div>
       <button class="button copy" title="Copy code to clipboard" data-clipboard-target="#p-{{ pattern.title | replace:' ','-' | downcase  }} code">Copy</button>
 
-      {% highlight html %}
-         {{ pattern.output }}
-      {% endhighlight %}
+      {% highlight html %}{{ pattern.output }}{% endhighlight %}
     </div>
 
   </div>
   <div class="preview">
-    {{ pattern.output }}
+  {{ pattern.output }}
   </div>
 </section>
