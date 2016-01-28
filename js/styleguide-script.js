@@ -26,8 +26,11 @@ $(function() {
 
   });
 
+  $( ".pattern footer.site-footer" ).css( "margin-top", 0 );
+
 
 });
+
 
 new Clipboard('.copy');
 
