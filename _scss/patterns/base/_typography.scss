@@ -11,12 +11,10 @@ h6, .h6 {
     color:$medium-gray;
     margin-top:rem-calc(12);
     margin-bottom:rem-calc(12);
-    font-size:(medium,)
+    font-size:rem-calc(14);
     font-weight:400;
     text-transform:uppercase;
-    + .small-text{
-      color:$black;
-    }
+  
     &.divide{
       display: flex;
       flex-direction: row;
@@ -80,7 +78,7 @@ a:link, a:visited{
   @extend %link-styles;
 }
 a:hover, a:active {
-  color:$mine-shaft;
+  color:$medium-gray;
 }
 
 .small-text {
@@ -90,7 +88,7 @@ a:hover, a:active {
 }
 
 .vcard {
-  color:$mine-shaft;
+  color:$medium-gray;
   border:0;
   margin:0;
   padding:0;
@@ -127,8 +125,6 @@ a:hover, a:active {
   line-height:rem-calc(16);
 
   p{
-    font-size:rem-calc(14);
-    color:$mine-shaft;
-    font-size: rem-calc(12);
+    color:$medium-gray;
   }
 }
