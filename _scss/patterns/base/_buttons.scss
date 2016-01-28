@@ -19,7 +19,7 @@
   i.fa{
     color: $ben-franklin-blue;
     }
-    
+
     .fa {
       background: $white;
     }
@@ -84,6 +84,7 @@ a.button:active > i.fa{
   text-align:center;
   a {
     display:block;
+    color:$dark-gray;
 
     &:hover .fa-circle, &:active .fa-circle {
       color:$mine-shaft;
@@ -101,9 +102,6 @@ a.button:active > i.fa{
         font-size:rem-calc(30);
         vertical-align: bottom;
       }
-    }
-    .h3{
-      font-weight:normal;
     }
   }
 }//end call to action
