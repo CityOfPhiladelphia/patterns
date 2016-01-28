@@ -11,6 +11,7 @@ h6, .h6 {
     color:$medium-gray;
     margin-top:rem-calc(12);
     margin-bottom:rem-calc(12);
+    font-size:(medium,)
     font-weight:400;
     text-transform:uppercase;
     + .small-text{
@@ -70,14 +71,8 @@ h6, .h6{
 }
 
 // Paragraphs
-blockquote p {
-  margin: 0 0 1em 0;
-}
 p {
   margin: 1em 0;
-}
-body{
-  background:$white;
 }
 
 // Links
@@ -125,4 +120,15 @@ a:hover, a:active {
   content: "\f08e";
   font-size:rem-calc(12);
   padding:0 5px;
+}
+
+.callout{
+  border-left:5px solid $bell-yellow;
+  line-height:rem-calc(16);
+
+  p{
+    font-size:rem-calc(14);
+    color:$mine-shaft;
+    font-size: rem-calc(12);
+  }
 }

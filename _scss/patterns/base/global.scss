@@ -71,12 +71,6 @@ dl {
 }
 
 
-.center{
-  //for when you really _really_ need that centered text.
-  text-align:center !important;
-}
-
-
 @media #{$medium-up} {
   a[href^="tel"] {
     pointer-events: none;

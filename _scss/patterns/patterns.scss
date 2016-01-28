@@ -1,16 +1,17 @@
 @charset 'utf-8';
 
-//pattern portfolio utils
-@import "utils/functions";
+//variables come first, so we can use them in foundation settings
 @import "utils/variables";
-@import "utils/classes";
 
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
 
+//the rest of phila.gov's utilities
 @import "utils/placeholders";
 @import "utils/mixins";
+@import "utils/functions";
+@import "utils/classes";
 
 @include foundation-global-styles;
 @include foundation-grid;
@@ -65,7 +66,6 @@
 @import "partials/alerts";
 @import "partials/aside";
 @import "partials/breadcrumbs";
-@import "partials/callout";
 @import "partials/content-block";
 @import "partials/divider";
 @import "partials/events-block";

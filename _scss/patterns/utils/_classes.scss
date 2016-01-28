@@ -21,3 +21,8 @@ ul.inline-list li{
   margin-right: auto;
   max-width: initial;
 }
+
+.center{
+  //for when you really _really_ need that centered text.
+  text-align:center !important;
+}
