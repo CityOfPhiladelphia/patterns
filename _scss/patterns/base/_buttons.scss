@@ -11,6 +11,20 @@
     color:$manatee
   }
 
+  &.alternate, &.alternate:link, &.alternate:visited{
+    background:$white;
+    color:$ben-franklin-blue;
+    border:1px solid $manatee;
+
+  i.fa{
+    color: $ben-franklin-blue;
+    }
+    
+    .fa {
+      background: $white;
+    }
+  }
+
   &.icon {
     display: inline-block;
     position: relative;
@@ -34,18 +48,6 @@
     + .small-text {
       margin:rem-calc(0 0 12 0);
       padding:0;
-    }
-    &.alternate, &.alternate:link, &.alternate:visited{
-      background:$white;
-      color:$ben-franklin-blue;
-      border:1px solid $manatee;
-    i.fa{
-      color: $ben-franklin-blue;
-    }
-
-      .fa {
-        background: $white;
-      }
     }
   }
 }
