@@ -8,7 +8,7 @@ h6, .h6 {
   @include secondary-font(700);
 
   &.alternate {
-    color:$sidewalk;
+    color:$medium-gray;
     font-size: header-size(medium, h4);
     margin-top:rem-calc(12);
     margin-bottom:rem-calc(12);
@@ -21,7 +21,7 @@ h6, .h6 {
       display: flex;
       flex-direction: row;
       &:after {
-        background-color: #F2BA13;
+        background-color: $bell-yellow;
         flex-grow: 1;
         height: rem-calc(2px);
         position: relative;
@@ -40,33 +40,28 @@ h1, .h1{
   padding:0;
   margin-top:rem-calc(16);
   margin-bottom:rem-calc(16);
-  font-size:header-size(medium, h1);
   letter-spacing:.03rem;
 }
 
 h2, .h2 {
   padding:0;
   margin:rem-calc(13 0);
-  font-size:header-size(medium, h2);
   letter-spacing:.03rem;
 }
 
 h3, .h3{
-  font-size:header-size(medium, h3);
   letter-spacing:.03rem;
 }
 h4, .h4{
-  font-size:header-size(medium, h4);
   font-weight:normal;
 }
 h5, .h5{
-  font-size:header-size(medium, h5);
   font-weight:normal;
 }
 h6, .h6{
-  font-size:header-size(medium, h6);
   font-weight:normal;
 }
+
 // Paragraphs
 blockquote p {
   margin: 0 0 1em 0;
@@ -78,12 +73,6 @@ body{
   background:$white;
 }
 
-hr {
-  height:1px;
-  border: none;
-  background:$whitesmoke;
-}
-
 // Links
 a:link, a:visited{
   @extend %link-styles;
@@ -93,7 +82,7 @@ a:hover, a:active {
 }
 
 .small-text {
-  color: $sidewalk;
+  color: $black;
   font-size: rem-calc(12);
   display:block;
 }
