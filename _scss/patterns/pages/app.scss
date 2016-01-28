@@ -28,9 +28,12 @@
       position: static;
     }
     h2.page-subtitle{
-      color:$sidewalk;
+      padding:0;
+      border:none;
+      color:$medium-gray;
       font-size:rem-calc(14);
       margin:0;
+
     }
     &:hover {
       opacity: .6;
