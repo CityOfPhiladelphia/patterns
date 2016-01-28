@@ -1,12 +1,6 @@
 /*------------------------------------*\
     $PATTERN SPECIFIC STYLES
 \*------------------------------------*/
-/**
- * This stylesheet is for styles you want to include only when the interface is being viewed within Pattern Lab.
- * This is helpful for displaying demo styles for grids, animations, color swatches, etc
- * It's also helpful for overriding context-specific styles like fixed or absolutely positioned elements
- * These styles will not be your production CSS.
- */
 
 /* Style Guide Interface Colors */
 $sg-primary : #222;
@@ -71,34 +65,6 @@ $animate-quick: 0.2s;
 	}
 }
 
-//Demo box for animation
-.demo-animate {
-	background: #ddd;
-	padding: $sg-pad;
-	margin-bottom: $sg-space;
-	text-align: center;
-}
-
-//Animate Demo to show
-.animate-move {
-	position: relative;
-
-	.demo-shape {
-		position: absolute;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		width: 20px;
-		background: $sg-secondary;
-	}
-
-	&:hover {
-		> .demo-shape {
-			left: 100%;
-			margin-left: -20px;
-		}
-	}
-}
 
 // Style Guide color swatches
 .sg-colors {
@@ -141,9 +107,6 @@ $animate-quick: 0.2s;
 	line-height: 1.8;
 }
 
-.title, .code {
-	display:block;
-}
 .the-code {
   display: none;
 }
@@ -159,23 +122,29 @@ $animate-quick: 0.2s;
 
 	h2, h3 {
 		display:inline-block;
+    width:100%;
 	}
-}
-.code + i {
-	color:$sg-secondary;
+  + i {
+  	color:$sg-secondary;
+  }
+  &:hover {
+  	color:$sg-primary;
+  }
+  .view-code{
+    display: block;
+    float:right;
+  }
 }
 
-.code:hover {
-	color:$sg-primary;
-}
 
-h2.title {
-	margin-bottom:0;
+figure.highlight{
+  margin:0;
 }
 
 p.small-text {
 	margin:.5em 0 1em 0;
 }
+
 #p-full-width-layout .column, #p-3-4-layout .column, #p-three-column-layout .column, #p-two-column-layout .column{
 	background: #eee;
 	font-size: 11px;
