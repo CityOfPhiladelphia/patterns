@@ -14,7 +14,9 @@ h6, .h6 {
     font-size:rem-calc(14);
     font-weight:400;
     text-transform:uppercase;
-  
+    border-bottom: none;
+    padding:0;
+
     &.divide{
       display: flex;
       flex-direction: row;
