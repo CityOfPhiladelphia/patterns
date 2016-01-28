@@ -11,33 +11,6 @@
     color:$manatee
   }
 
-  .fa{
-    background: $geyser;
-    padding: .4em .5em .5em .4em;
-    font-size: 1.7em;
-    max-height: 40px;
-    vertical-align: sub;
-    position:absolute;
-    right:0;
-    top:0;
-    width:rem-calc(40);
-  }
-  + .small-text {
-    margin:rem-calc(0 0 12 0);
-    padding:0;
-  }
-  &.alternate, &.alternate:link, &.alternate:visited{
-    background:$white;
-    color:$ben-franklin-blue;
-    border:1px solid $manatee;
-  i.fa{
-    color: $ben-franklin-blue;
-  }
-
-    .fa {
-      background: $white;
-    }
-  }
   &.icon {
     display: inline-block;
     position: relative;
@@ -46,6 +19,33 @@
     //alternate must be 2px smaller than .icon because of the border
     &.alternate .fa{
       max-height: 38px;
+    }
+    .fa{
+      background: $geyser;
+      padding: .4em .5em .5em .4em;
+      font-size: 1.7em;
+      max-height: 40px;
+      vertical-align: sub;
+      position:absolute;
+      right:0;
+      top:0;
+      width:rem-calc(40);
+    }
+    + .small-text {
+      margin:rem-calc(0 0 12 0);
+      padding:0;
+    }
+    &.alternate, &.alternate:link, &.alternate:visited{
+      background:$white;
+      color:$ben-franklin-blue;
+      border:1px solid $manatee;
+    i.fa{
+      color: $ben-franklin-blue;
+    }
+
+      .fa {
+        background: $white;
+      }
     }
   }
 }

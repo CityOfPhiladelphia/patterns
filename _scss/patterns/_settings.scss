@@ -88,8 +88,8 @@ $breakpoint-classes: (small medium large);
 $grid-row-width: $global-width;
 $grid-column-count: 24;
 $grid-column-responsive-gutter: (
-  small: 10px,
-  medium: 15px,
+  small: 15px,
+  medium: 20px,
 );
 $grid-column-align-edge: true;
 $block-grid-max: 4;
@@ -111,7 +111,7 @@ $header-sizes: (
     'h6': 16,
   ),
   medium: (
-    'h1': 40,
+    'h1': 35,
     'h2': 30,
     'h3': 25,
     'h4': 20,
