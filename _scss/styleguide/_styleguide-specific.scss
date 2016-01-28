@@ -107,18 +107,6 @@ $animate-quick: 0.2s;
 }
 
 
-.the-code {
-  display: none;
-}
-
-figure.highlight{
-  margin:0;
-}
-
-p.small-text {
-  margin:.5em 0 1em 0;
-}
-
 #p-full-width-layout .column, #p-3-4-layout .column, #p-three-column-layout .column, #p-two-column-layout .column{
   background: #eee;
   font-size: 11px;
@@ -139,8 +127,45 @@ p.small-text {
   margin-bottom: 30px;
   position: relative;
 
+  .columns{
+    position: relative;
+  }
+
+  .title {
+    cursor:pointer;
+    background: #a1a1a1;
+    color:#fff;
+    padding:0 10px;
+
+    h2, h3 {
+      display:inline-block;
+      width:100%;
+    }
+    + i {
+      color:$sg-secondary;
+    }
+    &:hover {
+      color:$sg-primary;
+    }
+    .view-code{
+      display: block;
+      float:right;
+    }
+  }
+
+  .preview{
+    padding:10px
+  }
+
   .details{
-    padding:10px;
+    display: none;
+  }
+
+  figure {
+    margin: 0;
+  }
+  .copy{
+    margin:0;
   }
 
 }

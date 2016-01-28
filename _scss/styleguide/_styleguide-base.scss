@@ -1,3 +1,6 @@
+header.pattern-site-header{
+  background: #f0f0f0;
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -19,11 +22,11 @@ pre {
     padding: 8px 12px;
     overflow-x: scroll;
 
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
+  > code {
+    display: block;
+    border:none;
+
+  }
 }
 
 .site-title {
@@ -39,10 +42,10 @@ pre {
  * Copy to clipboard button
  */
 .copy {
-    position: absolute;
-    right: 0;
-    margin-right: 13px;
-    padding: 2px 6px 3px;
+  position: absolute;
+  right: 0;
+  margin-right: 13px;
+  padding: 2px 6px 3px;
 }
 
 
