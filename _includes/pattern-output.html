@@ -1,18 +1,18 @@
-<div id="p-{{ pattern.title | replace:' ','-' | downcase  }}" data-magellan-target="p-{{ pattern.title | replace:' ','-' | downcase  }}">
+<div id="p-{{ pattern.title | replace:' ','-' | downcase  }}" data-magellan-target="p-{{ pattern.title | replace:' ','-' | downcase  }}" class="pattern">
 
-    <hgroup class="code">
-      <h3 class="code-title">{{ pattern.title }}<span class="view-code">View code <i class="fa fa-arrow-circle-right"></i></span></h3>
-    </hgroup>
+  <hgroup class="code">
+    <h3 class="code-title">{{ pattern.title }}<span class="view-code">View code <i class="fa fa-arrow-circle-right"></i></span></h3>
+  </hgroup>
 
-    <div class="the-code">
-      <button class="btn copy" title="Copy code to clipboard" data-clipboard-target="#p-{{ pattern.title | replace:' ','-' | downcase  }}"><i class="fa fa-clipboard"></i></button>
+  <div class="the-code">
+    <button class="btn copy" title="Copy code to clipboard" data-clipboard-target="#p-{{ pattern.title | replace:' ','-' | downcase  }}"><i class="fa fa-clipboard"></i></button>
 
-      {% highlight html %}
-         {{ pattern.output }}
-      {% endhighlight %}
-    </div>
-    <p class="small-text">{{ pattern.description }}</p>
+    {% highlight html %}
+       {{ pattern.output }}
+    {% endhighlight %}
+  </div>
+  <p class="small-text">{{ pattern.description }}</p>
 
-      {{ pattern.output }}
+    {{ pattern.output }}
 
 </div>

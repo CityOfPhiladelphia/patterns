@@ -5,19 +5,26 @@
 
   <body id="pattern-default">
 
-  {% include header.html %}
-  <div id="page">
+    {% include header.html %}
+
+    <div id="page">
+
       <div class="row expanded">
+
         <div class="small-18 columns" id="main">
             {{ content }}
         </div>
+
         <div class="small-6 columns">
           {% include nav.html %}
         </div>
+
     </div>
+
   </div>
 
     {% include footer.html %}
+
   </body>
 
 </html>

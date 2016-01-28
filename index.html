@@ -2,29 +2,29 @@
 layout: default
 ---
 
-    <h1>Getting Started</h1>
-    <p>Check out the <a href="https://github.com/CityOfPhiladelphia/patterns">GitHub repository</a> for information on how to use these patterns in your project, or view the <a href="{{ "/boilerplate" | prepend: site.baseurl}}">Boilerplate</a> for example markup. </p>
-    <div id="pattern-search">
-      <input class="filter" type="search" placeholder="Filter pattern list">
-      <hr>
+<h1>Getting Started</h1>
+<p>Check out the <a href="https://github.com/CityOfPhiladelphia/patterns">GitHub repository</a> for information on how to use these patterns in your project, or view the <a href="{{ "/boilerplate" | prepend: site.baseurl}}">Boilerplate</a> for example markup. </p>
+<div id="pattern-search">
+  <input class="filter" type="search" placeholder="Filter pattern list">
 
-      <div class="list">
+  <div class="list">
 
-        {% for type in site.data.types %}
-        {% capture slug %}{{ type.name | slugify }}{% endcapture %}
+    {% for type in site.data.types %}
 
-        <h1 id="{{ slug }}" data-magellan-target="{{ slug }}">{{ type.name }}</h1>
-        {% for pattern in site.patterns %}
+    {% capture slug %}{{ type.name | slugify }}{% endcapture %}
 
-          {% capture url %} {{ pattern.relative_path }} {% endcapture %}
-          {% capture label %}{{ collection }}{% endcapture %}
+      <h1 id="{{ slug }}" data-magellan-target="{{ slug }}">{{ type.name }}</h1>
+      {% for pattern in site.patterns %}
 
-          {% if url contains slug %}
+      {% capture url %} {{ pattern.relative_path }} {% endcapture %}
+      {% capture label %}{{ collection }}{% endcapture %}
 
-            {% include pattern-output.html %}
+      {% if url contains slug %}
 
-          {% endif %}
-        {% endfor %}
+        {% include pattern-output.html %}
+
+        {% endif %}
       {% endfor %}
-    </div>
-    </div>
+    {% endfor %}
+  </div>
+</div>
