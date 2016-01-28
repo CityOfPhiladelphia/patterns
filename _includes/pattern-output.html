@@ -1,22 +1,23 @@
 <section id="p-{{ pattern.title | replace:' ','-' | downcase  }}" data-magellan-target="p-{{ pattern.title | replace:' ','-' | downcase  }}" class="pattern">
 
   <hgroup class="title">
-    <h3>{{ pattern.title }}<span class="view-code">Details<i class="fa fa-arrow-circle-right"></i></span></h3>
+    <h3>{{ pattern.title }}<span class="view-code">Details <i class="fa fa-arrow-circle-right"></i></span></h3>
   </hgroup>
 
 
-  <div class="row details medium-collapse">
-    <div class="large-17 columns">
+  <div class="row details small-collapse">
+    <div class="large-24 columns">
+      <div class="usage">
+        <h4 class="h6">Usage</h4>
+        <p>{{ pattern.description }}</p>
+      </div>
       <button class="button copy" title="Copy code to clipboard" data-clipboard-target="#p-{{ pattern.title | replace:' ','-' | downcase  }} code">Copy</button>
 
       {% highlight html %}
          {{ pattern.output }}
       {% endhighlight %}
     </div>
-      <div class="large-7 columns">
-        <h4 class="h6">Usage</h4>
-        <p>{{ pattern.description }}</p>
-      </div>
+
   </div>
   <div class="preview">
     {{ pattern.output }}
