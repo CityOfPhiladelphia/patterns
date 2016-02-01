@@ -1,22 +1,21 @@
 .app {
-  .logo{
-    @media #{$small-only} {
-      width:50px;
-      padding:rem-calc(10px 10px 0 0);
-    }
+  background: $ben-franklin-blue;
+
+  > .row:first-of-type{
+    padding:1rem 0;
   }
-  nav {
-    text-align: right;
 
-    @media #{$small-only} {
-      text-align: left;
+  > .row:last-of-type{
+    background:$ben-franklin-light;
+
+    [class*="centered"]{
+      text-align: center;
     }
-
   }
   .page-title-container{
-    color: #353535;
+    color: $white;
     display: inline-block;
-    border-left: 1px solid #353535;
+    border-left: 1px solid $white;
     padding: rem-calc(5px 0 0px 13px);
     margin: rem-calc(10px 0px 10px 0px);
     min-height:rem-calc(50px);
@@ -30,7 +29,7 @@
     h2.page-subtitle{
       padding:0;
       border:none;
-      color:$medium-gray;
+      color:$white;
       font-size:rem-calc(14);
       margin:0;
 
@@ -44,32 +43,26 @@
   }
 
   h1.page-title {
-    color: #353535;
+    color: $white;
     display: inline-block;
-    border-left: 1px solid #353535;
+    border-left: 1px solid $white;
     padding: 5px 0 0px 13px;
     margin: 0px 0px 2px 16px;
     position: relative;
     top: 11px;
     line-height: 1;
+
     @include word-wrap();
     a {
-      color: #353535;
+      color: $white;
 
       &:hover {
         color: #027EA4;
       }
     }
-    @media #{$small-only} {
-      top:0;
-      border:none;
-      display:block;
-      margin:0;
-      padding:0;
-      font-size: 1.3em;
-      max-width:100%;
-    }
   }
+
+
 }//app
 
 #application {

@@ -1,12 +1,24 @@
-<header class="pattern-site-header">
-  <div class="row">
-    <div class="small-12 columns">
-      <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+<!-- Begin header -->
+<header data-swiftype-index='false' class="site-header app" role="banner">
+  <div class="row expanded">
+    <div class="small-24 columns">
+      <a href="http://alpha.phila.gov/" class="logo">
+        <img data-interchange="[{{ "/images/city-of-philadelphia-logo-mobile.png" | prepend: site.baseurl }}, small], [{{ "/images/city-of-philadelphia-logo-white.png" | prepend: site.baseurl }}, medium] ">
+      </a>
+      <h1 class="site-title">phila.gov</h1>
+      <h2 class="site-description">City of Philadelphia</h2>
+      <div class="page-title-container">
+        <a href="{{ site.baseurl }}/">
+          <h1 class="page-title">{{ site.title }}</h1>
+        </a>
+      </div>
+      </div>
     </div>
-
-    <div class="small-12 columns">
+  </div>
+  <div class="row expanded">
+    <div class="small-24 small-centered columns">
       <nav>
-        <ul class="dropdown menu float-right" data-dropdown-menu>
+        <ul class="dropdown menu" data-dropdown-menu>
           {% for node in site.pages %}
             {% if page.url == node.url %}
                 {% if node.title != null %}
@@ -19,7 +31,7 @@
               {% endif %}
             {% endfor %}
 
-        <li class="has-submenu">
+          <li class="has-submenu">
             <a href="#">Page Examples</a>
             <ul class="submenu menu vertical" data-submenu>
               {% for node in site.templates %}
@@ -29,10 +41,11 @@
                   <li><a href="{{node.url| prepend: site.baseurl}}">{{node.title}}</a></li>
                   {% endif %}
                 {% endfor %}
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </nav>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </div>
 </header>

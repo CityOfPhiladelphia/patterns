@@ -58,3 +58,4 @@ For more information on SemVer, please visit http://semver.org.
  - no more markup in tooltips
  - breadcrumbs
  - tabs
+ - application headers - new markup

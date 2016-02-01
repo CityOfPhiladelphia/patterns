@@ -15,12 +15,17 @@ img {
 }
 
 header.site-header {
-  a:hover .logo, a:active .logo {
+  a:hover, a:active{
     opacity:.7;
     transition: opacity 300ms ease-out;
   }
   .logo{
-    max-height:75px;
+    padding: 0 1rem 0 0;
+    margin: 0;
+    float: left;
+  }
+  img {
+    height:60px;
     width:auto;
   }
   @media #{$small-only} {
