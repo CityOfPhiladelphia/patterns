@@ -1,7 +1,7 @@
 <div data-sticky-container>
   <nav class="sticky" data-sticky data-anchor="main" data-sticky-on="large">
     <ul class="vertical menu" data-magellan data-options="deepLinking: true;">
-
+      <li class="h5">On this page</li>
       {% for type in site.data.types %}
         {% capture slug %}{{ type.name | slugify }}{% endcapture %}
         <li class="parent"><a href="#{{ slug }}"> {{ type.name }}</a>
