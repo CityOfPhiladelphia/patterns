@@ -17,7 +17,11 @@
   </div>
   <div class="row expanded">
     <div class="small-24 small-centered columns">
-      <nav>
+      <div class="title-bar" data-responsive-toggle="site-nav" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle></button>
+        <div class="title-bar-title">Menu</div>
+      </div>
+      <nav id="site-nav">
         <ul class="dropdown menu" data-dropdown-menu>
           {% for node in site.pages %}
             {% if page.url == node.url %}

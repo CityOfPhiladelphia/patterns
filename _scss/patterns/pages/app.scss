@@ -20,6 +20,13 @@
     margin: rem-calc(10px 0px 10px 0px);
     min-height:rem-calc(50px);
 
+    @include breakpoint(medium only) {
+      max-width: 402px;
+    }
+    @include breakpoint(small only) {
+      max-width: 292px;
+    }
+
     h1.page-title {
       border-left: none;
       padding: 0;
