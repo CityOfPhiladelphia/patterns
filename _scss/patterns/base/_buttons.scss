@@ -1,0 +1,107 @@
+// /|\ "regular" buttons /|\ //
+.button {
+  @include secondary-font(400);
+  text-transform:uppercase;
+  margin: 1em 0;
+  letter-spacing:.03rem;
+  transition: background-color 300ms ease-in-out;
+  border:none;
+
+  i.fa{
+    color:$manatee
+  }
+
+  &.alternate, &.alternate:link, &.alternate:visited{
+    background:$white;
+    color:$ben-franklin-blue;
+    border:1px solid $manatee;
+
+  i.fa{
+    color: $ben-franklin-blue;
+    }
+
+    .fa {
+      background: $white;
+    }
+  }
+
+  &.icon {
+    display: inline-block;
+    position: relative;
+    height:40px;  //height in px for cross-browser compatibility
+    padding:rem-calc(10 60 0 20);
+    //alternate must be 2px smaller than .icon because of the border
+    &.alternate .fa{
+      max-height: 38px;
+    }
+    .fa{
+      background: $geyser;
+      padding: .4em .5em .5em .4em;
+      font-size: 1.7em;
+      max-height: 40px;
+      vertical-align: sub;
+      position:absolute;
+      right:0;
+      top:0;
+      width:rem-calc(40);
+    }
+    + .small-text {
+      margin:rem-calc(0 0 12 0);
+      padding:0;
+    }
+  }
+}
+
+a.button:link, a.button:visited {
+  color: #fff;
+  font-weight:400;
+}
+
+a.button:hover,
+a.button:active{
+  background-color:$mine-shaft;
+  transition: background-color 300ms ease-in-out;
+}
+
+a.button:hover > i.fa,
+a.button:active > i.fa{
+  color:$mine-shaft;
+  background-color:$geyser;
+  transition: color 300ms ease-in-out;
+}
+
+.button.alternate:hover,
+.button.alternate:active,
+.button.alternate > .fa:hover,
+.button.alternate > .fa:active,
+.button.alternate:hover > i.fa{
+  color:$black;
+  transition: color 300ms ease-in-out;
+}
+
+// /|\ call to action /|\ //
+.call-to-action{
+  text-align:center;
+  a {
+    display:block;
+    color:$dark-gray;
+
+    &:hover .fa-circle, &:active .fa-circle {
+      color:$mine-shaft;
+      transition: color 300ms ease-out;
+    }
+    .fa  {
+      color:$bell-yellow;
+
+    }//.fa
+    .fa-inverse {
+      color: $white;
+      vertical-align:top;
+      font-size:rem-calc(40);
+      span {
+        font-size:rem-calc(30);
+        vertical-align: bottom;
+      }
+    }
+  }
+}//end call to action

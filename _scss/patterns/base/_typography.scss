@@ -1,0 +1,134 @@
+// Heading sizes
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  @include secondary-font(700);
+
+  &.alternate {
+    color:$medium-gray;
+    margin-top:rem-calc(12);
+    margin-bottom:rem-calc(12);
+    font-size:rem-calc(14);
+    font-weight:400;
+    text-transform:uppercase;
+    border-bottom: none;
+    padding:0;
+
+    &.divide{
+      display: flex;
+      flex-direction: row;
+      &:after {
+        background-color: $ben-franklin-blue;
+        flex-grow: 1;
+        height: rem-calc(2px);
+        position: relative;
+        top: 0.6em;
+        content: '';
+        margin:rem-calc(0 0 0 15px);
+      }
+    }
+    i {
+      padding:rem-calc(3px 5px 0 0);
+    }
+  }
+
+  &.contrast {
+    border-bottom:10px solid $ben-franklin-blue;
+    padding:rem-calc(0 0 0 10);
+    margin:rem-calc(13 0);
+  }
+
+
+}
+h1, .h1{
+  padding:0;
+  margin-top:rem-calc(16);
+  margin-bottom:rem-calc(16);
+  letter-spacing:.03rem;
+}
+
+h2, .h2 {
+  padding:0;
+  margin:rem-calc(13 0);
+  letter-spacing:.03rem;
+
+}
+
+h3, .h3{
+  letter-spacing:.03rem;
+  border-bottom: none;
+  padding:0;
+}
+h4, .h4{
+  font-weight:normal;
+}
+h5, .h5{
+  font-weight:normal;
+}
+h6, .h6{
+  font-weight:normal;
+}
+
+// Paragraphs
+p {
+  margin: 1em 0;
+}
+
+// Links
+a:link, a:visited{
+  @extend %link-styles;
+}
+a:hover, a:active {
+  color:$medium-gray;
+}
+
+.small-text {
+  color: $black;
+  font-size: rem-calc(14);
+  display:block;
+}
+
+.vcard {
+  color:$medium-gray;
+  border:0;
+  margin:0;
+  padding:0;
+
+  .vcard-label {
+    @extend %small-highlight;
+  }
+}
+
+.date-time {
+   letter-spacing:.01rem;
+   text-transform:uppercase;
+}
+
+// Tooltip
+.tooltip {
+  font-size:rem-calc(12);
+  p{
+    font-size:rem-calc(12);
+    margin:rem-calc(6 0);
+  }
+}
+
+// External Links
+.external::after {
+  font-family: "FontAwesome";
+  content: "\f08e";
+  font-size:rem-calc(12);
+  padding:0 5px;
+}
+
+.callout{
+  border-left:5px solid $bell-yellow;
+  line-height:rem-calc(16);
+
+  p{
+    color:$medium-gray;
+  }
+}

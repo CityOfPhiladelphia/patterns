@@ -1,0 +1,99 @@
+html, body{
+  height:100%;
+}
+.accessible,
+h1.site-title,
+h2.site-description,
+a.skip-link,
+.screen-reader-text {
+  @extend %accessible;
+}
+
+img {
+  max-width:100%;
+  height:auto;
+}
+
+header.site-header {
+  a:hover .logo, a:active .logo {
+    opacity:.7;
+    transition: opacity 300ms ease-out;
+  }
+  .logo{
+    max-height:75px;
+    width:auto;
+  }
+  @media #{$small-only} {
+    .search{
+      margin-bottom:rem-calc(18);
+    }//.search
+  }
+  @media #{$medium-up} {
+    .search{
+      margin-top:rem-calc(18);
+    }//.search
+  }
+}
+
+ol, ul{
+  padding: rem-calc(0 0 0 20);
+  margin:rem-calc(0 0 0 20);
+  li ul, li ol {
+    margin:0;
+  }
+  + h3, + h4, + h5, + h6 {
+    padding-top:rem-calc(16);
+  }
+}
+
+dl {
+  .columns, .column {
+    margin:0;
+    padding:0;
+  }
+
+  dt{
+    color:$manatee;
+    text-transform:uppercase;
+  }
+  dt, dd{
+    font-size:rem-calc(12);
+    line-height:1.9;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid $manatee;
+  }
+  dt:last-of-type, dd:last-of-type{
+    margin:0;
+    padding:0;
+    border-bottom:none;
+  }
+}
+
+
+@media #{$medium-up} {
+  a[href^="tel"] {
+    pointer-events: none;
+    cursor: default;
+    &:link, &:visited {
+      font-weight:normal;
+      color:$mine-shaft;
+    }
+  }
+}
+
+.equal-height {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+
+  > div {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+  }
+}

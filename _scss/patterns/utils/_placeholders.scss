@@ -1,0 +1,37 @@
+%group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+%small{
+  font-size:rem-calc(12);
+}
+
+%small-highlight{
+  font-weight: bold;
+  font-size: rem-calc(12);
+  letter-spacing:.01rem;
+  color: $manatee;
+  text-transform:uppercase;
+}
+
+%link-styles{
+  color:$ben-franklin-blue;
+  text-decoration: none;
+  font-weight:700;
+}
+
+%accessible{
+  position: absolute;
+  left: -99999px;
+  height: 10px;
+  width: 10px;
+}
+
+%lower-opacity {
+  opacity:.6;
+  transition: opacity .2s ease-in-out;
+   -moz-transition: opacity .2s ease-in-out;
+   -webkit-transition: opacity .2s ease-in-out;
+}

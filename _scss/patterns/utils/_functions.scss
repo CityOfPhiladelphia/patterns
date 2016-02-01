@@ -1,0 +1,5 @@
+//Easily return the value of the header, and it's size on a specific breakpoint
+
+@function header-size( $breakpoint, $size ) {
+  @return rem-calc( map-get( map-get( $header-sizes, $breakpoint ), $size ) * 1px);
+}

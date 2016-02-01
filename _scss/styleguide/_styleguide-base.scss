@@ -54,12 +54,20 @@ pre {
  * Clearfix
  */
 %clearfix {
+<<<<<<< e69c03fe7db5a858836ac7101390dbc98245c5d4
 
     &:after {
         content: "";
         display: table;
         clear: both;
     }
+=======
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+>>>>>>> Undo delete
 }
 
 nav.sticky ul a{

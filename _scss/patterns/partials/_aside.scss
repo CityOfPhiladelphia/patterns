@@ -1,0 +1,31 @@
+aside#secondary{
+  border-left: 3px solid $ghost-gray;
+  padding-bottom: 20px;
+  padding-left: 30px;
+
+  h3 {
+    margin-top:10px;
+  }
+
+  ul{
+    margin:0;
+    padding:0;
+  }
+
+  li {
+    @extend %small;
+    list-style:none;
+    margin-bottom:rem-calc(15);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      display:none;
+    }
+  }
+  a:link, a:visited{
+    font-weight:normal;
+  }
+}

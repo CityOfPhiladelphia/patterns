@@ -1,0 +1,184 @@
+/*------------------------------------*\
+    $PATTERN SPECIFIC STYLES
+\*------------------------------------*/
+
+/* Style Guide Interface Colors */
+$sg-primary : #222;
+$sg-secondary : #808080;
+$sg-tertiary : #ddd;
+$sg-quaternary : #fff;
+$sg-quinary : #999;
+$sg-tint : rgba(255,255,255,0.05);
+$sg-tint-2 : rgba(255,255,255,0.25);
+$sg-tone : rgba(0,0,0,0.1);
+$sg-tone-2 : rgba(0,0,0,0.3);
+
+/* Typography */
+$sg-font-size-norm : 100%;
+$sg-font-size-sm : 70%;
+$sg-font-size-large : 120%;
+
+/* Defaults */
+$sg-space : 1em;
+$sg-doublespace : $sg-space*2;
+$sg-pad : 1em;
+$sg-pad-half : $sg-pad/2;
+
+/* Dimensions */
+$offset-top: 2em;
+
+/* Breakpoints */
+$sg-bp-small : 24em;
+$sg-bp-small-2 : 30em;
+$sg-bp-med : 48em;
+$sg-bp-large : 72em;
+$sg-bp-xl : 80em;
+
+$animate-quick: 0.2s;
+
+
+// Demo to show grid system - in this stylesheet because it shouldn't be included in the production styles
+.demo {
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.demo .gi, .demo .demo-block {
+  background: $sg-tertiary;
+  color: $sg-secondary;
+  text-align: center;
+  margin-bottom: $sg-pad-half;
+  padding: 1em !important;
+
+  &:nth-of-type(2n) {
+    color: $sg-tertiary;
+    background: $sg-secondary;
+  }
+
+  .gi {
+    background: $sg-tone;
+    color: $sg-tertiary;
+
+    &:nth-of-type(2n) {
+      background: $sg-tone-2;
+    }
+  }
+}
+
+
+// Style Guide color swatches
+.sg-colors {
+  overflow: hidden;
+  margin:0;
+  padding:0;
+
+  li {
+    overflow: hidden;
+    border: 1px solid $sg-tertiary;
+    margin: 0.3em;
+
+    @media all and (min-width: $sg-bp-small-2) {
+      float: left;
+      width: 10em;
+    }
+  }
+  .sg-swatch {
+    display: block;
+    height: 1.5em;
+    width: 50%;
+
+    @media all and (max-width: $sg-bp-small-2) {
+      float: left;
+      margin-right: 0.3em;
+    }
+
+    @media all and (min-width: $sg-bp-small-2) {
+      width: 100%;
+      height: 4em;
+      margin-bottom: 0.2em;
+    }
+
+  }
+
+  .sg-label {
+    padding:.3rem;
+    line-height: 1.8;
+  }
+}
+
+
+#p-full-width-layout .column, #p-3-4-layout .column, #p-three-column-layout .column, #p-two-column-layout .column{
+  background: #eee;
+  font-size: 11px;
+  margin-bottom: 10px;
+  line-height: 2rem;
+  border: solid 1px #c6c6c6;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/*override normal behavior for propper alignment*/
+.row .row {
+  margin-left:0 !important;
+  margin-right:0 !important;
+}
+.pattern{
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+  position: relative;
+
+  .columns{
+    position: relative;
+  }
+
+  .title {
+    cursor:pointer;
+    background: #a1a1a1;
+    color:#fff;
+    padding:10px;
+
+    h3 {
+      display:inline-block;
+      width:100%;
+      font-size:1.5rem;
+      margin:0;
+    }
+    + i {
+      color:$sg-secondary;
+    }
+    &:hover {
+      color:$sg-primary;
+    }
+    .view-code{
+      display: block;
+      float:right;
+      padding-top:3px;
+      font-size:1.2rem;
+    }
+  }
+
+  .preview{
+    padding:10px
+  }
+
+  .details{
+    display: none;
+  }
+
+  figure {
+    margin: 0;
+  }
+  .copy{
+    margin:0;
+  }
+
+  .usage{
+    padding:10px;
+  }
+
+}
+
+#page {
+  transition:.3s ease-in-out;
+  position:relative;
+}
