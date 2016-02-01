@@ -13,11 +13,11 @@
 
   &.alternate, &.alternate:link, &.alternate:visited{
     background:$white;
-    color:$ben-franklin-blue;
-    border:1px solid $manatee;
+    color:$flyers-orange;
+    border:1px solid $flyers-orange;
 
   i.fa{
-    color: $ben-franklin-blue;
+    color: $flyers-orange;
     }
 
     .fa {
@@ -35,7 +35,7 @@
       max-height: 38px;
     }
     .fa{
-      background: $geyser;
+      background: $ghost-gray;
       padding: .4em .5em .5em .4em;
       font-size: 1.7em;
       max-height: 40px;
@@ -59,14 +59,14 @@ a.button:link, a.button:visited {
 
 a.button:hover,
 a.button:active{
-  background-color:$mine-shaft;
+  background-color:$dark-gray;
   transition: background-color 300ms ease-in-out;
 }
 
 a.button:hover > i.fa,
 a.button:active > i.fa{
-  color:$mine-shaft;
-  background-color:$geyser;
+  color:$dark-gray;
+  background-color:$ghost-gray;
   transition: color 300ms ease-in-out;
 }
 
@@ -75,7 +75,7 @@ a.button:active > i.fa{
 .button.alternate > .fa:hover,
 .button.alternate > .fa:active,
 .button.alternate:hover > i.fa{
-  color:$black;
+  color:$dark-gray;
   transition: color 300ms ease-in-out;
 }
 
