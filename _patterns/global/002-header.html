@@ -3,7 +3,7 @@ title: Standard Header
 id: header
 ---
 <!-- Begin .header -->
-<header data-swiftype-index='false' class="site-header" role="banner">
+<header data-swiftype-index='false' class="site-header inner" role="banner" data-interchange="[{{"/images/revenue-header-image.jpg" | prepend: site.baseurl }}, large]">
   <div class="row site-branding">
     <div class="small-24 medium-12 columns">
       {{ site.patterns | where:"title" : "Logo" }}
@@ -14,4 +14,5 @@ id: header
       {{ site.patterns | where:"title" : "Search Form" }}
     </div>
   </div>
+  {{ site.patterns | where:"title" : "Breadcrumbs" }}
 </header>
