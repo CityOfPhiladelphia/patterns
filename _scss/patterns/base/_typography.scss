@@ -8,7 +8,6 @@ h6, .h6 {
   @include secondary-font(700);
 
   &.alternate {
-    color:$medium-gray;
     margin-top:rem-calc(12);
     margin-bottom:rem-calc(12);
     font-size:rem-calc(14);
@@ -86,8 +85,8 @@ a:hover, a:active {
 }
 
 .small-text {
-  color: $black;
-  font-size: rem-calc(14);
+  color: $dark-gray;
+  font-size: rem-calc(13);
   display:block;
 }
 
