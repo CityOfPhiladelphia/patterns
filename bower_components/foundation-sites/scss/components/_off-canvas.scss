@@ -12,7 +12,7 @@ $offcanvas-size: 250px !default;
 
 /// Background color of an off-canvas menu.
 /// @type Color
-$offcanvas-background: $ghost-gray !default;
+$offcanvas-background: $light-gray !default;
 
 /// Z-index of an off-canvas menu.
 /// @type Number
@@ -88,10 +88,6 @@ $maincontent-shadow: 0 0 10px rgba($black, 0.5) !default;
     background: $offcanvas-exit-background;
     cursor: pointer;
     transition: background $offcanvas-transition-length $offcanvas-transition-timing;
-
-    .is-off-canvas-open & {
-      display: block;
-    }
   }
 }
 

@@ -12,7 +12,7 @@ $input-prefix-color: $black !default;
 
 /// Background color of labels prefixed to an input.
 /// @type Color
-$input-prefix-background: $ghost-gray !default;
+$input-prefix-background: $light-gray !default;
 
 /// Border around labels prefixed to an input.
 /// @type Border
@@ -56,6 +56,7 @@ $input-prefix-padding: 1rem !default;
     background: $input-prefix-background;
     color: $input-prefix-color;
     border: $input-prefix-border;
+    white-space: nowrap;
 
     @if has-value($input-prefix-border) {
       &:first-child {

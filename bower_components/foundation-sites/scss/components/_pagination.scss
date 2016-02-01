@@ -32,7 +32,7 @@ $pagination-radius: $global-radius !default;
 
 /// Background color of pagination items on hover.
 /// @type Color
-$pagination-item-background-hover: $ghost-gray !default;
+$pagination-item-background-hover: $light-gray !default;
 
 /// Background color of pagination item for the current page.
 /// @type Color
@@ -68,10 +68,14 @@ $pagination-arrows: true !default;
   li {
     font-size: $pagination-font-size;
     margin-#{$global-right}: $pagination-item-spacing;
-    display: none;
     border-radius: $pagination-radius;
 
-    @if not $pagination-mobile-items {
+    @if $pagination-mobile-items {
+      display: inline-block;
+    }
+    @else {
+      display: none;
+
       &:last-child,
       &:first-child {
         display: inline-block;

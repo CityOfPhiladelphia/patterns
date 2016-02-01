@@ -28,7 +28,7 @@ $input-background-focus: $white !default;
 
 /// Background color of disabled text inputs.
 /// @type Color
-$input-background-disabled: $ghost-gray !default;
+$input-background-disabled: $light-gray !default;
 
 /// Border around text inputs.
 /// @type Border
@@ -128,7 +128,7 @@ $input-radius: $global-radius !default;
   // Reset styles on button-like inputs
   [type='submit'],
   [type='button'] {
-    border-radius: $global-radius;
+    border-radius: $button-radius;
     -webkit-appearance: none;
     -moz-appearance: none;
   }

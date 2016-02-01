@@ -109,7 +109,7 @@ $code-font-weight: $global-weight-normal !default;
 
 /// Background color of code samples.
 /// @type Color
-$code-background: $ghost-gray !default;
+$code-background: $light-gray !default;
 
 /// Border around code samples.
 /// @type List
@@ -213,7 +213,7 @@ $keystroke-color: $black !default;
 
 /// Background color for `<kbd>` elements.
 /// @type Color
-$keystroke-background: $ghost-gray !default;
+$keystroke-background: $light-gray !default;
 
 /// Padding for `<kbd>` elements.
 /// @type Number | List
