@@ -4,15 +4,15 @@
   width:100%;
   position: relative;
   flex-grow: 1;
-  @include pad-box(16);
+  @include pad-box(14);
 
   @media #{$small-only} {
     margin-bottom: 1rem;
   }
 
-  h3 {
-    padding:0 0 3px 0;
-    border-bottom:1px solid $geyser;
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-size: $global-font-size;
   }
   p {
     margin: rem-calc(7 0);
@@ -24,10 +24,8 @@
   img {
     width:100%;
     height:auto;
+    padding-bottom: rem-calc(14);
 
-    @media #{$small-only} {
-      display:none;
-    }
   }
   .more{
     position: absolute;
@@ -37,6 +35,8 @@
   }
 }
 a.card{
+  border-bottom: 5px solid $ben-franklin-blue;
+  font-weight: normal;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -45,6 +45,10 @@ a.card{
   -moz-transition: opacity .2s ease-in-out;
   -webkit-transition: opacity .2s ease-in-out;
 
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    color:$ben-franklin-blue;
+  }
   > a {
     display: block;
 
