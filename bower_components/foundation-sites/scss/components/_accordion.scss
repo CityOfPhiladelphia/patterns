@@ -20,7 +20,7 @@ $accordion-item-color: foreground($accordion-background, $primary-color) !defaul
 
 /// Default background color on hover for items in a Menu.
 /// @type Color
-$accordion-item-background-hover: $light-gray !default;
+$accordion-item-background-hover: $ghost-gray !default;
 
 /// Default padding of an accordion item.
 /// @type Number | List
@@ -32,7 +32,7 @@ $accordion-content-background: $white !default;
 
 /// Default border color of tab content.
 /// @type Color
-$accordion-content-border: 1px solid $light-gray !default;
+$accordion-content-border: 1px solid $ghost-gray !default;
 
 /// Default text color of tab content.
 /// @type Color
