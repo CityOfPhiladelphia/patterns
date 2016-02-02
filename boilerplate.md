@@ -12,7 +12,7 @@ Use this template to get up and running fast! It includes:
   * Absolute path to the phila.gov logo
   * CDN links to:
     * [jQuery](https://jquery.com/)
-    * [foundation.min.js](http://foundation.zurb.com/docs/javascript.html)
+    * [foundation.min.js](http://foundation.zurb.com/sites/docs/javascript.html)
     * [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
     * [Ionicons CSS](http://ionicons.com/) (optional, font files not included)
   * Standard header & footer markup
