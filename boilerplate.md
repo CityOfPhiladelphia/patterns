@@ -12,7 +12,6 @@ Use this template to get up and running fast! It includes:
   * Absolute path to the phila.gov logo
   * CDN links to:
     * [jQuery](https://jquery.com/)
-    * [Modernizr](http://modernizr.com/)
     * [foundation.min.js](http://foundation.zurb.com/docs/javascript.html)
     * [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
     * [Ionicons CSS](http://ionicons.com/) (optional, font files not included)
@@ -44,8 +43,7 @@ Change the page wrapper from <code><div class="site" id="page"></code> to <code>
     <link rel="stylesheet" href="//cityofphiladelphia.github.io/patterns/dist/{{ site.version }}/css/patterns.css">
 
     <link rel="canonical" href="">
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    
   </head>
 
   <body>
