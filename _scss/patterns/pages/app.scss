@@ -13,6 +13,7 @@
     }
   }
   .page-title-container{
+    width:auto;
     color: $white;
     display: inline-block;
     border-left: 1px solid $white;
@@ -59,7 +60,6 @@
     top: 11px;
     line-height: 1;
 
-    @include word-wrap();
     a {
       color: $white;
 
