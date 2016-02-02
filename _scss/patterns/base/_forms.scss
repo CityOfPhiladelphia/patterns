@@ -21,19 +21,19 @@ select{
 }
 
 input[type]::-webkit-input-placeholder {
-   color: $manatee;
+   color: $medium-gray;
 }
 
 input[type]:-moz-placeholder { /* Firefox 18- */
-   color: $manatee;
+   color: $medium-gray;
 }
 
 input[type]::-moz-placeholder {  /* Firefox 19+ */
-   color: $manatee;
+   color: $medium-gray;
 }
 
 input[type]:-ms-input-placeholder {
-   color: $manatee;
+   color: $medium-gray;
 }
 input[type="text"]:focus,
 input[type="password"]:focus,
@@ -93,7 +93,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 }
 
 #filter-list input[type="text"]{
-  border:1px solid $geyser;
+  border:1px solid $medium-gray;
 }
 
 input[type="text"].is-error {

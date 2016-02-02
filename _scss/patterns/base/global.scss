@@ -83,7 +83,7 @@ dl {
   }
 
   dt{
-    color:$manatee;
+    color:$medium-gray;
     text-transform:uppercase;
   }
   dt, dd{
@@ -91,7 +91,7 @@ dl {
     line-height:1.9;
     margin: 0 0 10px 0;
     padding: 0 0 10px 0;
-    border-bottom: 1px solid $manatee;
+    border-bottom: 1px solid $medium-gray;
   }
   dt:last-of-type, dd:last-of-type{
     margin:0;
@@ -107,7 +107,7 @@ dl {
     cursor: default;
     &:link, &:visited {
       font-weight:normal;
-      color:$mine-shaft;
+      color:$dark-gray;
     }
   }
 }

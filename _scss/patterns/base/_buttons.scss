@@ -8,7 +8,7 @@
   border:none;
 
   i.fa{
-    color:$manatee
+    color:$medium-gray
   }
 
   &.alternate, &.alternate:link, &.alternate:visited{
@@ -87,7 +87,7 @@ a.button:active > i.fa{
     color:$dark-gray;
 
     &:hover .fa-circle, &:active .fa-circle {
-      color:$mine-shaft;
+      color:$dark-gray;
       transition: color 300ms ease-out;
     }
     .fa  {
