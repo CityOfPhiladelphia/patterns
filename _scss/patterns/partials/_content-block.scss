@@ -1,46 +1,6 @@
-.content-block{
-  border:1px solid $light-gray;
-  background:$white;
-  width:100%;
-  position: relative;
-  flex-grow: 1;
-  @include pad-box(14);
-
-  @include breakpoint(small only) {
-    margin-bottom: 1rem;
-  }
-
-  h1, h2, h3, h4, h5, h6,
-  .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-size: $global-font-size;
-  }
-  p {
-    margin: rem-calc(7 0);
-    @extend %small;
-    &:last-child{
-      min-height:20px;
-    }
-  }
-  img {
-    width:100%;
-    height:auto;
-    padding-bottom: rem-calc(14);
-
-  }
-  .more{
-    position: absolute;
-    bottom: 0;
-    right: rem-calc(20);
-    width: auto;
-  }
-}
 a.card{
-  border-bottom: 5px solid $ben-franklin-blue;
+  color: $dark-gray;
   font-weight: normal;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  color: $black;
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
   -webkit-transition: opacity .2s ease-in-out;
@@ -61,15 +21,7 @@ a.card{
   &:hover{
     @extend %lower-opacity;
   }
-  img {
-    width:100%;
-  }
   .content-block{
-    background:$ghost-gray;
-    display: flex;
-    flex-direction: column;
-    flex-grow:1;
-
     @include breakpoint(small only) {
       &:after {
         content: '\f178';
@@ -79,5 +31,32 @@ a.card{
         right: 8%;
       }
     }
+  }
+}
+.card{
+  border-bottom: 5px solid $ben-franklin-blue;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  color: $dark-gray;
+  font-size: rem-calc(13);
+
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    color:$dark-gray;
+    font-size:1rem;
+    margin:0;
+  }
+  img {
+    width:100%;
+    height:auto;
+  }
+  .content-block{
+    padding:1rem;
+    background:$ghost-gray;
+    display: flex;
+    flex-direction: column;
+    flex-grow:1;
+
   }
 }
