@@ -36,6 +36,7 @@ Change the page wrapper from <code><div class="site" id="page"></code> to <code>
     <meta name="description" content="">
 
     <link rel="stylesheet" href="<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">">
+
     <!--Ionicons are optional-->
     <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
@@ -49,7 +50,7 @@ Change the page wrapper from <code><div class="site" id="page"></code> to <code>
   <body>
     <div class="site" id="page">
 
-{{ site.patterns | where:"title" : "Header with Breadcrumbs" }}
+{{ site.patterns | where:"title" : "Header" }}
       <article data-swiftype-name="body" data-swiftype-type="text">
         <div class="row">
           <div class="large-24 columns">
@@ -59,8 +60,10 @@ Change the page wrapper from <code><div class="site" id="page"></code> to <code>
       </article>
     </div><!-- End #page -->
 {{ site.patterns | where:"title" : "Footer" }}
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation.min.js"></script>
+
     <script src="//cityofphiladelphia.github.io/patterns/dist/{{ site.version }}/js/patterns.min.js"></script>
   </body>
 </html>
