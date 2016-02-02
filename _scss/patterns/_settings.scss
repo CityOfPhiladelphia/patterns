@@ -494,15 +494,15 @@ $show-header-for-stacked: false;
 // --------
 
 $tab-margin: 0;
-$tab-background: $white;
-$tab-background-active: $ghost-gray;
-$tab-border: $ghost-gray;
+$tab-background: $ghost-gray;
+$tab-background-active: $sidewalk;
+$tab-border: $white;
 $tab-item-color: foreground($tab-background, $primary-color);
 $tab-item-background-hover: $white;
 $tab-item-padding: 1.25rem 1.5rem;
 $tab-expand-max: 6;
 $tab-content-background: $white;
-$tab-content-border: $ghost-gray;
+$tab-content-border: $white;
 $tab-content-color: foreground($tab-background, $primary-color);
 $tab-content-padding: 1rem;
 

@@ -2,22 +2,26 @@
   padding:0;
 
   .tabs-title{
-    border-bottom: 3px solid $white;
+    border-bottom: 2px solid $white;
     font-weight: 600;
 
     > a{
       padding: .5rem 1.5rem;
       font-weight: 600;
       font-size:rem-calc(14);
-      border-left:5px solid $ghost-gray;
+      border-left:5px solid transparent;
+      color: $dark-gray;
 
       &:hover {
-        border-left:5px solid $bell-yellow;
+        border-left:5px solid $fairmount-green;
+        background: $medium-gray;
+        color:$white;
       }
     }
 
     &.is-active a {
-      border-left:5px solid $bell-yellow;
+      border-left:5px solid $fairmount-green;
+      background: $sidewalk;
     }
     &:last-child{
       border:none;
