@@ -16,12 +16,11 @@ img {
 
 header {
 
-
   .site-branding{
     background: rgba( 255, 255, 255,.6 );
   }
 
-  .breadcrumbs {
+  .row + .row{
     background: rgba( 255, 255, 255, .8 );
     padding:0;
   }
