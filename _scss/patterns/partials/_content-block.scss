@@ -6,7 +6,7 @@
   flex-grow: 1;
   @include pad-box(14);
 
-  @media #{$small-only} {
+  @include breakpoint(small only) {
     margin-bottom: 1rem;
   }
 
@@ -70,7 +70,7 @@ a.card{
     flex-direction: column;
     flex-grow:1;
 
-    @media #{$small-only} {
+    @include breakpoint(small only) {
       &:after {
         content: '\f178';
         font-family: "FontAwesome";

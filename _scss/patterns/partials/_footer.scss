@@ -17,7 +17,7 @@ footer.site-footer {
       margin:rem-calc(10 0);
     }
 
-    @media #{$small-only} {
+    @include breakpoint(small only) {
       text-align:center;
       .inline-list>li{
         float:none;
@@ -45,7 +45,7 @@ footer.site-footer {
   a:hover, a:active{
     color:$bell-yellow;
   }
-  @media #{$large-up} {
+  @include breakpoint(large) {
 
     .feedback{
       text-align:center;
