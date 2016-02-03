@@ -18,9 +18,63 @@ Use this template to get up and running fast! It includes:
   * Standard header & footer markup
   * Empty div for your main content
 
-##Standard Markup
+<div class="row">
+<div class="medium-12 columns">
+<h2>Full-width Applications</h2>
+<div class="pattern">
+<button class="button copy" title="Copy code to clipboard" data-clipboard-target=".application">Copy</button>
+<div class="application">
+{% highlight html %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button class="btn copy" title="Copy code to clipboard" data-clipboard-target=".highlight"><i class="fa fa-clipboard"></i></button>
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} | phila.gov</title>
+    <link rel='icon' type='image/x-icon' href="//cityofphiladelphia.github.io/patterns/images/favicon.ico">
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!--pattern stylesheet includes foundation css -->
+    <link rel="stylesheet" href="//cityofphiladelphia.github.io/patterns/dist/{{ site.version }}/css/patterns.css">
+
+    <link rel="canonical" href="">
+
+  </head>
+
+  <body>
+  <div class="full" id="application">
+    {{ site.patterns | where:"title" : "Application Header" }}
+      <article data-swiftype-name="body" data-swiftype-type="text">
+        <div class="row">
+          <div class="large-24 columns">
+            <!-- main content here-->
+          </div>
+        </div>
+      </article>
+    </div><!-- End #page -->
+    {{ site.patterns | where:"title" : "Footer" }}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation.min.js"></script>
+
+    <script src="//cityofphiladelphia.github.io/patterns/dist/{{ site.version }}/js/patterns.min.js"></script>
+  </body>
+</html>
+
+{% endhighlight %}
+</div>
+</div>
+</div>
+
+<div class="medium-12 columns">
+
+<h2>Standard Markup</h2>
+<div class="pattern">
+<button class="button copy" title="Copy code to clipboard" data-clipboard-target=".highlight">Copy</button>
 {% highlight html %}
 <!DOCTYPE html>
 <html>
@@ -66,49 +120,5 @@ Use this template to get up and running fast! It includes:
 </html>
 
 {% endhighlight %}
-
-##Full-width Applications
-
-<button class="btn copy" title="Copy code to clipboard" data-clipboard-target=".highlight"><i class="fa fa-clipboard"></i></button>
-{% highlight html %}
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} | phila.gov</title>
-    <link rel='icon' type='image/x-icon' href="//cityofphiladelphia.github.io/patterns/images/favicon.ico">
-    <meta name="description" content="">
-
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-    <!--pattern stylesheet includes foundation css -->
-    <link rel="stylesheet" href="//cityofphiladelphia.github.io/patterns/dist/{{ site.version }}/css/patterns.css">
-
-    <link rel="canonical" href="">
-
-  </head>
-
-  <body>
-  <div class="full" id="application">
-    {{ site.patterns | where:"title" : "Application Header" }}
-      <article data-swiftype-name="body" data-swiftype-type="text">
-        <div class="row">
-          <div class="large-24 columns">
-            <!-- main content here-->
-          </div>
-        </div>
-      </article>
-    </div><!-- End #page -->
-    {{ site.patterns | where:"title" : "Footer" }}
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation.min.js"></script>
-
-    <script src="//cityofphiladelphia.github.io/patterns/dist/{{ site.version }}/js/patterns.min.js"></script>
-  </body>
-</html>
-
-{% endhighlight %}
+</div>
+</div>

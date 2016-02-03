@@ -182,3 +182,10 @@ $animate-quick: 0.2s;
   transition:.3s ease-in-out;
   position:relative;
 }
+
+#pattern-page{
+  figure{
+    height:250px;
+    overflow: auto;
+  }
+}
