@@ -17,39 +17,40 @@
   </div>
   <div class="row expanded">
     <div class="small-24 small-centered columns">
-      <div class="title-bar" data-responsive-toggle="site-nav" data-hide-for="medium">
-        <button class="menu-icon" type="button" data-toggle></button>
-        <div class="title-bar-title">Menu</div>
+      <div class="title-bar" data-responsive-toggle="pattern-site-nav" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle><div class="title-bar-title">Menu</div></button>
       </div>
-      <nav id="site-nav">
-        <ul class="dropdown menu" data-dropdown-menu>
-          {% for node in site.pages %}
-            {% if page.url == node.url %}
-                {% if node.title != null %}
-                  <li class="active"><a href="{{node.url | prepend: site.baseurl}}" class="active">{{node.title}}</a></li>
-                {% endif %}
-              {% else %}
-                {% if node.title != null %}
-                  <li><a href="{{node.url | prepend: site.baseurl}}">{{node.title}}</a></li>
-                {% endif %}
-              {% endif %}
-            {% endfor %}
-
-          <li class="has-submenu">
-            <a href="#">Page Examples</a>
-            <ul class="submenu menu vertical" data-submenu>
-              {% for node in site.templates %}
-                {% if page.url == node.url %}
-                  <li class="active"><a href="{{node.url | prepend: site.baseurl}}" class="active">{{node.title}}</a></li>
-                  {% else %}
-                  <li><a href="{{node.url| prepend: site.baseurl}}">{{node.title}}</a></li>
+      <div class="top-bar" id="pattern-site-nav">
+        <nav>
+          <ul class="dropdown vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
+            {% for node in site.pages %}
+              {% if page.url == node.url %}
+                  {% if node.title != null %}
+                    <li class="active"><a href="{{node.url | prepend: site.baseurl}}" class="active">{{node.title}}</a></li>
                   {% endif %}
-                {% endfor %}
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </nav>
+                {% else %}
+                  {% if node.title != null %}
+                    <li><a href="{{node.url | prepend: site.baseurl}}">{{node.title}}</a></li>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+
+            <li>
+              <a href="#">Page Examples</a>
+              <ul class="submenu vertical menu">
+                {% for node in site.templates %}
+                  {% if page.url == node.url %}
+                    <li class="active"><a href="{{node.url | prepend: site.baseurl}}" class="active">{{node.title}}</a></li>
+                    {% else %}
+                    <li><a href="{{node.url| prepend: site.baseurl}}">{{node.title}}</a></li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
   </div>
 </header>

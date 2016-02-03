@@ -1,5 +1,6 @@
-nav#site-nav{
+#site-nav{
   text-transform: uppercase;
+  background: $white;
   ul{
     margin:0;
     padding:0;
@@ -25,4 +26,8 @@ nav#site-nav{
       color: $white;
     }
   }
+}
+
+.title-bar-title{
+  margin: 0 0 0 30px;
 }
