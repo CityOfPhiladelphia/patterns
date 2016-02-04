@@ -11,7 +11,7 @@
     color:$medium-gray
   }
 
-  &.alternate, &.alternate:link, &.alternate:visited{
+  &.hollow, &.hollow:link, &.hollow:visited{
     background:$white;
     color:$flyers-orange;
     border:1px solid $flyers-orange;
@@ -30,8 +30,8 @@
     position: relative;
     height:40px;  //height in px for cross-browser compatibility
     padding:rem-calc(10 60 0 20);
-    //alternate must be 2px smaller than .icon because of the border
-    &.alternate .fa{
+    //hollow must be 2px smaller than .icon because of the border
+    &.hollow .fa{
       max-height: 38px;
     }
     .fa{
@@ -70,11 +70,11 @@ a.button:active > i.fa{
   transition: color 300ms ease-in-out;
 }
 
-.button.alternate:hover,
-.button.alternate:active,
-.button.alternate > .fa:hover,
-.button.alternate > .fa:active,
-.button.alternate:hover > i.fa{
+.button.hollow:hover,
+.button.hollow:active,
+.button.hollow > .fa:hover,
+.button.hollow > .fa:active,
+.button.hollow:hover > i.fa{
   color:$dark-gray;
   transition: color 300ms ease-in-out;
 }

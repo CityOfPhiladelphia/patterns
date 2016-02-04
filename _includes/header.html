@@ -37,7 +37,7 @@
 
             <li>
               <a href="#">Page Examples</a>
-              <ul class="submenu vertical menu">
+              <ul class="submenu vertical menu" data-submenu>
                 {% for node in site.templates %}
                   {% if page.url == node.url %}
                     <li class="active"><a href="{{node.url | prepend: site.baseurl}}" class="active">{{node.title}}</a></li>
