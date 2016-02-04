@@ -3,6 +3,16 @@ jQuery(document).ready(function( $ ) {
   //init foundation
   $(document).foundation();
 
+  //enable foundation equalizer rows
+  $('.equal-height').each( function() {
+
+    $(this).find('.equal').attr('data-equalizer-watch','');
+
+  });
+
+  var equalizerOptions = { equalizeOnStack: false };
+  var equalRow = new Foundation.Equalizer($ ('.equal-height'), equalizerOptions );
+
   //reponsive tables
   $( document ).trigger( "enhance.tablesaw" );
 

@@ -111,19 +111,3 @@ dl {
     }
   }
 }
-
-.equal-height {
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  position: relative;
-
-  > div {
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-  }
-}

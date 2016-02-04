@@ -35,11 +35,9 @@ a.card{
 }
 .card{
   border-bottom: 5px solid $ben-franklin-blue;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
   color: $dark-gray;
   font-size: rem-calc(13);
+  display: block;
 
   h1, h2, h3, h4, h5, h6,
   .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -54,9 +52,6 @@ a.card{
   .content-block{
     padding:1rem;
     background:$ghost-gray;
-    display: flex;
-    flex-direction: column;
-    flex-grow:1;
 
   }
 }
