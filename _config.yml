@@ -1,5 +1,5 @@
 # Syntax highlighting
-highlighter:         rouge
+highlighter:         pygments
 
 # Permalinks
 #
