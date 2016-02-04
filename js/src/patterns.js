@@ -3,7 +3,7 @@ jQuery(document).ready(function( $ ) {
   //init foundation
   $(document).foundation();
 
-  //enable foundation equalizer rows
+  //foundation equalizer rows
   $('.equal-height').each( function() {
 
     $(this).find('.equal').attr('data-equalizer-watch','');
@@ -12,6 +12,9 @@ jQuery(document).ready(function( $ ) {
 
   var equalizerOptions = { equalizeOnStack: false };
   var equalRow = new Foundation.Equalizer($ ('.equal-height'), equalizerOptions );
+
+  //foundation tooltips
+  var tooltip = new Foundation.Tooltip($('.has-tip'), options);
 
   //reponsive tables
   $( document ).trigger( "enhance.tablesaw" );
