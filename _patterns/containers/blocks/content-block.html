@@ -1,15 +1,14 @@
 ---
 title: Content Block
 description: Content blocks can be linked to more information, in which case the whole card is a link. To make a card, apply the 'card' class to an &lt;a&gt; tag that wraps the card content. The 'equal-height' class can be used to force blocks (and other elements) of different heights to appear equal.
-id: content-block
 ---
 
 <div class="row equal-height">
     <div class="medium-8 columns">
       <h2 class="h6 contrast">Card Block</h2>
-      <a href="http://www.phila.gov/experiencephila/mayor.html" class="card">
+      <a href="http://www.phila.gov/experiencephila/mayor.html" class="card equal">
         <img src="{{ "/images/visit-to-penrose.jpg" | prepend: site.baseurl }}" alt="Mayor Kenney Visits Penrose">
-          <div class="content-block equal">
+          <div class="content-block">
             <h3>Visit to Penrose Elementary School</h3>
             <p>On Friday, January 15th, Mayor Kenney continued his weekly visits to Philadelphia public schools by stopping by Penrose Elementary School!</p>
           </div>
@@ -17,9 +16,9 @@ id: content-block
     </div>
     <div class="medium-8 columns end">
       <h2 class="h6 contrast">Unlinked Block</h2>
-      <div class="card">
+      <div class="card equal">
         <img src="{{ "/images/taxes.jpg" | prepend: site.baseurl }}" alt="">
-        <div class="content-block equal">
+        <div class="content-block">
           <h3>Changes in tax rates are now in effect</h3>
           <p>As of July 1, 2015, Earnings, Wage & NPT - Resident (3.9102%) - Nonresident (3.4828%), U&O (1.21%), Parking & Valet Parking (22.5%), SIT (3.9102%), Real Estate .6317% (City) + .7681% (School) = 1.3998% (Total)</p>
         </div>
