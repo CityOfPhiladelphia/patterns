@@ -19,9 +19,7 @@ $(function() {
         $( element ).parent().parent().show();
 
       }
-      if ( currentParent ){
-        $( element ).next().show();
-      }
+      
     });
 
   });
