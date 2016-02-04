@@ -9,8 +9,6 @@ $(function() {
 
  $( 'nav.sticky ul' ).on('update.zf.magellan', function( event, element ) {
 
-    var currentParent = $(element).parent();
-
     $( 'nav.sticky ul' ).each(function(){
 
       if ( element.hasClass('active') ){
@@ -19,7 +17,7 @@ $(function() {
         $( element ).parent().parent().show();
 
       }
-      
+
     });
 
   });
