@@ -6,20 +6,13 @@
 Phila.gov Pattern Library
 
 ## Using Phila.gov Patterns
-The patterns CSS includes a customized 24-column grid version of Foundation 5.5.2. Just add a few lines to `<head>`. For a sticky footer, also include the patterns.min.js file.
+The patterns CSS includes a customized 24-column grid version of Foundation 6.1.2. Just add a few lines to `<head>`.
 
 ### The bare minimum
 ```
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="//cityofphiladelphia.github.io/patterns/dist/0.12.6/css/patterns.css">
-<script type="text/javascript" src="//cityofphiladelphia.github.io/patterns/dist/0.12.6/js/patterns.min.js"></script>
-```
-
-### Also recommended
-Ionicons are used in alerts and modernizr is included for sad, old browsers.
-```
-<link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js?ver=2.8.3'></script>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//cityofphiladelphia.github.io/patterns/dist/1.0.0/css/patterns.css">
+<script type="text/javascript" src="//cityofphiladelphia.github.io/patterns/dist/1.0.0/js/patterns.min.js"></script>
 ```
 
 ## Local Setup
@@ -48,14 +41,16 @@ Phila.gov Patterns will be maintained under the Semantic Versioning guidelines a
 
 For more information on SemVer, please visit http://semver.org.
 
-## new stuff
-- foundation 6
-- added grunt-postcss
+## New in 1.0
+- Foundation 6!
+- Added grunt-postcss to dev process.
 
-### Markup changes
- - modal
- - navigation
- - no more markup in tooltips
- - breadcrumbs
- - tabs
- - application headers - new markup
+### Upgrading to 1.0
+There have been a number of markup changes in foundation 6, which developers will need to be aware of when updating to Patterns 1.0. Here is the list of elements to watch out for:
+ - [Modal](http://cityofphiladelphia.github.io/patterns/#p-modal)
+ - [Navigation (dropdowns)](http://cityofphiladelphia.github.io/patterns/#p-navigation)
+ - [Tooltips](http://cityofphiladelphia.github.io/patterns/#p-tooltips)
+ - [Breadcrumbs](http://cityofphiladelphia.github.io/patterns/#p-breadcrumbs)
+ - [Tabs](http://cityofphiladelphia.github.io/patterns/#p-sub-navigation---vertical-tabs)
+ - [Application Headers](http://cityofphiladelphia.github.io/patterns/#p-application-header)
+ - [Equal-height divs](http://cityofphiladelphia.github.io/patterns/#p-content-block)
