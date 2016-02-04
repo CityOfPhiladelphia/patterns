@@ -10,17 +10,17 @@ permalink: /logos/
   <div class="row">
     <div class="medium-12 columns">
       <h2>Standard logo</h2>
-      <a href="http://alpha.phila.gov" class="logo"><img src="{{ "/images/city-of-philadelphia.png" | prepend: site.baseurl }}" alt="City of Philadelphia Logo"></a>
+      <a href="http://alpha.phila.gov" class="logo"><img src="//cityofphiladelphia.github.io/patterns/images/city-of-philadelphia.png" alt="City of Philadelphia Logo"></a>
     </div>
     <div class="medium-12 columns inverse">
       <h2>Standard logo inverse</h2>
-      <a href="http://alpha.phila.gov" class="logo"><img src="{{ "/images/city-of-philadelphia-white.png" | prepend: site.baseurl }}" alt="City of Philadelphia Logo"></a>
+      <a href="http://alpha.phila.gov" class="logo"><img src="//cityofphiladelphia.github.io/patterns/images/city-of-philadelphia-white.png" alt="City of Philadelphia Logo"></a>
     </div>
   </div>
   <div class="row">
     <div class="columns">
       <h2>Mobile Logo</h2>
-        <a href="http://alpha.phila.gov" class="logo"><img src="{{ "/images/city-of-philadelphia-mobile.png" | prepend: site.baseurl }}" alt="City of Philadelphia Logo"></a>
+        <a href="http://alpha.phila.gov" class="logo"><img src="//cityofphiladelphia.github.io/patterns/images/city-of-philadelphia-mobile.png" alt="City of Philadelphia Logo"></a>
     </div>
   </div>
 </div>
