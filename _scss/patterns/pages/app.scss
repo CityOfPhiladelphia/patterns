@@ -33,6 +33,17 @@
       padding: 0;
       margin: 0;
       position: static;
+      color: $white;
+      display: inline-block;
+      line-height: 2.5rem;
+
+      a {
+        color: $white;
+
+        &:hover {
+          color: #027EA4;
+        }
+      }
     }
     h2.page-subtitle{
       padding:0;
@@ -49,28 +60,7 @@
       padding:rem-calc(5px 0);
     }
   }
-
-  h1.page-title {
-    color: $white;
-    display: inline-block;
-    border-left: 1px solid $white;
-    padding: 5px 0 0px 13px;
-    margin: 0px 0px 2px 16px;
-    position: relative;
-    top: 11px;
-    line-height: 1;
-
-    a {
-      color: $white;
-
-      &:hover {
-        color: #027EA4;
-      }
-    }
-  }
-
-
-}//app
+}
 
 #application {
   min-height: 100%;
