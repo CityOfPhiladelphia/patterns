@@ -1,76 +1,28 @@
-.content-block,
-.story
-//.story class will remain for backwards compatiblity,
-//but will be removed in the next major release
-{
-  border:1px solid $geyser;
-  background:$white;
-  width:100%;
-  position: relative;
-  flex-grow: 1;
-  @include pad-box(16);
-
-  @media #{$small-only} {
-    margin-bottom: 1rem;
-  }
-
-  h3 {
-    padding:0 0 3px 0;
-    border-bottom:1px solid $geyser;
-  }
-  p {
-    margin: rem-calc(7 0);
-    @extend %small;
-    &:last-child{
-      min-height:20px;
-    }
-  }
-  img {
-    width:100%;
-    height:auto;
-
-    @media #{$small-only} {
-      display:none;
-    }
-  }
-  .more{
-    position: absolute;
-    bottom: 0;
-    right: rem-calc(20);
-    width: auto;
-  }
-}
 a.card{
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  color: $black;
+  color: $dark-gray;
+  font-weight: normal;
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
   -webkit-transition: opacity .2s ease-in-out;
 
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    color:$ben-franklin-blue;
+  }
   > a {
     display: block;
 
     &:link,
     &:visited{
-      color:$black;
+      color:$dark-gray;
     }
   }
 
   &:hover{
     @extend %lower-opacity;
   }
-  img {
-    width:100%;
-  }
   .content-block{
-    background:$ghost-gray;
-    display: flex;
-    flex-direction: column;
-    flex-grow:1;
-
-    @media #{$small-only} {
+    @include breakpoint(small only) {
       &:after {
         content: '\f178';
         font-family: "FontAwesome";
@@ -79,5 +31,26 @@ a.card{
         right: 8%;
       }
     }
+  }
+}
+.card{
+  border-bottom: 5px solid $ben-franklin-blue;
+  color: $dark-gray;
+  font-size: rem-calc(13);
+  display: block;
+  background:$ghost-gray;
+
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    color:$dark-gray;
+    font-size:1rem;
+    margin:0;
+  }
+  img {
+    width:100%;
+    height:auto;
+  }
+  .content-block{
+    padding:1rem;
   }
 }

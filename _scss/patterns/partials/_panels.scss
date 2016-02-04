@@ -1,11 +1,11 @@
 .panel {
   @extend %group;
   background-color: $ghost-gray;
-  border: 1px solid $geyser;
+  border: 1px solid $medium-gray;
   padding: 1.5em;
   //word-wrap: break-word;
   //removing break-word because apparently this randomly adds extra space to the bottom of pages in which panel is the last div before the footer. No idea what is going on here.
-  @media #{$small-only} {
+  @include breakpoint(small only) {
     padding:1em;
   }
 }

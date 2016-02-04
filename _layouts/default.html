@@ -6,17 +6,25 @@
   <body id="pattern-default">
 
     {% include header.html %}
-  <div id="page">
-    <div class="container">
-      <div class="row">
-        <div class="small-24 column">
-            {{ content }}
+
+    <div id="page">
+
+      <div class="row expanded">
+
+        <div class="medium-19 columns" id="main">
+          {{ content }}
         </div>
-      </div>
+
+        <div class="medium-5 columns">
+          {% include side-nav.html %}
+        </div>
+
     </div>
+
   </div>
 
     {% include footer.html %}
+
   </body>
 
 </html>

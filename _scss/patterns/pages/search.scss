@@ -1,17 +1,17 @@
 .search-head{
   padding:rem-calc(16 0);
-  background:$geyser;
+  background:$light-gray;
   margin:rem-calc(16 0);
   h1{
     text-transform: none;
-    @media #{$small-only} {
+    @include breakpoint(small only) {
       margin-top:0;
     }
   }
   input[type="search"]{
     color:$black;
   }
-  @media #{$medium-up} {
+@include breakpoint(medium) {
     .search{
       margin-top:rem-calc(12);
     }

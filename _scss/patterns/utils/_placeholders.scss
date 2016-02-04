@@ -12,7 +12,7 @@
   font-weight: bold;
   font-size: rem-calc(12);
   letter-spacing:.01rem;
-  color: $manatee;
+  color: $medium-gray;
   text-transform:uppercase;
 }
 
@@ -28,6 +28,7 @@
   height: 10px;
   width: 10px;
 }
+
 %lower-opacity {
   opacity:.6;
   transition: opacity .2s ease-in-out;

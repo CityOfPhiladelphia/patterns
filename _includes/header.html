@@ -1,49 +1,56 @@
-<header class="pattern-site-header">
-
-  <div class="row">
+<!-- Begin header -->
+<header data-swiftype-index='false' class="site-header app" role="banner">
+  <div class="row expanded">
     <div class="small-24 columns">
-      <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      <a href="http://alpha.phila.gov/" class="logo">
+        <img data-interchange="[{{ "/images/city-of-philadelphia-mobile.png" | prepend: site.baseurl }}, small], [{{ "/images/city-of-philadelphia-white.png" | prepend: site.baseurl }}, medium] ">
+      </a>
+      <h1 class="site-title">phila.gov</h1>
+      <h2 class="site-description">City of Philadelphia</h2>
+      <div class="page-title-container">
+        <a href="{{ site.baseurl }}/">
+          <h1 class="page-title">{{ site.title }}</h1>
+        </a>
+      </div>
+      </div>
     </div>
   </div>
-  <div class="contain-to-grid">
-
-
-      <nav class="top-bar" data-topbar role="navigation">
-        <ul class="title-area">
-          <li class="name"></li>
-          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-      </ul>
-      <section class="top-bar-section">
-        <!-- Right Nav Section -->
-        <ul class="right">
-        {% for node in site.pages %}
-          {% if page.url == node.url %}
-              {% if node.title != null %}
-                <li class="active"><a href="{{node.url | prepend: site.baseurl}}" class="active">{{node.title}}</a></li>
-              {% endif %}
-            {% else %}
-              {% if node.title != null %}
-                <li><a href="{{node.url | prepend: site.baseurl}}">{{node.title}}</a></li>
-              {% endif %}
-            {% endif %}
-          {% endfor %}
-
-
-          <li class="has-dropdown">
-            <a href="#">Page Examples</a>
-            <ul class="dropdown">
-              {% for node in site.templates %}
-                {% if page.url == node.url %}
-                  <li class="active"><a href="{{node.url | prepend: site.baseurl}}" class="active">{{node.title}}</a></li>
-                  {% else %}
-                  <li><a href="{{node.url| prepend: site.baseurl}}">{{node.title}}</a></li>
+  <div class="row expanded">
+    <div class="small-24 small-centered columns">
+      <div class="title-bar" data-responsive-toggle="pattern-site-nav" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle><div class="title-bar-title">Menu</div></button>
+      </div>
+      <div class="top-bar" id="pattern-site-nav">
+        <nav>
+          <ul class="dropdown vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
+            {% for node in site.pages %}
+              {% if page.url == node.url %}
+                  {% if node.title != null %}
+                    <li class="active"><a href="{{node.url | prepend: site.baseurl}}" class="active">{{node.title}}</a></li>
                   {% endif %}
-                {% endfor %}
-            </ul><!-- dropdown -->
-          </li><!--has dropdown -->
-        </ul><!--right-->
-      </section>
-      </nav>
-</div><!--contain to grid -->
+                {% else %}
+                  {% if node.title != null %}
+                    <li><a href="{{node.url | prepend: site.baseurl}}">{{node.title}}</a></li>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
 
+            <li>
+              <a href="#">Page Examples</a>
+              <ul class="submenu vertical menu" data-submenu>
+                {% for node in site.templates %}
+                  {% if page.url == node.url %}
+                    <li class="active"><a href="{{node.url | prepend: site.baseurl}}" class="active">{{node.title}}</a></li>
+                    {% else %}
+                    <li><a href="{{node.url| prepend: site.baseurl}}">{{node.title}}</a></li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
 </header>

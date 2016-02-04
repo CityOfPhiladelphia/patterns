@@ -1,34 +1,25 @@
 ---
 title: Application Header
-id: header-app
 description: Application Header, with app name next to logo. Please note the class "app" on the header tag. See <a href="templates/application/">application page</a> for an example of a full-width layout.
 ---
 <!-- Begin header -->
 <header data-swiftype-index='false' class="site-header app" role="banner">
   <div class="row">
-    <div class="large-16 columns">
-      <div class="row collapse">
-        <div class="small-6 columns">
-          <a href="http://alpha.phila.gov">
-            <img src="//cityofphiladelphia.github.io/patterns/images/city-of-philadelphia-logo-mobile.png" alt="City of Philadelphia" class="logo show-for-small-only">
-
-            <img src="//cityofphiladelphia.github.io/patterns/images/city-of-philadelphia-logo.png" alt="City of Philadelphia" class="logo show-for-medium-up">
-          </a>
-          <h1 class="site-title">phila.gov</h1>
-          <h2 class="site-description">City of Philadelphia</h2>
-        </div>
-        <div class="small-18 columns">
-          <div class="page-title-container">
-            <a href="#/">
-              <h1 class="page-title">Application Name With a Long Title</h1>
-              <h2 class="page-subtitle">An optional subtitle</h2>
-            </a>
-          </div>
-        </div>
+    <div class="small-24 columns">
+      <a href="http://alpha.phila.gov/" class="logo">
+        <img data-interchange="[{{ "/images/city-of-philadelphia-mobile.png" | prepend: site.baseurl }}, small], [{{ "/images/city-of-philadelphia-white.png" | prepend: site.baseurl }}, medium] ">
+      </a>
+      <div class="page-title-container">
+        <a href="#/">
+          <h1 class="page-title">Application Name With a Long Title</h1>
+          <h2 class="page-subtitle">An optional subtitle</h2>
+        </a>
       </div>
     </div>
-    <div class="large-8 columns">
-      <nav class="right">
+  </div>
+  <div class="row">
+    <div class="small-20 small-centered columns">
+      <nav>
         <a class="button" href="#/">Button 1</a>
         <a class="button" href="#/">Button 2</a>
       </nav>

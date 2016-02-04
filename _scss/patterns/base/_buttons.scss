@@ -5,46 +5,49 @@
   margin: 1em 0;
   letter-spacing:.03rem;
   transition: background-color 300ms ease-in-out;
+  border:none;
 
   i.fa{
-    color:$manatee
+    color:$medium-gray
   }
 
-  .fa{
-    background: $geyser;
-    padding: .4em .5em .5em .4em;
-    font-size: 1.7em;
-    max-height: 40px;
-    vertical-align: sub;
-    position:absolute;
-    right:0;
-    top:0;
-    width:rem-calc(40);
-  }
-  + .small-text {
-    margin:rem-calc(0 0 12 0);
-    padding:0;
-  }
-  &.alternate, &.alternate:link, &.alternate:visited{
+  &.hollow, &.hollow:link, &.hollow:visited{
     background:$white;
-    color:$ben-franklin-blue;
-    border:1px solid $manatee;
+    color:$flyers-orange;
+    border:1px solid $flyers-orange;
+
   i.fa{
-    color: $ben-franklin-blue;
-  }
+    color: $flyers-orange;
+    }
 
     .fa {
       background: $white;
     }
   }
+
   &.icon {
     display: inline-block;
     position: relative;
     height:40px;  //height in px for cross-browser compatibility
     padding:rem-calc(10 60 0 20);
-    //alternate must be 2px smaller than .icon because of the border
-    &.alternate .fa{
+    //hollow must be 2px smaller than .icon because of the border
+    &.hollow .fa{
       max-height: 38px;
+    }
+    .fa{
+      background: $ghost-gray;
+      padding: .4em .5em .5em .4em;
+      font-size: 1.7em;
+      max-height: 40px;
+      vertical-align: sub;
+      position:absolute;
+      right:0;
+      top:0;
+      width:rem-calc(40);
+    }
+    + .small-text {
+      margin:rem-calc(0 0 12 0);
+      padding:0;
     }
   }
 }
@@ -56,23 +59,23 @@ a.button:link, a.button:visited {
 
 a.button:hover,
 a.button:active{
-  background-color:$mine-shaft;
+  background-color:$dark-gray;
   transition: background-color 300ms ease-in-out;
 }
 
 a.button:hover > i.fa,
 a.button:active > i.fa{
-  color:$mine-shaft;
-  background-color:$geyser;
+  color:$dark-gray;
+  background-color:$ghost-gray;
   transition: color 300ms ease-in-out;
 }
 
-.button.alternate:hover,
-.button.alternate:active,
-.button.alternate > .fa:hover,
-.button.alternate > .fa:active,
-.button.alternate:hover > i.fa{
-  color:$black;
+.button.hollow:hover,
+.button.hollow:active,
+.button.hollow > .fa:hover,
+.button.hollow > .fa:active,
+.button.hollow:hover > i.fa{
+  color:$dark-gray;
   transition: color 300ms ease-in-out;
 }
 
@@ -81,9 +84,10 @@ a.button:active > i.fa{
   text-align:center;
   a {
     display:block;
+    color:$dark-gray;
 
     &:hover .fa-circle, &:active .fa-circle {
-      color:$mine-shaft;
+      color:$dark-gray;
       transition: color 300ms ease-out;
     }
     .fa  {
@@ -98,9 +102,6 @@ a.button:active > i.fa{
         font-size:rem-calc(30);
         vertical-align: bottom;
       }
-    }
-    .h3{
-      font-weight:normal;
     }
   }
 }//end call to action

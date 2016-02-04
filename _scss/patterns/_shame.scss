@@ -1,6 +1,20 @@
-// _shame.scss 
+// _shame.scss
 // Quick fixes that needs to be folded in to correct places in sass.
 // "nasty, hacky, quick-fix CSS"
 // http://csswizardry.com/2013/04/shame-css/
 
 // if there is nothing in here, we are doing a good job!
+
+/* These styles are here because without them, users will see a flash of mobile content. This has been doucmented here: https://github.com/zurb/foundation-sites/issues/7083
+As of 2-3-2016 there is no better solution
+*/
+.no-js [data-responsive-toggle] {
+  display: none;
+}
+.title-bar{
+  display: none;
+}
+
+nav ul ul{
+  display: none;
+}
