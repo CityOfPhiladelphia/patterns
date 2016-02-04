@@ -7,7 +7,7 @@ $(function() {
     $(this).find("i").toggleClass("fa-arrow-circle-down").toggleClass("fa-arrow-circle-right");
   });
 
- $( 'nav.sticky ul' ).on('update.zf.magellan', function( event, element ) {
+  $( 'nav.sticky ul' ).on('update.zf.magellan', function( event, element ) {
 
     $( 'nav.sticky ul' ).each(function(){
 
