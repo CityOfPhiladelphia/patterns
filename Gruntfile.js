@@ -28,7 +28,7 @@ module.exports = function(grunt) {
             'bower_components/foundation-sites/scss',
             'bower_components/motion-ui/src'
           ],
-          sourcemap: 'auto'
+          sourcemap: 'file'
         },
         files: {
           'css/patterns.css': '_scss/patterns/patterns.scss',
