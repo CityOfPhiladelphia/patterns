@@ -53,13 +53,15 @@ header {
           padding:1rem;
         }
     }
+
     img {
-      height:60px;
+      height:50px;
       width:auto;
     }
+
     @include breakpoint(medium) {
       .search{
-        margin-top:.8rem;
+        margin-top:.5rem;
       }//.search
     }
   }

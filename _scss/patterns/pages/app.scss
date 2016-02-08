@@ -18,7 +18,7 @@
     display: inline-block;
     border-left: 1px solid $white;
     padding: rem-calc(5px 0 0px 13px);
-    margin: rem-calc(10px 0px 10px 0px);
+    margin: 0;
     min-height:rem-calc(50px);
 
     @include breakpoint(medium only) {
