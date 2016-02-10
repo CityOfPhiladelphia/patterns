@@ -41,28 +41,27 @@ img {
 header {
 
   .site-branding{
-    background: rgba( 255, 255, 255,.6 );
     padding:1rem 0;
   }
 
   .row + .row{
-    background: rgba( 255, 255, 255, .8 );
     padding:0;
   }
 
-  &.inner{
+  &.site-header {
+    background: $ben-franklin-blue;
 
-    height:180px;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-
-    @include breakpoint(small only) {
-      height: auto;
+    > .row:first-of-type{
+      padding:1rem 0;
     }
 
-  }
+    > .row:last-of-type{
+      background:$ben-franklin-light;
 
-  &.site-header {
+      [class*="centered"]{
+        text-align: center;
+      }
+    }
 
     a:hover, a:active{
       opacity:.7;

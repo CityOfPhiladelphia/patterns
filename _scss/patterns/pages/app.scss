@@ -1,17 +1,4 @@
 .app {
-  background: $ben-franklin-blue;
-
-  > .row:first-of-type{
-    padding:1rem 0;
-  }
-
-  > .row:last-of-type{
-    background:$ben-franklin-light;
-
-    [class*="centered"]{
-      text-align: center;
-    }
-  }
   .page-title-container{
     width:auto;
     color: $white;
