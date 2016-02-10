@@ -11,8 +11,8 @@ The patterns CSS includes a customized 24-column grid version of Foundation 6.1.
 ### The bare minimum
 ```
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="//cityofphiladelphia.github.io/patterns/dist/1.0.0/css/patterns.css">
-<script type="text/javascript" src="//cityofphiladelphia.github.io/patterns/dist/1.0.0/js/patterns.min.js"></script>
+<link rel="stylesheet" href="//cityofphiladelphia.github.io/patterns/dist/1.0.1/css/patterns.css">
+<script type="text/javascript" src="//cityofphiladelphia.github.io/patterns/dist/1.0.1/js/patterns.min.js"></script>
 ```
 
 ## Local Setup
