@@ -4,7 +4,7 @@ title: Boilerplate
 permalink: /boilerplate/
 ---
 
-#Boilerplate
+# Boilerplate
 
 Use this template to get up and running fast! It includes:
 
