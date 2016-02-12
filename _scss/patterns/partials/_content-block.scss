@@ -27,13 +27,13 @@ a.card{
         content: '\f178';
         font-family: "FontAwesome";
         position: absolute;
-        bottom: 2%;
         right: 8%;
       }
     }
   }
 }
 .card{
+  margin-bottom: 30px;
   border-bottom: 5px solid $ben-franklin-blue;
   color: $dark-gray;
   font-size: rem-calc(13);
