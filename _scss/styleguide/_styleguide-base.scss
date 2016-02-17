@@ -76,3 +76,22 @@ nav.sticky ul a{
   background:#000;
   color:#fff;
 }
+
+$ten-by-ten:(
+  '10': .1,
+  '20': .2,
+  '30': .3,
+  '40': .4,
+  '50': .5,
+  '60': .6,
+  '70': .7,
+  '80': .8,
+  '90': .9,
+  '100': 1,
+);
+
+@each $ten, $single in $ten-by-ten {
+  .bg-black-#{$ten} {
+    background: rgba(0, 0, 0, $single);
+  }
+}

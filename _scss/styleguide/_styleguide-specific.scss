@@ -207,3 +207,15 @@ $animate-quick: 0.2s;
     background: rgba(255,255,255,.9);
   }
 }
+
+.spacing-examples{
+  >div {
+    color:white;
+    background:black;
+    display: inline-block
+  }
+  section > div > div{
+    display: inline-block;
+  }
+
+}
