@@ -6,11 +6,13 @@ footer.site-footer {
   letter-spacing:.015em;
 
   .classic {
+    @include secondary-font(400);
+
     a:link, a:visited {
-      color: #e5e5e5;
+      color: $bell-yellow;
     }
     a:hover, a:active{
-      color:$bell-yellow;
+      color:$white;
     }
 
     .columns{
