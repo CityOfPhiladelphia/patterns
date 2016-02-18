@@ -5,7 +5,10 @@ jQuery(document).ready(function( $ ) {
 
   //foundation equalizer rows
 
-  if ($('.equal-height').length > 0) {
+  if ( $('.equal-height').length > 0 ) {
+
+    //equalizeByRow: true to force each instance of equalizer to work individually
+    var equalizerOptions = { equalizeOnStack: false, equalizeByRow: true };
 
     $('.equal-height').each( function() {
 
@@ -13,8 +16,7 @@ jQuery(document).ready(function( $ ) {
 
     });
 
-    var equalizerOptions = { equalizeOnStack: false };
-    var equalRow = new Foundation.Equalizer($ ('.equal-height'), equalizerOptions );
+    var equalHeight = new Foundation.Equalizer($ ('.equal-height'), equalizerOptions );
 
   }
 
@@ -27,5 +29,5 @@ jQuery(document).ready(function( $ ) {
 
   //reponsive tables
   $( document ).trigger( "enhance.tablesaw" );
-  
+
 });
