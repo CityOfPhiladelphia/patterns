@@ -93,14 +93,10 @@ a:hover, a:active {
 }
 
 .vcard {
-  color:$dark-gray;
-  border:0;
-  margin:0;
-  padding:0;
-
-  .vcard-label {
-    @extend %small-highlight;
-  }
+  color: $dark-gray;
+  font-weight: bold;
+  text-transform: none;
+  margin: 1em 0;
 }
 
 .date-time {
