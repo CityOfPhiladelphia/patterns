@@ -2,40 +2,6 @@
     $PATTERN SPECIFIC STYLES
 \*------------------------------------*/
 
-/* Style Guide Interface Colors */
-$sg-primary : #222;
-$sg-secondary : #808080;
-$sg-tertiary : #ddd;
-$sg-quaternary : #fff;
-$sg-quinary : #999;
-$sg-tint : rgba(255,255,255,0.05);
-$sg-tint-2 : rgba(255,255,255,0.25);
-$sg-tone : rgba(0,0,0,0.1);
-$sg-tone-2 : rgba(0,0,0,0.3);
-
-/* Typography */
-$sg-font-size-norm : 100%;
-$sg-font-size-sm : 70%;
-$sg-font-size-large : 120%;
-
-/* Defaults */
-$sg-space : 1em;
-$sg-doublespace : $sg-space*2;
-$sg-pad : 1em;
-$sg-pad-half : $sg-pad/2;
-
-/* Dimensions */
-$offset-top: 2em;
-
-/* Breakpoints */
-$sg-bp-small : 30em;
-$sg-bp-med : 48em;
-$sg-bp-large : 72em;
-$sg-bp-xl : 80em;
-
-$animate-quick: 0.2s;
-
-
 // Demo to show grid system - in this stylesheet because it shouldn't be included in the production styles
 .demo {
   overflow: hidden;
@@ -43,24 +9,15 @@ $animate-quick: 0.2s;
 }
 
 .demo .gi, .demo .demo-block {
-  background: $sg-tertiary;
-  color: $sg-secondary;
+  background: $dark-gray;
+  color: $ghost-gray;
   text-align: center;
-  margin-bottom: $sg-pad-half;
+  margin-bottom: $spacing-small;
   padding: 1em !important;
 
   &:nth-of-type(2n) {
-    color: $sg-tertiary;
-    background: $sg-secondary;
-  }
-
-  .gi {
-    background: $sg-tone;
-    color: $sg-tertiary;
-
-    &:nth-of-type(2n) {
-      background: $sg-tone-2;
-    }
+    color: $dark-gray;
+    background: $ghost-gray;
   }
 }
 
@@ -74,10 +31,10 @@ $animate-quick: 0.2s;
 
   li {
     overflow: hidden;
-    border: 1px solid $sg-tertiary;
+    border: 1px solid $sidewalk;
     margin: 0.3em;
 
-    @media all and (min-width: $sg-bp-small) {
+    @media all and (min-width: 40rem) {
       float: left;
       width: 10em;
     }
@@ -88,7 +45,7 @@ $animate-quick: 0.2s;
     width: 100%;
     height: 5em;
 
-    @media all and (max-width: $sg-bp-small) {
+    @media all and (max-width: 40rem) {
       float: left;
       margin-right: 0.3em;
       margin-bottom: 0.2em;
@@ -140,10 +97,10 @@ $animate-quick: 0.2s;
       margin:0;
     }
     + i {
-      color:$sg-secondary;
+      color:$dark-gray;
     }
     &:hover {
-      color:$sg-primary;
+      color:$black;
     }
     .view-code{
       display: block;
@@ -205,5 +162,94 @@ $animate-quick: 0.2s;
     padding:0;
     margin:0;
     background: rgba(255,255,255,.9);
+  }
+}
+
+.spacing-examples{
+
+  >div >div {
+    color:white;
+    background:$dark-gray;
+    display: inline-block
+  }
+
+}
+
+header.pattern-site-header{
+  background: #f0f0f0;
+}
+
+
+/**
+ * Code formatting
+ */
+
+
+pre {
+    padding: 8px 12px;
+    overflow-x: scroll;
+    background: #f0f0f0;
+
+  > code {
+    display: block;
+    border:none;
+
+  }
+}
+
+/**
+ * Copy to clipboard button
+ */
+.copy {
+  position: absolute;
+  right: 0;
+  margin-right: 13px;
+  padding: 2px 6px 3px;
+}
+
+
+/**
+ * Clearfix
+ */
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+nav.sticky ul a{
+  border-left: 5px solid transparent;
+  padding-left:5px;
+  font-weight: normal;
+
+  &.active{
+    border-left: 5px solid $brand-color;
+  }
+
+}
+
+.inverse{
+  background:#000;
+  color:#fff;
+}
+
+$ten-by-tenths:(
+  '10': .1,
+  '20': .2,
+  '30': .3,
+  '40': .4,
+  '50': .5,
+  '60': .6,
+  '70': .7,
+  '80': .8,
+  '90': .9,
+  '100': 1,
+);
+
+@each $ten, $single in $ten-by-tenths {
+  .bg-black-#{$ten} {
+    background: rgba(0, 0, 0, $single);
   }
 }

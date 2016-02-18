@@ -29,7 +29,7 @@
     display: inline-block;
     position: relative;
     height:40px;  //height in px for cross-browser compatibility
-    padding:rem-calc(10 60 0 20);
+    padding:rem-calc(14 60 0 20);
     //hollow must be 2px smaller than .icon because of the border
     &.hollow .fa{
       max-height: 38px;
