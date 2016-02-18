@@ -133,3 +133,17 @@ a:hover, a:active {
     color:$medium-gray;
   }
 }
+
+.see-all-left{
+
+  &::before{
+    content: "« ";
+  }
+}
+
+.see-all-right{
+
+  &::after{
+    content: " »";
+  }
+}
