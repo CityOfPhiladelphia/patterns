@@ -12,7 +12,6 @@
 @import "utils/mixins";
 @import "utils/functions";
 @import "utils/classes";
-@import "utils/spacing";
 
 @include foundation-global-styles;
 @include foundation-grid;
@@ -80,6 +79,9 @@
 @import "pages/search";
 @import "pages/app";
 
+
+//spacing utils at the bottom, so they take effect in the right order
+@import "utils/spacing";
 
 // shame.scss
 @import "shame";
