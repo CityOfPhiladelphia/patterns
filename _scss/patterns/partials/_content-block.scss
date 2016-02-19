@@ -21,16 +21,6 @@ a.card{
   &:hover{
     @extend %lower-opacity;
   }
-  .content-block{
-    @include breakpoint(small only) {
-      &:after {
-        content: '\f178';
-        font-family: "FontAwesome";
-        position: absolute;
-        right: 8%;
-      }
-    }
-  }
 }
 .card{
   margin-bottom: 30px;
