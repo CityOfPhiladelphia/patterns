@@ -1,25 +1,9 @@
 /*media events box*/
 
 .event-box {
-  border: 1px solid #DBE1E3;
-  background: $white;
-  width: 100%;
-  padding: 0;
-  font-size: rem-calc(10);
-  line-height: rem-calc(12);
-  color: $dark-gray;
+  border:1px solid $ghost-gray;
 
-  .event-row {
-    padding: rem-calc(16);
-    &:nth-child(even){
-      background:$light-gray;
-    }
+  .event-row{
+    border-bottom: 1px solid $ghost-gray;
   }
-  .event-title{
-    font-weight: bold;
-    font-size: rem-calc(10);
-    line-height: rem-calc(12);
-    margin-bottom: rem-calc(5);
-    margin-top: rem-calc(10);
-   }
 }//end events box
