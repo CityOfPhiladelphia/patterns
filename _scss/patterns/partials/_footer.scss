@@ -47,6 +47,15 @@ footer.site-footer {
   a:hover, a:active{
     color:$bell-yellow;
   }
+  .contact {
+    a:link, a:visited {
+      color:$ben-franklin-blue;
+      text-decoration: underline;
+    }
+    a:hover, a:active{
+      color:$dark-gray;
+    }
+  }
   @include breakpoint(large) {
 
     .feedback{
