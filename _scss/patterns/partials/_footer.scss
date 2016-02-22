@@ -1,14 +1,4 @@
 footer {
-  
-  .contact {
-    a:link, a:visited {
-      color:$ben-franklin-blue;
-      text-decoration: underline;
-    }
-    a:hover, a:active{
-      color:$dark-gray;
-    }
-  }
 
   &.site-footer {
     font-size:rem-calc(13);
@@ -89,6 +79,18 @@ footer {
         margin:0;
         line-height: 1.6rem;
       }
+    }
+  }
+  .contact {
+    a:link, a:visited {
+      color:$ben-franklin-blue;
+      text-decoration: underline;
+    }
+    a:hover, a:active{
+      color:$dark-gray;
+    }
+    .social{
+      text-decoration: none;
     }
   }
 }
