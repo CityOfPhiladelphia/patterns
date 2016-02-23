@@ -103,20 +103,20 @@ $header-font-style: normal;
 $font-family-monospace: Consolas, 'Montserrat', Courier, monospace;
 $header-sizes: (
   small: (
-    'h1': 30,
-    'h2': 25,
-    'h3': 20,
-    'h4': 18,
-    'h5': 15,
+    'h1': 25,
+    'h2': 20,
+    'h3': 18,
+    'h4': 15,
+    'h5': 14,
     'h6': 12,
   ),
   medium: (
-    'h1': 35,
-    'h2': 30,
-    'h3': 25,
-    'h4': 20,
-    'h5': 17,
-    'h6': 15,
+    'h1': 30,
+    'h2': 25,
+    'h3': 20,
+    'h4': 17,
+    'h5': 15,
+    'h6': 14,
   ),
 );
 $header-color: inherit;
