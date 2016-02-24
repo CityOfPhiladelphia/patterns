@@ -1,29 +1,35 @@
 #site-nav{
   text-transform: uppercase;
   background: $white;
+  display: inline-block;
+
   ul{
     margin:0;
     padding:0;
     .submenu{
       background: rgba(255, 255, 255, .9);
     }
-  }
-  .is-dropdown-submenu-parent.is-down-arrow {
-    a{
-      padding: 1rem 2rem;
-    }
+    li{
+      padding:1px solid $ben-franklin-blue;
 
-    >a::after {
-      right:10px;
-    }
-  }
-  a {
-    padding: 1rem 2rem;
-    color:$dark-gray;
+      &.is-active > a {
+        background: $ben-franklin-blue;
+        color:$white;
+      }
 
-    &:hover{
-      background:$ben-franklin-blue;
-      color: $white;
+      &:hover > a{
+        background: $ben-franklin-blue;
+        color:$white;
+      }
+      a{
+        color:$dark-gray;
+      }
+      ul li{
+        text-align: left;
+        li{
+          text-align: left;
+        }
+      }
     }
   }
 }
