@@ -29,11 +29,11 @@
     font-size:rem-calc(13);
   }
   a:link, a:visited{
-    color:$bell-yellow;
-    text-transform: none;
+    color:$white;
+    text-transform: uppercase;
   }
   a:hover, a:active{
-    color:$white;
+    color:$bell-yellow;
   }
   .accessibility{
     text-align:right;

@@ -10,13 +10,6 @@ footer {
     .classic {
       @include secondary-font(400);
 
-      a:link, a:visited {
-        color: $bell-yellow;
-      }
-      a:hover, a:active{
-        color:$white;
-      }
-
       .columns{
         margin:rem-calc(10 0);
       }
@@ -48,15 +41,6 @@ footer {
     }
     a:hover, a:active{
       color:$bell-yellow;
-    }
-    @include breakpoint(large) {
-
-      .feedback{
-        text-align:center;
-      }
-      ul.inline-list{
-        float:right;
-      }
     }
     p{
       margin:0;
