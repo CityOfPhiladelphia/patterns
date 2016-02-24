@@ -94,9 +94,11 @@ a:hover, a:active {
 
 .vcard {
   color: $dark-gray;
-  font-weight: bold;
   text-transform: none;
   margin: 1em 0;
+  .vcard-label{
+    font-weight: bold;
+  }
 }
 
 // Tooltip
