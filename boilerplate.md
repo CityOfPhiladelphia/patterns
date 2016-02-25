@@ -101,7 +101,7 @@ Use this template to get up and running fast! It includes:
 
   <body>
     <div class="site" id="page">
-      {{ site.patterns | where:"title" : "Header" }}
+      {{ site.patterns | where:"title" : "Default Header" }}
       <article data-swiftype-name="body" data-swiftype-type="text">
         <div class="row">
           <div class="large-24 columns">
