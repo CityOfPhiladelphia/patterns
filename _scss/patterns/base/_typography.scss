@@ -72,11 +72,32 @@ h3, .h3{
   padding:0;
 }
 
-// Paragraphs
-p {
-  margin: 1em 0;
-}
+// Paragraphs + heading interaction
+article{
 
+  h1 + p,
+  h2 + p,
+  h3 + p,
+  h4 + p,
+  h5 + p,
+  h6 + p{
+    margin-top:0;
+  }
+
+  p + h1,
+  p + h2,
+  p + h3,
+  p + h4,
+  p + h5,
+  p + h6{
+    margin-top:$spacing-large;
+  }
+
+  h2 + h3{
+    margin-top:$spacing-small;
+  }
+
+}
 // Links
 a:link, a:visited{
   @extend %link-styles;
