@@ -160,3 +160,8 @@ a:hover, a:active {
     content: " »";
   }
 }
+
+ol + p,
+ul + p{
+  margin-top:1rem;
+}
