@@ -68,4 +68,4 @@ There have been a number of markup changes in foundation 6, which developers wil
 - http://cityofphiladelphia.github.io/contracts/ (0.2.0)
 - http://cityofphiladelphia.github.io/bullet-voting/democratic (0.12.1)
 - http://cityofphiladelphia.github.io/crashboard/ (0.12.6)
-- http://cityofphiladelphia.github.io/community-health-explorer/
+- http://cityofphiladelphia.github.io/community-health-explorer/ (0.12.5)
