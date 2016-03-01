@@ -32,7 +32,7 @@ Phila.gov Patterns will be maintained under the Semantic Versioning guidelines a
 
 {major}.{minor}.{patch}
 
-###Guidelines
+### Guidelines
 
 1. Breaking backward compatibility bumps the major (and resets the minor and patch)
 2. New patterns (without breaking backward compatibility) bumps the minor (and resets the patch)
@@ -54,3 +54,18 @@ There have been a number of markup changes in foundation 6, which developers wil
  - [Tabs](http://cityofphiladelphia.github.io/patterns/#p-sub-navigation---vertical-tabs)
  - [Application Headers](http://cityofphiladelphia.github.io/patterns/#p-application-header)
  - [Equal-height divs](http://cityofphiladelphia.github.io/patterns/#p-content-block)
+
+
+## Sites using the Phila.gov Pattern Portfolio
+- http://cityofphiladelphia.github.io/patterns/ (1.1.2) (we're so meta)
+- http://alpha.phila.gov (1.1.2)
+- https://alpha.phila.gov/property/ (0.12.5)
+- https://alpha.phila.gov/trashday/ (0.12.5)
+- http://analytics.phila.gov/ (0.6.0)
+- http://metadata.phila.gov/ (0.12.6)
+- https://secure.phila.gov/PaymentCenter/AccountLookup/ (0.1.1)
+- http://www.phila.gov/openbudget/ (0.1.1)
+- http://cityofphiladelphia.github.io/contracts/ (0.2.0)
+- http://cityofphiladelphia.github.io/bullet-voting/democratic (0.12.1)
+- http://cityofphiladelphia.github.io/crashboard/ (0.12.6)
+- http://cityofphiladelphia.github.io/community-health-explorer/
