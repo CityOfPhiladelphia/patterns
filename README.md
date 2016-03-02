@@ -57,15 +57,18 @@ There have been a number of markup changes in foundation 6, which developers wil
 
 
 ## Sites using the Phila.gov Pattern Portfolio
-- http://cityofphiladelphia.github.io/patterns/ (1.1.2) (we're so meta)
-- http://alpha.phila.gov (1.1.2)
-- https://alpha.phila.gov/property/ (0.12.5)
-- https://alpha.phila.gov/trashday/ (0.12.5)
-- http://analytics.phila.gov/ (0.6.0)
-- http://metadata.phila.gov/ (0.12.6)
-- https://secure.phila.gov/PaymentCenter/AccountLookup/ (0.1.1)
-- http://www.phila.gov/openbudget/ (0.1.1)
-- http://cityofphiladelphia.github.io/contracts/ (0.2.0)
-- http://cityofphiladelphia.github.io/bullet-voting/democratic (0.12.1)
-- http://cityofphiladelphia.github.io/crashboard/ (0.12.6)
-- http://cityofphiladelphia.github.io/community-health-explorer/ (0.12.5)
+
+| Site                                                        | Version |
+| ----------------------------------------------------------- |-------------|
+| [alpha.phila.gov](http://alpha.phila.gov)                   | 1.1.2  |
+| [analytics.phila.gov](http://analytics.phila.gov/)          | 1.1.2  |
+| [Bullet Voting](http://cityofphiladelphia.github.io/bullet-voting/) |  0.12.1 |
+| [Crashboard: Service Monitor Status](http://cityofphiladelphia.github.io/crashboard/) | 0.12.6 |
+| [Community Health Explorer](http://cityofphiladelphia.github.io/community-health-explorer/) | 0.12.5 |
+| [Make a Payment](https://secure.phila.gov/PaymentCenter/AccountLookup/) | 0.1.1 |
+| [Metadata Catalog](http://metadata.phila.gov/)              | 0.12.6 |
+| [Open Budget](http://www.phila.gov/openbudget/)             | 0.1.1 |
+| [Open Contract Data](http://cityofphiladelphia.github.io/contracts/) | 0.2.0 |
+| [Phila.gov Patterns](http://cityofphiladelphia.github.io/patterns/)  | 1.1.2 |
+| [Property](https://alpha.phila.gov/property/)               | 0.12.5 |
+| [Trashday](https://alpha.phila.gov/trashday/)               | 0.12.5 |
