@@ -59,7 +59,7 @@ There have been a number of markup changes in foundation 6, which developers wil
 ## Sites using the Phila.gov Pattern Portfolio
 
 | Site                                                        | Version |
-| ----------------------------------------------------------- |-------------|
+| ----------------------------------------------------------- |---------|
 | [alpha.phila.gov](http://alpha.phila.gov)                   | 1.1.2  |
 | [analytics.phila.gov](http://analytics.phila.gov/)          | 1.1.2  |
 | [Bullet Voting](http://cityofphiladelphia.github.io/bullet-voting/) |  0.12.1 |
@@ -71,4 +71,6 @@ There have been a number of markup changes in foundation 6, which developers wil
 | [Open Contract Data](http://cityofphiladelphia.github.io/contracts/) | 0.2.0 |
 | [Phila.gov Patterns](http://cityofphiladelphia.github.io/patterns/)  | 1.1.2 |
 | [Property](https://alpha.phila.gov/property/)               | 0.12.5 |
+| ROWS | |
+| Street Closures | |
 | [Trashday](https://alpha.phila.gov/trashday/)               | 0.12.5 |
