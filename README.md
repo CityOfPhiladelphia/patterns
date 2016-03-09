@@ -69,7 +69,7 @@ There have been a number of markup changes in foundation 6, which developers wil
 | [Metadata Catalog](http://metadata.phila.gov/)              | 0.12.6 |
 | [Open Budget](http://www.phila.gov/openbudget/)             | 0.1.1 |
 | [Open Contract Data](http://cityofphiladelphia.github.io/contracts/) | 0.2.0 |
-| [Phila.gov Patterns](http://cityofphiladelphia.github.io/patterns/)  | 1.1.2 |
+| [Phila.gov Patterns](http://cityofphiladelphia.github.io/patterns/)  | 1.1.3 |
 | [Property](https://alpha.phila.gov/property/)               | 1.1.3 |
 | ROWS | |
 | Street Closures | |
