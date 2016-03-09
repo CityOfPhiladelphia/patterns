@@ -23,7 +23,7 @@ jQuery(document).ready(function( $ ) {
   //foundation tooltips
   if ($('.has-tip').length > 0) {
 
-    var tooltip = new Foundation.Tooltip($('.has-tip'), options);
+    var tooltip = new Foundation.Tooltip( $('.has-tip') );
 
   }
 
