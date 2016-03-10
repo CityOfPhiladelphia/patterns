@@ -5,7 +5,7 @@ jQuery(document).ready(function( $ ) {
 
   //foundation equalizer rows
 
-  if ( $('.equal-height').length > 0 ) {
+  if ( $('.equal').length > 0 ) {
 
     //equalizeByRow: true to force each instance of equalizer to work individually
     var equalizerOptions = { equalizeOnStack: false, equalizeByRow: true };
@@ -29,5 +29,16 @@ jQuery(document).ready(function( $ ) {
 
   //reponsive tables
   $( document ).trigger( "enhance.tablesaw" );
+
+  //get our feedback link and if it's clicked, pass the current url
+  $("a[href*='/feedback/']").click( function( e ){
+    e.preventDefault();
+    var loc = window.location.href;
+    var url =  $(this).attr('href') + '?url=' + loc;
+
+    window.location.assign(url);
+
+  });
+
 
 });
