@@ -4,8 +4,17 @@
   ul{
     margin:0;
     padding:0;
-    .submenu{
+    &.submenu{
       background: rgba(255, 255, 255, .9);
+      border:1px solid $sidewalk;
+
+      li{
+      border-bottom:1px solid $sidewalk;
+
+      &:last-child{
+          border-bottom: none;
+        }
+      }
     }
     li{
 
