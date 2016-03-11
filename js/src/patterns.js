@@ -49,7 +49,7 @@ jQuery(document).ready(function( $ ) {
 
     }else{
 
-      var url = $(this).attr('href') + '?url=' + loc + '&query=' + q;
+      var url = $(this).attr('href') + '?url=' + loc + '&query=' + q.replace('\?', '');
 
     }
 
