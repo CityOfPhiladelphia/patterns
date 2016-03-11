@@ -39,17 +39,18 @@ jQuery(document).ready(function( $ ) {
 
     var loc = [location.protocol, '//', location.host, location.pathname].join('');
 
-    if ( window.location.search === "" ) {
+    if ( $(this).attr('href').includes('dept=') ) {///we know it's coming from alpha
+
+      var url = $(this).attr('href') + '&url=' + loc;
+
+    }else if( window.location.search === "" ) {
 
       var url = $(this).attr('href') + '?url=' + loc;
-
-    }else if( window.location.search.includes('dept=') ) { //we know it's coming from alpha
-
-      var url = $(this).attr('href') + '?url=' + loc + q.replace('?', '&');
 
     }else{
 
       var url = $(this).attr('href') + '?url=' + loc + '&query=' + q;
+
     }
 
     window.location.assign(url);
