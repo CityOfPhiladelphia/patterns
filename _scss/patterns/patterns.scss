@@ -7,12 +7,11 @@
 @import 'foundation';
 @import 'motion-ui';
 
-//the rest of phila.gov's utilities
+//phila.gov's utilities
 @import "utils/placeholders";
 @import "utils/mixins";
 @import "utils/functions";
 @import "utils/classes";
-@import "utils/colors";
 
 @include foundation-global-styles;
 @include foundation-grid;
@@ -81,6 +80,9 @@
 @import "pages/app";
 
 
+//the rest of phila.gov's utils
+//colors at the bottom so global doesn't override it
+@import "utils/colors";
 //spacing utils at the bottom, so they take effect in the right order
 @import "utils/spacing";
 
