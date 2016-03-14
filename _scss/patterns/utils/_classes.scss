@@ -38,3 +38,15 @@ ul.inline-list li{
 .bg-black{
   background-color:$black;
 }
+
+ul.border-bottom-list li{
+  border-bottom:1px solid $dark-gray;
+  padding:$spacing-small 0;
+  &:last-child{
+    border-bottom: none;
+  }
+}
+
+.border-bottom {
+  border-bottom:1px solid $dark-gray;
+}
