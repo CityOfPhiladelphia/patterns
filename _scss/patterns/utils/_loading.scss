@@ -1,0 +1,15 @@
+//Add class to Font Awesome fa-spinner to animate a "Loading" placeholder.
+
+@keyframes spin-360deg {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); }
+}
+
+.spin {
+  animation-name: spin-360deg;
+  animation-duration:800ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
