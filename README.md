@@ -11,8 +11,8 @@ The patterns CSS includes a customized 24-column grid version of Foundation 6.1.
 ### The bare minimum
 ```
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="//cityofphiladelphia.github.io/patterns/dist/1.1.5/css/patterns.css">
-<script type="text/javascript" src="//cityofphiladelphia.github.io/patterns/dist/1.1.5/js/patterns.min.js"></script>
+<link rel="stylesheet" href="//cityofphiladelphia.github.io/patterns/dist/1.2.0/css/patterns.css">
+<script type="text/javascript" src="//cityofphiladelphia.github.io/patterns/dist/1.2.0/js/patterns.min.js"></script>
 ```
 
 ## Local Setup
@@ -69,7 +69,7 @@ There have been a number of markup changes in foundation 6, which developers wil
 | [Metadata Catalog](http://metadata.phila.gov/)              | 0.12.6 |
 | [Open Budget](http://www.phila.gov/openbudget/)             | 0.1.1 |
 | [Open Contract Data](http://cityofphiladelphia.github.io/contracts/) | 0.2.0 |
-| [Phila.gov Patterns](http://cityofphiladelphia.github.io/patterns/)  | 1.1.3 |
+| [Phila.gov Patterns](http://cityofphiladelphia.github.io/patterns/)  | 1.2.0 |
 | [Property](https://alpha.phila.gov/property/)               | 1.1.3 |
 | ROWS | |
 | Street Closures | |
