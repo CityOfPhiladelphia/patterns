@@ -16,7 +16,6 @@
   "dependencies": {
     "clipboard": "~1.4.1",
     "foundation-sites": "~6.1.0",
-    "motion-ui": "~1.1.0",
-    "nprogress": "~0.1.6"
+    "motion-ui": "~1.1.0"
   }
 }

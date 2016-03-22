@@ -13,7 +13,6 @@ module.exports = function(grunt) {
           'js/dist/patterns.min.js':
           [
             'bower_components/filament-tablesaw/dist/stackonly/tablesaw.stackonly.js',
-            'bower_components/nprogress/nprogress.js',
             'js/src/patterns.js'
           ]
         }

@@ -4,7 +4,6 @@ jQuery(document).ready(function( $ ) {
   $(document).foundation();
 
   //foundation equalizer rows
-
   if ( $('.equal').length > 0 ) {
 
     //equalizeByRow: true to force each instance of equalizer to work individually
