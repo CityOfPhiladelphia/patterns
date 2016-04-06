@@ -11,8 +11,8 @@ The patterns CSS includes a customized 24-column grid version of Foundation 6.1.
 ### The bare minimum
 ```
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="//cityofphiladelphia.github.io/patterns/dist/1.2.0/css/patterns.css">
-<script type="text/javascript" src="//cityofphiladelphia.github.io/patterns/dist/1.2.0/js/patterns.min.js"></script>
+<link rel="stylesheet" href="//cityofphiladelphia.github.io/patterns/dist/1.2.1/css/patterns.css">
+<script type="text/javascript" src="//cityofphiladelphia.github.io/patterns/dist/1.2.1/js/patterns.min.js"></script>
 ```
 
 ## Local Setup
@@ -60,7 +60,7 @@ There have been a number of markup changes in foundation 6, which developers wil
 
 | Site                                                        | Version |
 | ----------------------------------------------------------- |---------|
-| [alpha.phila.gov](http://alpha.phila.gov)                   | 1.1.2  |
+| [alpha.phila.gov](http://alpha.phila.gov)                   | 1.2.1  |
 | [analytics.phila.gov](http://analytics.phila.gov/)          | 1.1.2  |
 | [Bullet Voting](http://cityofphiladelphia.github.io/bullet-voting/) |  0.12.1 |
 | [Crashboard: Service Monitor Status](http://cityofphiladelphia.github.io/crashboard/) | 0.12.6 |
@@ -70,7 +70,7 @@ There have been a number of markup changes in foundation 6, which developers wil
 | [Open Budget](http://www.phila.gov/openbudget/)             | 0.1.1 |
 | [Open Contract Data](http://cityofphiladelphia.github.io/contracts/) | 0.2.0 |
 | [Phila.gov Patterns](http://cityofphiladelphia.github.io/patterns/)  | 1.2.0 |
-| [Property](https://alpha.phila.gov/property/)               | 1.1.3 |
+| [Property](https://alpha.phila.gov/property/)               | 1.2.1 |
 | ROWS | |
 | Street Closures | |
 | [Trashday](https://alpha.phila.gov/trashday/)               | 0.12.5 |
