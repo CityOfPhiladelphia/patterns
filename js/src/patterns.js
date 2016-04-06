@@ -38,7 +38,7 @@ jQuery(document).ready(function( $ ) {
 
     var loc = [location.protocol, '//', location.host, location.pathname].join('');
 
-    if ( $(this).attr('href').includes('dept=') ) {///we know it's coming from alpha
+    if ( $(this).attr('href').indexOf('dept=') ) {///we know it's coming from alpha
 
       var url = $(this).attr('href') + '&url=' + loc;
 
