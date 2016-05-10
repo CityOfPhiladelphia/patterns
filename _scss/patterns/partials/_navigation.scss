@@ -4,9 +4,12 @@
   ul{
     margin:0;
     padding:0;
-    &.submenu{
+
+  &.submenu{
+    @media screen and (min-width: 40em) {
       background: rgba(255, 255, 255, .9);
       border:1px solid $sidewalk;
+    }
 
       li{
       border-bottom:1px solid $sidewalk;
@@ -16,6 +19,7 @@
         }
       }
     }
+
     li{
 
       &.is-active > a {
@@ -23,7 +27,7 @@
         color:$white;
       }
 
-      &:hover > a{
+      a:hover {
         background: $ben-franklin-blue;
         color:$white;
       }
