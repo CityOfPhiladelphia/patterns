@@ -38,19 +38,14 @@
         }
       }
       &.is-drilldown-submenu-parent>a:hover::after{
-        border: inset 6px;
         border-color: transparent transparent transparent $white;
-        top: 50%;
-        margin-top: -6px;
         border-left-style: solid;
         border-right-width: 0;
       }
       &.js-drilldown-back>a:hover::before{
-        border: inset 6px;
         border-color: transparent $white transparent transparent;
         border-right-style: solid;
         border-left-width: 0;
-        display: inline-block;
       }
     }
   }
