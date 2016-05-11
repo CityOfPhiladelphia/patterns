@@ -110,7 +110,8 @@
   }
 
   .preview{
-    padding:10px
+    padding: 1rem 1rem 3rem 1rem;
+    position: relative;
   }
 
   .details{
@@ -199,14 +200,26 @@ pre {
 /**
  * Copy to clipboard button
  */
-.copy {
+.copy.code {
   position: absolute;
   right: 0;
-  margin-right: 13px;
-  padding: 2px 6px 3px;
+}
+
+.copy.anchor-link {
+  margin: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 
+.copy-success, .copy-failure{
+  display: none;
+  position: fixed !important;
+  padding:1rem 3rem !important;
+  top:50%;
+  right:50%;
+}
 /**
  * Clearfix
  */

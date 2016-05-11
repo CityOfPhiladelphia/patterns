@@ -4,20 +4,22 @@
     <h3>{{ pattern.title }}<span class="view-code">Details <i class="fa fa-arrow-circle-right"></i></span></h3>
   </hgroup>
 
-
   <div class="row details small-collapse">
     <div class="large-24 columns">
       <div class="usage">
         <h4 class="h6">Usage</h4>
         <p>{{ pattern.description }}</p>
       </div>
-      <button class="button copy" title="Copy code to clipboard" data-clipboard-target="#p-{{ pattern.title | replace:' ','-' | downcase  }} code">Copy</button>
+      <button class="button copy code" title="Copy code to clipboard" data-clipboard-target="#p-{{ pattern.title | replace:' ','-' | downcase  }} code">Copy Code</button>
 
       {% highlight html %}{{ pattern.output }}{% endhighlight %}
     </div>
 
   </div>
   <div class="preview">
-  {{ pattern.output }}
+
+    {{ pattern.output }}
+
+    <button class="anchor-link copy button" data-clipboard-text="{{ site.url }}/#p-{{ pattern.title | replace:' ','-' | downcase  }}">Copy Pattern Link</button>
   </div>
 </section>
