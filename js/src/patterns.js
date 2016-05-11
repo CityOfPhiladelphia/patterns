@@ -56,4 +56,9 @@ jQuery(document).ready(function( $ ) {
 
   });
 
+  $("[data-global-search]").submit(function (e) {
+    e.preventDefault();
+    window.location.href = 'http://alpha.phila.gov/search/#stq=' + $(this).find(".search-field").val();
+  });
+
 });
