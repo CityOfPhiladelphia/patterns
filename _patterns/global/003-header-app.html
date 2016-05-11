@@ -18,11 +18,8 @@ description: Application Header, with app name next to logo. Please note the cla
     </div>
   </div>
   <div class="row expanded">
-    <div class="small-20 small-centered columns">
-      <nav>
-        <a class="button" href="#/">Button 1</a>
-        <a class="button" href="#/">Button 2</a>
-      </nav>
+    <div class="small-24 small-centered columns">
+      {{ site.patterns | where:"title" : "Navigation" }}
     </div>
   </div>
 </header>
