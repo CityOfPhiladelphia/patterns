@@ -1,4 +1,4 @@
-//Easily add classes to set font color
+//Easily add classes to set fonts and background colors
 
 /*
   BRIGHTS
@@ -24,6 +24,27 @@
 .white {
   color: $white;
 }
+.bg-ben-franklin-blue {
+  background: $ben-franklin-blue;
+}
+.bg-bell-yellow {
+  background: $bell-yellow;
+}
+.bg-flyers-orange {
+  background: $flyers-orange;
+}
+.bg-fairmount-green {
+  background: $fairmount-green;
+}
+.bg-ben-franklin-light {
+  background: $ben-franklin-light;
+}
+.bg-black {
+  background: $black;
+}
+.bg-white {
+  background: $white;
+}
 /*
   GRAYS
 */
@@ -38,4 +59,16 @@
 }
 .sidewalk {
   color: $sidewalk;
+}
+.bg-dark-gray{
+  background: $dark-gray;
+}
+.bg-medium-gray{
+  background: $medium-gray;
+}
+.bg-ghost-gray {
+  background: $ghost-gray;
+}
+.bg-sidewalk {
+  background: $sidewalk;
 }
