@@ -74,7 +74,8 @@ Use this template to get up and running fast! It includes:
 
 <h2>Standard Markup</h2>
 <div class="pattern">
-<button class="button copy" title="Copy code to clipboard" data-clipboard-target=".highlight">Copy</button>
+<button class="button copy" title="Copy code to clipboard" data-clipboard-target=".standard">Copy</button>
+<div class="standard">
 {% highlight html %}
 <!DOCTYPE html>
 <html>
@@ -120,5 +121,6 @@ Use this template to get up and running fast! It includes:
 </html>
 
 {% endhighlight %}
+</div>
 </div>
 </div>
