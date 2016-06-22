@@ -64,7 +64,7 @@ There have been a number of markup changes in foundation 6, which developers wil
 | [analytics.phila.gov](http://analytics.phila.gov/)          | 1.1.2  |
 | [Bullet Voting](http://cityofphiladelphia.github.io/bullet-voting/) |  0.12.1 |
 | [Crashboard: Service Monitor Status](http://cityofphiladelphia.github.io/crashboard/) | 1.4.0 |
-| [Community Health Explorer](http://cityofphiladelphia.github.io/community-health-explorer/) | 0.12.5 |
+| [Community Health Explorer](http://cityofphiladelphia.github.io/community-health-explorer/) | 1.4.0 |
 | [Jekyll Patterns Template](http://cityofphiladelphia.github.io/patterns-jekyll/) | 1.4.0 |
 | [Make a Payment](https://secure.phila.gov/PaymentCenter/AccountLookup/) | 0.1.1 |
 | [Metadata Catalog](http://metadata.phila.gov/)              | 0.12.6 |
