@@ -58,20 +58,20 @@ There have been a number of markup changes in foundation 6, which developers wil
 
 ## Sites using the Phila.gov Pattern Portfolio
 
-| Site                                                        | Version |
-| ----------------------------------------------------------- |---------|
-| [alpha.phila.gov](http://alpha.phila.gov)                   | 1.2.1  |
-| [analytics.phila.gov](http://analytics.phila.gov/)          | 1.1.2  |
-| [Bullet Voting](http://cityofphiladelphia.github.io/bullet-voting/) |  0.12.1 |
-| [Crashboard: Service Monitor Status](http://cityofphiladelphia.github.io/crashboard/) | 1.4.0 |
-| [Community Health Explorer](http://cityofphiladelphia.github.io/community-health-explorer/) | 1.4.0 |
-| [Jekyll Patterns Template](http://cityofphiladelphia.github.io/patterns-jekyll/) | 1.4.0 |
-| [Make a Payment](https://secure.phila.gov/PaymentCenter/AccountLookup/) | 0.1.1 |
-| [Metadata Catalog](http://metadata.phila.gov/)              | 0.12.6 |
-| [Open Budget](http://www.phila.gov/openbudget/)             | 0.1.1 |
-| [Open Contract Data](http://cityofphiladelphia.github.io/contracts/) | 0.2.0 |
-| [Phila.gov Patterns](http://cityofphiladelphia.github.io/patterns/)  | 1.2.0 |
-| [Property](https://alpha.phila.gov/property/)               | 1.2.1 |
-| ROWS | |
-| Street Closures | |
-| [Trashday](https://alpha.phila.gov/trashday/)               | 0.12.5 |
+| Site                                                        | Source | Version |
+| ----------------------------------------------------------- | ---- |---------|
+| [alpha.phila.gov](http://alpha.phila.gov)                   | repo | 1.2.1  |
+| [analytics.phila.gov](http://analytics.phila.gov/)          | repo | 1.1.2  |
+| [Bullet Voting](http://cityofphiladelphia.github.io/bullet-voting/) | repo |  0.12.1 |
+| [Crashboard: Service Monitor Status](http://cityofphiladelphia.github.io/crashboard/) | repo | 1.4.0 |
+| [Community Health Explorer](http://cityofphiladelphia.github.io/community-health-explorer/) | repo | 1.4.0 |
+| [Jekyll Patterns Template](http://cityofphiladelphia.github.io/patterns-jekyll/) | repo | 1.4.0 |
+| [Make a Payment](https://secure.phila.gov/PaymentCenter/AccountLookup/) | repo | 0.1.1 |
+| [Metadata Catalog](http://metadata.phila.gov/)              | repo | 0.12.6 |
+| [Open Budget](http://www.phila.gov/openbudget/)             | repo | 0.1.1 |
+| [Open Contract Data](http://cityofphiladelphia.github.io/contracts/) | repo | 0.2.0 |
+| [Phila.gov Patterns](http://cityofphiladelphia.github.io/patterns/)  | repo | 1.2.0 |
+| [Property](https://alpha.phila.gov/property/)              | repo | 1.2.1 |
+| ROWS | repo | |
+| Street Closures | repo | |
+| [Trashday](https://alpha.phila.gov/trashday/)              | repo  | 0.12.5 |
