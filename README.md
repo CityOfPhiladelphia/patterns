@@ -85,6 +85,6 @@ There have been a number of markup changes in foundation 6, which developers wil
 | [Open Contract Data](http://cityofphiladelphia.github.io/contracts/) | repo | 0.2.0 |
 | [Phila.gov Patterns](http://cityofphiladelphia.github.io/patterns/)  | repo | 1.2.0 |
 | [Property](https://alpha.phila.gov/property/)              | repo | 1.2.1 |
-| ROWS | repo | |
+| [ROWS](https://phl.secure.force.com/ROWS/) | repo | 0.8.1 |
 | Street Closures | repo | |
 | [Trashday](https://alpha.phila.gov/trashday/)              | repo  | 0.12.5 |
