@@ -32,7 +32,7 @@ Phila.gov Patterns uses <a href="http://jekyllrb.com/">Jekyll</a> to generate pa
 6. Start the Jekyll development server <code>$ jekyll serve</code>
 7. Navigate to <code>http://localhost:4000/patterns</code>
 
-If you intend to alter the SASS or JS files in this project while running the Jekyll server:
+To watch your local files for changes and update the compressed code being used on the Jekyll site:
 
 8. Open a second Terminal window
 9. Navigate into the root of the patterns directory
