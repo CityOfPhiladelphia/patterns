@@ -16,14 +16,27 @@ The patterns CSS includes a customized 24-column grid version of Foundation 6.1.
 ```
 
 ## Local Setup
-Phila.gov Patterns uses <a href="http://jekyllrb.com/">Jekyll</a> to generate pattern files.
+Phila.gov Patterns uses <a href="http://jekyllrb.com/">Jekyll</a> to generate pattern files. Jekyll requires the following dependencies:
 
-1. Install Jekyll <code>$ gem install jekyll</code>  
-2. Clone this repository
-3. cd into the patterns directory
-4. <code>$ jekyll serve</code>
-5. Navigate to <code>http://localhost:4000/patterns</code>
-6. Run <code>$ grunt watch</code>
+- [Ruby](https://www.ruby-lang.org/en/downloads/)
+- [RubyGems](https://rubygems.org/pages/download)
+- [Nodejs & npm](https://nodejs.org/en/)
+
+### Getting Started
+
+1. Install Jekyll <code>$ gem install jekyll</code>
+2. Install Pygments <code>$ gem install pygments.rb</code>
+3. Clone this repository
+4. cd into the patterns directory
+5. Install additional dependencies <code>$ npm install</code>
+6. Start the Jekyll development server <code>$ jekyll serve</code>
+7. Navigate to <code>http://localhost:4000/patterns</code>
+
+If you intend to alter the SASS or JS files in this project while running the Jekyll server:
+
+8. Open a second Terminal window
+9. Navigate into the root of the patterns directory
+10. Run <code>$ grunt watch</code>
 
 
 ## Versioning
@@ -72,6 +85,6 @@ There have been a number of markup changes in foundation 6, which developers wil
 | [Open Contract Data](http://cityofphiladelphia.github.io/contracts/) | repo | 0.2.0 |
 | [Phila.gov Patterns](http://cityofphiladelphia.github.io/patterns/)  | repo | 1.2.0 |
 | [Property](https://alpha.phila.gov/property/)              | repo | 1.2.1 |
-| [ROWS](https://phl.secure.force.com/ROWS/) | repo | 0.8.1 |
+| ROWS | repo | |
 | Street Closures | repo | |
 | [Trashday](https://alpha.phila.gov/trashday/)              | repo  | 0.12.5 |
