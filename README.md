@@ -6,14 +6,21 @@
 Phila.gov Pattern Library
 
 ## Using Phila.gov Patterns
-The patterns CSS includes a customized 24-column grid version of Foundation 6.1.2. Just add a few lines to `<head>`.
+The patterns CSS includes a customized 24-column grid version of Foundation 6.1.2. Just add the following snippets in the appropriate locations:
 
-### The bare minimum
+### Place in the `head`
 ```
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="//cityofphiladelphia.github.io/patterns/dist/1.4.1/css/patterns.css">
-<script type="text/javascript" src="//cityofphiladelphia.github.io/patterns/dist/1.4.1/js/patterns.min.js"></script>
 ```
+
+### Place just before the closing `body`
+```
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation.min.js"></script>
+<script src="//cityofphiladelphia.github.io/patterns/dist/1.4.1/js/patterns.min.js"></script>
+```
+
 
 ## Local Setup
 Phila.gov Patterns uses <a href="http://jekyllrb.com/">Jekyll</a> to generate pattern files. Jekyll requires the following dependencies:
