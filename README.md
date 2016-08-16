@@ -16,7 +16,7 @@ The patterns CSS includes a customized 24-column grid version of Foundation 6.1.
 
 ### Place just before the closing `body`
 ```
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation.min.js"></script>
 <script src="//cityofphiladelphia.github.io/patterns/dist/1.4.1/js/patterns.min.js"></script>
 ```
