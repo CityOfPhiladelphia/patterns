@@ -10,20 +10,25 @@
     "type": "git",
     "url": "git+https://github.com/CityOfPhiladelphia/patterns.git"
   },
-  "author": "@cityofphilaelphia",
+  "author": "@cityofphiladelphia",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/CityOfPhiladelphia/patterns/issues"
   },
   "homepage": "https://github.com/CityOfPhiladelphia/patterns#readme",
+  "dependencies" : {
+    "clipboard": "~1.4.1",
+    "tablesaw": "~2.0.2",
+    "foundation-sites": "~6.1.0",
+    "motion-ui": "~1.1.0"
+  },
   "devDependencies": {
     "autoprefixer": "^6.3.1",
-    "grunt": "^0.4.5",
-    "grunt-autoprefixer": "^3.0.3",
+    "grunt": "^1.0.0",
     "grunt-cli": "^1.2.0",
-    "grunt-contrib-sass": "^0.9.2",
-    "grunt-contrib-uglify": "^0.9.2",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-postcss": "^0.7.1"
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0"
   }
 }

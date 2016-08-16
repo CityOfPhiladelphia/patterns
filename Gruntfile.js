@@ -12,7 +12,7 @@ module.exports = function(grunt) {
         files: {
           'js/dist/patterns.min.js':
           [
-            'bower_components/filament-tablesaw/dist/stackonly/tablesaw.stackonly.js',
+            'node_modules/tablesaw/dist/stackonly/tablesaw.stackonly.js',
             'js/src/patterns.js'
           ]
         }
@@ -24,8 +24,8 @@ module.exports = function(grunt) {
         options: {
           style: 'compressed',
           loadPath: [
-            'bower_components/foundation-sites/scss',
-            'bower_components/motion-ui/src'
+            'node_modules/foundation-sites/scss',
+            'node_modules/motion-ui/src'
           ],
           sourcemap: 'file'
         },
