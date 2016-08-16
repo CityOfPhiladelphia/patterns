@@ -10,12 +10,18 @@
     "type": "git",
     "url": "git+https://github.com/CityOfPhiladelphia/patterns.git"
   },
-  "author": "@cityofphilaelphia",
+  "author": "@cityofphiladelphia",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/CityOfPhiladelphia/patterns/issues"
   },
   "homepage": "https://github.com/CityOfPhiladelphia/patterns#readme",
+  "dependencies" : {
+    "clipboard": "~1.4.1",
+    "tablesaw": "~2.0.2",
+    "foundation-sites": "~6.1.0",
+    "motion-ui": "~1.1.0"
+  },
   "devDependencies": {
     "autoprefixer": "^6.3.1",
     "grunt": "^0.4.5",
