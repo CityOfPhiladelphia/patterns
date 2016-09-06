@@ -8,7 +8,7 @@
   border:none;
 
   i.fa{
-    color:$medium-gray
+    color:$white;
   }
 
   &.hollow, &.hollow:link, &.hollow:visited{
@@ -29,19 +29,20 @@
     display: inline-block;
     position: relative;
     height:40px;  //height in px for cross-browser compatibility
-    padding:rem-calc(14 60 0 20);
+    padding:rem-calc(14 20 0 60);
     //hollow must be 2px smaller than .icon because of the border
     &.hollow .fa{
       max-height: 38px;
     }
     .fa{
-      background: $ghost-gray;
+      background: $dark-gray;
       padding: .4em .5em .5em .4em;
+      box-shadow: .25rem 0 $white;
       font-size: 1.7em;
       max-height: 40px;
       vertical-align: sub;
       position:absolute;
-      right:0;
+      left:0;
       top:0;
       width:rem-calc(40);
     }
@@ -53,20 +54,21 @@
 }
 
 a.button:link, a.button:visited {
-  color: #fff;
-  font-weight:400;
+  color: $dark-gray;
+  font-weight:600;
 }
 
 a.button:hover,
 a.button:active{
+  color: $white;
   background-color:$dark-gray;
   transition: background-color 300ms ease-in-out;
 }
 
 a.button:hover > i.fa,
 a.button:active > i.fa{
-  color:$dark-gray;
-  background-color:$ghost-gray;
+  color:$indego-blue;
+  background-color:$dark-gray;
   transition: color 300ms ease-in-out;
 }
 
