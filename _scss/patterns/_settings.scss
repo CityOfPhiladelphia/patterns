@@ -233,7 +233,7 @@ $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $indego-blue;
 $button-background-hover: scale-color($indego-blue, $lightness: -15%);
-$button-color: #fff;
+$button-color: $dark-gray;
 $button-color-alt: #000;
 $button-radius: $global-radius;
 $button-sizes: (
