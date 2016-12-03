@@ -5,7 +5,7 @@
 # Version 2.0 is coming
 This version of patterns will be deprecated in the future. Use at your own risk!
 
-Phila.gov Pattern Library
+
 
 ## Using Phila.gov Patterns
 The patterns CSS includes a customized 24-column grid version of Foundation 6.1.2. Just add the following snippets in the appropriate locations:
